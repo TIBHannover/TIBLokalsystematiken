@@ -1,0 +1,92 @@
+mat1	Allgemeines
+mat1_4	Didaktik der Mathematik. Programmierter und rechnergestützter Mathematikunterricht
+mat1_5	Beruf. Ausbildung. Nachwuchs
+mat3	Unterhaltungsmathematik (Rätsel, Spiele, u. a.)
+mat5	Geschichte der Mathematik
+mat8	Biographien. Gesammelte Werke
+mat10	Mathematische Logik
+mat23	Berechenbarkeit. Rekursivität
+mat40	Mengenlehre
+mat45	Zahlentheorie
+mat50	Analytische Zahlentheorie
+mat65	Algebraische Zahlentheorie
+mat70	Algebra
+mat71	Lineare Algebra
+mat85	Algebraische Geometrie. Algebraische Mannigfaltigkeiten. Algebraische Räume. Algebraische Funktionenkörper
+mat90	Ringe. Algebren
+mat94	Kommutative Ringe und Algebren
+mat105	Gruppentheorie
+mat106	Endliche Gruppen. Gruppen mit Endlichkeitsbedingungen
+mat119	Topologische Gruppen
+mat119_6	Lie-Gruppen. Möbius- und Klein-Gruppen. Topologische Transformationsgruppen
+mat124	Gruppendarstellungen und -charaktere
+mat130	Verbände und ihre Darstellungen
+mat133	Boole'sche Verbände, Algebren und Ringe
+mat135	Kategorien. Funktoren
+mat137	Algebraische Strukturen und Systeme
+mat140	Analysis
+mat146	Ungleichungen
+mat150	Differential- und Integralrechnung
+mat157	Maßtheorie
+mat162	Integrationstheorie
+mat174	Konvexe Funktionen. Konvexe Analysis
+mat190	Theorie der Funktionen komplexer Veränderlicher
+mat233	Funktionentheorie mehrere komplexer Variabler
+mat243	Potentialtheorie
+mat255	Reihen und Folgen
+mat267	Fourier-Reihen. Orthogonalreihen, -polynome, -systeme. Entwicklung nach Eigenfunktionen. Jacobi-Reihen
+mat280	Approximationstheorie. Asymptotische Analysis
+mat298	Elliptische Funktionen und Integrale. Abelsche Funktionen. Weierstraßsche Funktionen. Jacobische elliptische Funktionen
+mat325	Differentialgleichungen. Randwertaufgaben
+mat330	Gewöhnliche Differentialgleichungen
+mat339	Dynamische (autonome) Systeme
+mat340	Stochastische gewöhnliche Differentialgleichungen
+mat365	Partielle Differentialgleichungen
+mat380	Lineare und quasilineare partielle Differentialgleichungen
+mat395	Integralgleichungen
+mat402	Lineare Integralgleichungen
+mat411	Differenzengleichungen
+mat413	Funktionalgleichungen
+mat429	Variationsrechnung
+mat430	Funktionaltransformationen. Operatorenrechnung
+mat433	Laplace-Transformation und ihre Faltungen
+mat434	Fourier-Transformation und ihre Faltungen
+mat445	Funktionalanalysis
+mat448	Operatoren und Gleichungen. Fixpunkttheorie
+mat451	Topologische Vektorräume. Lineare topologische Räume
+mat454	Verallgemeinerte Funktionen (Distributionen). Lineare Funktionale
+mat468	Lineare metrische und normierte Räume. Banach-Räume
+mat470	Hilbert-Raum. Operatoren im Hilbert-Raum
+mat473	Nichtlineare Funktionalanalysis
+mat481	Topologie
+mat500	Algebraische Topologie
+mat521	Knotentheorie
+mat525	Graphentheorie
+mat530	Kombinatorik
+mat535	Geometrie
+mat549	Darstellende Geometrie
+mat555	Analytische Geometrie. Euklidische Geometrie
+mat570	Differentialgeometrie
+mat571	Vektoren. Tensoren. Spinoren
+mat571_1	Vektoralgebra und -analysis
+mat571_2	Tensoralgebra und -analysis
+mat592	Riemannsche Geometrie. Riemannsche Bäume. Riemannsche Mannigfaltigkeiten.
+mat645	Wahrscheinlichkeitstheorie und mathematische Statistik
+mat646	Wahrscheinlichkeitstheorie
+mat655	Stochastische Prozesse. Stochastische Analysis.
+mat660	Mathematische Statistik
+mat679	Multivariate Methoden
+mat680	Korrelations- und Regressionstheorie
+mat686	Zeitreihen. Multimomentverfahren.
+mat690	Angewandte Mathematik
+mat691	Numerische Mathematik
+mat698	Finite Verfahren. Differenzenverfahren.
+mat730	Kybernetik. Theorie allgemeiner Systeme.
+mat845	Mathematische Operations Research
+mat847	Versicherungsmathematik. Risikotheorie.
+mat848	Finanz- und Wirtschaftsrechnen
+mat850	Optmierung
+mat851	Lineare Optimierung
+mat852	Nichtlineare Optimierung
+mat855	Spieltheorie
+mat885	Mathematische Tafeln und Formelsammlungen
