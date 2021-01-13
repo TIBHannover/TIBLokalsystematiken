@@ -1,6 +1,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @base <http://uricorn.fly/tib_lok_sy> .
-@prefix math: <http://uricorn.fly/tib_lok_sy#> .
+@prefix math: <http://uricorn.fly/tib_lok_sys#> .
 
 
 math: a owl:Ontology ; owl:imports skos: .

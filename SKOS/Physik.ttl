@@ -1,0 +1,60 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://uricorn.fly/tib_lok_sy> .
+@prefix physik: <http://uricorn.fly/tib_lok_sys#> .
+
+physik: a owl:Ontology ; owl:imports skos: .
+
+physik:phy1 a skos:Concept ;
+    skos:prefLabel "Gesamtgebiet"@de ;
+    rdfs:comment "auch Gesamtdarstellungen der Experimentalphysik"@de .
+
+physik:phy2 a skos:Concept ;
+    skos:prefLabel "Institute der Lehre u. Forschung, Organisationen"@de ;
+    rdfs:seeAlso physik:phy89 .
+
+# Frage an Esther: Was ist die Beziehung der Codes im Gegensatz zu 4.1 etc.?
+physik:phy4 a skos:Concept ;
+    skos:prefLabel "Gesamtgebiet in besonderer Ausrichtung"@de ;
+    skos:narrower physik:phy5 ;
+    skos:narrower physik:phy6 ;
+    skos:narrower physik:phy7 ;
+    skos:narrower physik:phy8 ;
+    skos:narrower physik:phy9 ;
+    skos:narrower physik:phy11 .
+
+physik:phy5 a skos:Concept ;
+    skos:prefLabel "Angewandte u. technische, Physik"@de .
+
+physik:phy6 a skos:Concept ;
+    skos:prefLabel "Tabellenwerke"@de ;
+    rdfs:comment "u.ä. Ordnung nach 2. Notation; Formelsammlungen bei phy"@de ;
+    rdfs:comment "1 e"@de .
+
+physik:phy7 a skos:Concept ;
+    skos:prefLabel "Physik in den biologischen Wissenschaften u. der Medizin"@de .
+
+physik:phy8 a skos:Concept ;
+    skos:prefLabel "Physik im Alltag"@de .
+
+physik:phy9 a skos:Concept ;
+    skos:prefLabel "Populäre Physik"@de .
+
+physik:phy11 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy15 a skos:Concept ;
+    skos:prefLabel "Philosophie, Wesen, Weltbild der Physik"@de ;
+    skos:narrower physik:phy15_2 .
+
+# physik:phy a skos:Concept ;
+#     skos:prefLabel ""@de .
+
+# physik:phy a skos:Concept ;
+#     skos:prefLabel ""@de .
+
+# physik:phy a skos:Concept ;
+#     skos:prefLabel ""@de .
+
+# physik:phy a skos:Concept ;
+#     skos:prefLabel ""@de .

@@ -1,6 +1,6 @@
 mat1	Allgemeines
-mat1_4	Didaktik der Mathematik. Programmierter und rechnergestützter Mathematikunterricht
-mat1_5	Beruf. Ausbildung. Nachwuchs
+mat1.4	Didaktik der Mathematik. Programmierter und rechnergestützter Mathematikunterricht
+mat1.5	Beruf. Ausbildung. Nachwuchs
 mat3	Unterhaltungsmathematik (Rätsel, Spiele, u. a.)
 mat5	Geschichte der Mathematik
 mat8	Biographien. Gesammelte Werke
@@ -18,7 +18,7 @@ mat94	Kommutative Ringe und Algebren
 mat105	Gruppentheorie
 mat106	Endliche Gruppen. Gruppen mit Endlichkeitsbedingungen
 mat119	Topologische Gruppen
-mat119_6	Lie-Gruppen. Möbius- und Klein-Gruppen. Topologische Transformationsgruppen
+mat119.6	Lie-Gruppen. Möbius- und Klein-Gruppen. Topologische Transformationsgruppen
 mat124	Gruppendarstellungen und -charaktere
 mat130	Verbände und ihre Darstellungen
 mat133	Boole'sche Verbände, Algebren und Ringe
@@ -68,8 +68,8 @@ mat549	Darstellende Geometrie
 mat555	Analytische Geometrie. Euklidische Geometrie
 mat570	Differentialgeometrie
 mat571	Vektoren. Tensoren. Spinoren
-mat571_1	Vektoralgebra und -analysis
-mat571_2	Tensoralgebra und -analysis
+mat571.1	Vektoralgebra und -analysis
+mat571.2	Tensoralgebra und -analysis
 mat592	Riemannsche Geometrie. Riemannsche Bäume. Riemannsche Mannigfaltigkeiten.
 mat645	Wahrscheinlichkeitstheorie und mathematische Statistik
 mat646	Wahrscheinlichkeitstheorie
