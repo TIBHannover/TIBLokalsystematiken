@@ -1,9 +1,16 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skos: <http://www.w3.org/2104/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://uricorn.fly/tib_lok_sy> .
 @prefix physik: <http://uricorn.fly/tib_lok_sys#> .
 
 physik: a owl:Ontology ; owl:imports skos: .
+
+# Einige hierarchische Beziehungen fehlen noch. 
+# Dies ist nur eine stumpf abgetippte Liste.
+# Es fehlen:
+# Die unterstrichenen Gebiete haben kein Konzept.
+# Unterbegriffe unter einem unterstrichenen Gebiet.
+# Sonderbestände "e" noch nicht erfasst.
 
 physik:phy1 a skos:Concept ;
     skos:prefLabel "Gesamtgebiet"@de ;
@@ -28,8 +35,8 @@ physik:phy5 a skos:Concept ;
 
 physik:phy6 a skos:Concept ;
     skos:prefLabel "Tabellenwerke"@de ;
-    rdfs:comment "u.ä. Ordnung nach 2. Notation; Formelsammlungen bei phy"@de ;
-    rdfs:comment "1 e"@de .
+    rdfs:seeAlso "u.ä. Ordnung nach 2. Notation; Formelsammlungen bei phy 1 e"@de ;
+    rdfs:seeAlso physik:phy1_e .
 
 physik:phy7 a skos:Concept ;
     skos:prefLabel "Physik in den biologischen Wissenschaften u. der Medizin"@de .
@@ -45,16 +52,371 @@ physik:phy11 a skos:Concept ;
 
 physik:phy15 a skos:Concept ;
     skos:prefLabel "Philosophie, Wesen, Weltbild der Physik"@de ;
-    skos:narrower physik:phy15_2 .
+    skos:narrower physik:phy15_2 ;
+    skos:narrower physik:phy15_4 ;
+    skos:narrower physik:phy15_6 ;
+    skos:narrower physik:phy15_8 .
 
-# physik:phy a skos:Concept ;
-#     skos:prefLabel ""@de .
+physik:phy15_2 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art"@de .
 
-# physik:phy a skos:Concept ;
-#     skos:prefLabel ""@de .
+physik:phy15_4 a skos:Concept ;
+    skos:prefLabel "Begrifflicher Aufbau der Physik"@de .
 
-# physik:phy a skos:Concept ;
-#     skos:prefLabel ""@de .
+physik:phy15_6 a skos:Concept ;
+    skos:prefLabel "Erkenntnistheorie der Physik. Grundlagenforschung. Physikalische Begriffsbildung u. Forschungsmethoden"@de .
 
-# physik:phy a skos:Concept ;
-#     skos:prefLabel ""@de .
+physik:phy15_8 a skos:Concept ;
+    skos:prefLabel "Axiomatische Methoden in der Physik (bes. Mechanik u. Quantenmechanik)"@de .
+
+physik:phy16_2 a skos:Concept ;
+    skos:prefLabel "Hypothese. Theorie. Naturgesetz. Wahrscheinlichkeit."@de .
+
+physik:phy16_4 a skos:Concept ;
+    skos:prefLabel "Symmetrie. Invarianz."@de .
+
+physik:phy16_6 a skos:Concept ;
+    skos:prefLabel "Raum u. Zeit. Philosophische Betrachtungen zur Relativitätstheorie"@de ;
+    rdfs:seeAlso physik:phy46 .
+
+physik:phy16_8 a skos:Concept ;
+    skos:prefLabel "Philosophie mechanischer Grundbegriffe (Problem d. Bewegung u.ä.)"@de ;
+    skos:narrower physik:phy17 .
+
+physik:phy17 a skos:Concept ;
+    skos:prefLabel "Philosophie der Mikrophysik u. Quantentheorie i.a."@de .
+
+physik:phy17_2 a skos:Concept ;
+    skos:prefLabel "Dualismus. Anschaulichkeit. Objektivierbarkeit."@de .
+
+physik:phy17_4 a skos:Concept ;
+    skos:prefLabel "Kausalität. Indeterminismus. Konsequenzen der Unschärferelation"@de .
+
+physik:phy17_6 a skos:Concept ;
+    skos:prefLabel "Synthese von Relativitäts- u. Quantentheorie. Raum-, Zeitquantelung u.ä."@de .
+
+physik:phy17_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges. Außenseiter."@de .
+
+physik:phy20 a skos:Concept ;
+    skos:prefLabel "Beziehungen zu .anderen Gebieten"@de ;
+    skos:narrower physik:phy20_2 ;
+    skos:narrower physik:phy20_4 ;
+    skos:narrower physik:phy20_6 ;
+    skos:narrower physik:phy20_8 ;
+    skos:narrower physik:phy20_9 .
+
+physik:phy20_2 a skos:Concept ;
+    skos:prefLabel "Physik u. Kultur. Bildung durch Physik"@de .
+
+physik:phy20_4 a skos:Concept ;
+    skos:prefLabel "Physik u. Sprache"@de .
+
+physik:phy20_6 a skos:Concept ;
+    skos:prefLabel "Physik u. Religion"@de .
+
+physik:phy20_8 a skos:Concept ;
+    skos:prefLabel "Soziale Verantwortung der physikalischen Forschung. Physik u. Politik"@de .
+
+physik:phy20_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+# Verweis auf eine andere Systematik, die nicht mehr existiert
+physik:phy22 a skos:Concept ;
+    skos:prefLabel "Unterrichts- u. Darstellungsfragen"@de ;
+    rdfs:comment "s.a. pae 635"@de ;
+    skos:narrower physik:phy22_2 ;
+    skos:narrower physik:phy22_3 ;
+    skos:narrower physik:phy22_4 ;
+    skos:narrower physik:phy22_6 ;
+    skos:narrower physik:phy22_9 .
+
+physik:phy22_2 a skos:Concept ;
+    skos:prefLabel "Fragen allg.Art (funktionelle Herleitung physikal. Formeln u.ä.)"@de .
+	
+physik:phy22_3 a skos:Concept ;
+    skos:prefLabel "Methodik des Physikunterrichts an Hochschulen"@de .
+
+physik:phy22_4 a skos:Concept ;
+    skos:prefLabel "Unterrichts-u. Demonstrationsgeräte i.a."@de .
+
+physik:phy22_6 a skos:Concept ;
+    skos:prefLabel "Einzelne physikalische Gebiete u. Erscheinungen"@de ;
+    rdfs:comment "NS dort"@de ;
+    rdfs:comment "Untergliederung: Zahlen der Physikgliederung mit Doppelpunkt anhängen, auf Rückenschildchen in 3. Zeile !"@de .
+
+physik:phy22_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy24 a skos:Concept ;
+    skos:prefLabel "Grundbegriffe u. fundamentale Prinzipien"@de ;
+    skos:narrower physik:phy24_2 ;
+    skos:narrower physik:phy24_3 ;
+    skos:narrower physik:phy24_4 ;
+    skos:narrower physik:phy24_5 ;
+    skos:narrower physik:phy24_6 ;
+    skos:narrower physik:phy24_7 ;
+    skos:narrower physik:phy24_8 ;
+    skos:narrower physik:phy24_9 .
+
+physik:phy24_2 a skos:Concept ;
+    skos:prefLabel "Masse"@de .
+
+physik:phy24_3 a skos:Concept ;
+    skos:prefLabel "Energie u. allg. Energieprinzip"@de .
+
+physik:phy24_4 a skos:Concept ;
+    skos:prefLabel "Erhaltungsprinzipien i.a. Invarianz-Prinzipien"@de .
+
+physik:phy24_5 a skos:Concept ;
+    skos:prefLabel "Entropie i.a."@de .
+
+physik:phy24_6 a skos:Concept ;
+    skos:prefLabel "Feldbegriff. Nah- u. Fernwirkung von Kräften"@de .
+
+physik:phy24_7 a skos:Concept ;
+    skos:prefLabel "Physikalische Gesetze u. Effekte i.a."@de .
+
+physik:phy24_8 a skos:Concept ;
+    skos:prefLabel "Symmetrien"@de .
+
+physik:phy24_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy30 a skos:Concept ;
+    skos:prefLabel "Mathematische Hilfsmittel: Allgemeines"@de ;
+    rdfs:comment "Vgl.a.die entsprechenden Gebiete der Mathematik"@de ;
+    rdfs:comment "Hilfsmittel für Teilgebiete der Physik s. bei diesen"@de ;
+    skos:narrower physik:phy30_2 ;
+    skos:narrower physik:phy30_4 ;
+    skos:narrower physik:phy30_6 .
+
+physik:phy30_2 a skos:Concept ;
+    skos:prefLabel "Fragen allg.Art"@de .
+
+physik:phy30_4 a skos:Concept ;
+    skos:prefLabel "Hilfsmittel aus math. Logik, Mengenlehre, Verbands-, Strukturtheorie"@de .
+
+physik:phy30_6 a skos:Concept ;
+    skos:prefLabel "Algebra. Gruppentheorie. Matrizenrechnung"@de .
+
+physik:phy31 a skos:Concept ;
+    skos:prefLabel "Analysis (reine und numerische)"@de ;
+    skos:narrower physik:phy31_1 ;
+    skos:narrower physik:phy31_2 ;
+    skos:narrower physik:phy31_3 ;
+    skos:narrower physik:phy31_4 ;
+    skos:narrower physik:phy31_5 ;
+    skos:narrower physik:phy31_7 ;
+    skos:narrower physik:phy31_9 .
+
+physik:phy31_1 a skos:Concept ;
+    skos:prefLabel "Reelle u.komplexe Funktionen. Reihen. Approximation. Differential- u. Integralrechnung"@de .
+
+physik:phy31_2 a skos:Concept ;
+    skos:prefLabel "Spezielle Funktionen der math. Physik"@de ;
+    rdfs:comment "NS"@de .
+
+physik:phy31_3 a skos:Concept ;
+    skos:prefLabel "Differentialgleichungen. Potentialtheorie. Relaxationsmethoden"@de .
+
+physik:phy31_4 a skos:Concept ;
+    skos:prefLabel "Integralgleichungen. Variationsrechnung"@de .
+
+physik:phy31_5 a skos:Concept ;
+    skos:prefLabel "Integraltransformationen"@de .
+
+physik:phy31_7 a skos:Concept ;
+    skos:prefLabel "Funktionsanalysis. Operatorentheorie"@de .
+
+physik:phy31_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy32_2 a skos:Concept ;
+    skos:prefLabel "Topologie. Graphentheorie. Kombinatorische Analysis"@de .
+
+physik:phy32_4 a skos:Concept ;
+    skos:prefLabel "Geometrie. Differentialgeometrie. Vektor- u. Tensorrechnung. Besondere Geometrien u. Mannigfaltigkeiten"@de .
+
+physik:phy32_6 a skos:Concept ;
+    skos:prefLabel "Wahrscheinlichkeitsrechnung. Statistik"@de .
+
+physik:phy32_8 a skos:Concept ;
+    skos:prefLabel "Numerische Methoden i.a."@de ;
+    rdfs:comment "für einzelne Probleme s. dort"@de .
+
+physik:phy32_9 a skos:Concept ;
+    skos:prefLabel "Felddarstellung u.-analyse (numerische u. experimentelle Methoden)"@de ;
+    rdfs:seeAlso physik:phy338 .
+
+physik:phy33_2 a skos:Concept ;
+    skos:prefLabel "Rechenmaschinen. Datenverarbeitung"@de .
+
+physik:phy33_8 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy40 a skos:Concept ;
+    skos:prefLabel "Theoretische Physik. Mathematische Physik: Allgemeines"@de ;
+    rdfs:comment "Theorie einzelner Teilgebiete der Physik s. bei diesen"@de ;
+    rdfs:seeAlso "Quantentheorie  s. phy 560 ff"@de ;
+    rdfs:seeAlso physik:phy560 ;
+    skos:narrower physik:phy40_5 .
+
+physik:phy40_5 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art  u.allg. theoretische Ansätze"@de .
+
+physik:phy42 a skos:Concept ;
+    skos:prefLabel "Feldtheorie i. a. Physikalische Felder i. a."@de ;
+    rdfs:seeAlso "Quantenfeldtheorie s. phy 585"@de ;
+    rdfs:seeAlso physik:phy585 ;
+    rdfs:seeAlso "Feldtheorie der Elementarteilchen s. phy 594"@de ;
+    rdfs:seeAlso physik:phy594 ;
+    skos:narrower physik:phy42_2 ;
+    skos:narrower physik:phy42_4 ;
+    skos:narrower physik:phy42_6 .
+
+physik:phy42_2 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art. Geschichte der Feldtheorien"@de .
+
+physik:phy42_4 a skos:Concept ;
+    skos:prefLabel "Klassische Feldtheorien ()"@de ;
+    rdfs:seeAlso "Raum u. Zeit s. phy 16.6"@de ;
+    rdfs:seeAlso physik:phy16_6 .
+
+physik:phy42_6 a skos:Concept ;
+    skos:prefLabel "Äther. Raumstofftheorie. Raumfeldtheorien"@de .
+
+physik:phy43 a skos:Concept ;
+    skos:prefLabel "Relativitätstheorie"@de ;
+    skos:narrower physik:phy43_5 ;
+    skos:narrower physik:phy44 ;
+    skos:narrower physik:phy45 .
+
+physik:phy43_5 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art"@de .
+
+physik:phy44 a skos:Concept ;
+    skos:prefLabel "Spezielle Relativitätstheorie"@de ;
+    skos:narrower physik:phy44_5 .
+
+physik:phy44_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy45 a skos:Concept ;
+    skos:prefLabel "Allgemeine Relativitätstheorie"@de ;
+    skos:narrower physik:phy45_5 .
+
+physik:phy45_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy46 a skos:Concept ;
+    skos:prefLabel "Kritik. Weiterbildung. Philosophie"@de ;
+    rdfs:seeAlso "vgl. a. phy 51"@de ;
+    rdfs:seeAlso physik:phy51 .
+
+physik:phy47 a skos:Concept ;
+    skos:prefLabel "Gravitation i. a."@de .
+
+physik:phy49 a skos:Concept ;
+    skos:prefLabel "Nichtlokale Feldtheorien"@de .
+
+physik:phy51 a skos:Concept ;
+    skos:prefLabel "Einheitliche Feldtheorien. Vereinigung von Gravitations-, elektromagnetischer (u.Kernkraft-) Feldtheorie"@de ;
+    skos:narrower physik:phy51_2 ;
+    skos:narrower physik:phy51_4 ;
+    skos:narrower physik:phy51_6 ;
+    skos:narrower physik:phy51_9 .
+
+physik:phy51_2 a skos:Concept ;
+    skos:prefLabel "Ältere Arbeiten. Verfahren von Weyl, Eddington, Schrödinger u.a."@de .
+
+physik:phy51_4 a skos:Concept ;
+    skos:prefLabel "Feldtheorien mit unsymmetrischem Feld (Einstein 1945 ff)"@de .
+
+physik:phy51_6 a skos:Concept ;
+    skos:prefLabel "Projektive Relativitätstheorie. Fünfdimensionale Feldtheorien: Theorien von Jordan-Thiry u.Kaluza-Klein"@de .
+
+physik:phy51_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges (Feldgleichungen höherer Ordnung, Verfahren von Lanczos, Geometrodynamik u.a. )  Supersymmetrie, Supergravitation"@de .
+
+physik:phy53 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy70 a skos:Concept ;
+    skos:prefLabel "Maßsysteme. Einheiten. Konstanten: Allgemeines"@de ;
+    skos:narrower physik:phy70_5 .
+
+physik:phy72 a skos:Concept ;
+    skos:prefLabel "Größen. Symbole. Einheiten. Maßsysteme. Umwandlungstafeln"@de ;
+    skos:narrower physik:phy72_1 ;
+    skos:narrower physik:phy72_2 ;
+    skos:narrower physik:phy72_4 ;
+    skos:narrower physik:phy72_5 ;
+    skos:narrower physik:phy72_6 ;
+    skos:narrower physik:phy72_7 ;
+    skos:narrower physik:phy72_9 .
+
+physik:phy72_1 a skos:Concept ;
+    skos:prefLabel "Symbole. Formelzeichen"@de .
+
+physik:phy72_2 a skos:Concept ;
+    skos:prefLabel "Einheiten. Normalien"@de .
+
+physik:phy72_4 a skos:Concept ;
+    skos:prefLabel "Maßsysteme"@de .
+
+physik:phy72_5 a skos:Concept ;
+    skos:prefLabel "Einheiten und Maßsysteme einzelner Teilgebiete der Physik"@de ;
+    rdfs:comment "NS dort"@de ;
+    rdfs:comment "Unterteilung: Zahlen der Physikgliederung in runden Klammern anhängen"@de .
+
+physik:phy72_6 a skos:Concept ;
+    skos:prefLabel "Einheiten und Maßsysteme einzelner Länder und- Zeiten"@de .
+
+physik:phy72_7 a skos:Concept ;
+    skos:prefLabel "Umwandlungstafeln"@de .
+
+physik:phy72_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy74 a skos:Concept ;
+    skos:prefLabel "Dimensionen. Dimensionsanalyse. Ähnlichkeits- u. Modelltheorie"@de ;
+    skos:narrower physik:phys74_5 .
+
+physik:phy76 a skos:Concept ;
+    skos:prefLabel "Allgemeine Konstanten. Fundamentalkonstanten"@de ;
+     rdfs:seeAlso "Konstanten- u. Datensammlungen zur gesamten Physik od. mehreren Teilgebieten s. phy 1 e 6"@de ;
+    rdfs:seeAlso physik:phy1_e_6 .
+
+physik:phy78 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy a skos:Concept ;
+    skos:prefLabel ""@de .
+
+physik:phy a skos:Concept ;
+    skos:prefLabel ""@de .
+
+physik:phy a skos:Concept ;
+    skos:prefLabel ""@de .
+
+physik:phy a skos:Concept ;
+    skos:prefLabel ""@de .
+
+physik:phy a skos:Concept ;
+    skos:prefLabel ""@de .
+
+physik:phy a skos:Concept ;
+    skos:prefLabel ""@de .
+
+physik:phy a skos:Concept ;
+    skos:prefLabel ""@de .
+
+physik:phy a skos:Concept ;
+    skos:prefLabel ""@de .
+
+physik:phy a skos:Concept ;
+    skos:prefLabel ""@de .
+
+physik:phy a skos:Concept ;
+    skos:prefLabel ""@de .
