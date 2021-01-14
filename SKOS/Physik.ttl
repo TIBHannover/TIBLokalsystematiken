@@ -1,4 +1,4 @@
-@prefix skos: <http://www.w3.org/2104/02/skos/core#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://uricorn.fly/tib_lok_sy> .
 @prefix physik: <http://uricorn.fly/tib_lok_sys#> .
