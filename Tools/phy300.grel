@@ -1,0 +1,82 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 1",
+    "expression": "grel:value.replace(\".\", \"_\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 1 using expression grel:value.replace(\".\", \"_\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 2",
+    "expression": "join ([coalesce(cells['Column 2'].value,''),coalesce(cells['Column 3'].value,''),coalesce(cells['Column 4'].value,''),coalesce(cells['Column 5'].value,''),coalesce(cells['Column 6'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 2 using expression join ([coalesce(cells['Column 2'].value,''),coalesce(cells['Column 3'].value,''),coalesce(cells['Column 4'].value,''),coalesce(cells['Column 5'].value,''),coalesce(cells['Column 6'].value,'')],'')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "Column 1",
+      "Column 2"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 1",
+    "expression": "grel:\"physik:phy\" + value + \" a skos:Concept ;\\n\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 1 using expression grel:\"physik:phy\" + value + \" a skos:Concept ;\\n\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 2",
+    "expression": "grel:\"\\tskos:prefLabel \\\"\" + value + \"\\\"@de .\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 2 using expression grel:\"\\tskos:prefLabel \\\"\" + value + \"\\\"@de .\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 1",
+    "expression": "join ([coalesce(cells['Column 1'].value,''),coalesce(cells['Column 2'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 1 using expression join ([coalesce(cells['Column 1'].value,''),coalesce(cells['Column 2'].value,'')],'')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "Column 1"
+    ],
+    "description": "Reorder columns"
+  }
+]
