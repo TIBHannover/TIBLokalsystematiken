@@ -493,20 +493,526 @@ physik:phy93 a skos:Concept ;
     skos:narrower physik:phy93_7 ;
     skos:narrower physik:phy93_9 .
 
-physik:phy a skos:Concept ;
-    skos:prefLabel ""@de .
+physik:phy93_1 a skos:Concept ;
+    skos:prefLabel "Grundlagen. Rechenverfahren u.a."@de .
 
-physik:phy a skos:Concept ;
-    skos:prefLabel ""@de .
+physik:phy93_2 a skos:Concept ;
+    skos:prefLabel "Vakuummessung"@de .
 
-physik:phy a skos:Concept ;
-    skos:prefLabel ""@de .
+physik:phy93_3 a skos:Concept ;
+    skos:prefLabel "Evakuierung. Pumpen, Lecksuche"@de .
 
-physik:phy a skos:Concept ;
-    skos:prefLabel ""@de .
+physik:phy93_5 a skos:Concept ;
+    skos:prefLabel "Gasabgabe u .-absorption in der Vakuumtechnik"@de .
 
-physik:phy a skos:Concept ;
-    skos:prefLabel ""@de .
+physik:phy93_7 a skos:Concept ;
+    skos:prefLabel "Ultrahochvakuum"@de .
 
-physik:phy a skos:Concept ;
-    skos:prefLabel ""@de .
+physik:phy93_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges (Werkstoffe u.a.)."@de .
+
+physik:phy95 a skos:Concept ;
+    skos:prefLabel "Druck- u. Hochdruckphysik (vgl. a. phy 878)"@de ;
+    rdfs:seeAlso physik:phy878 ;
+    skos:narrower physik:phy95_5 .
+
+physik:phy95_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de ;
+    rdfs:seeAlso "Messung s.phy 107.2"@de ;
+    rdfs:seeAlso physik:phy107_2 .
+
+physik:phy97 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy98 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy100 a skos:Concept ;
+    skos:prefLabel "Gesamtgebiet"@de .
+
+physik:phy101 a skos:Concept ;
+    skos:prefLabel "Gesamtgebiet in besonderer Ausrichtung (Hochgeschwindigkeitsmechanik u.a.)"@de .
+
+physik:phy103 a skos:Concept ;
+    skos:prefLabel "Experimentelle Mechanik i.a."@de .
+
+physik:phy104 a skos:Concept ;
+    skos:prefLabel "Messung mechanischer Größen"@de ;
+    skos:narrower physik:phy104_5 .
+
+physik:phy104_5 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art"@de .
+
+physik:phy105_2 a skos:Concept ;
+    skos:prefLabel "Länge. Dicke. Oberflächenstruktur (auch pneumatische, optische, interferometrische Methoden)"@de .
+
+physik:phy105_4 a skos:Concept ;
+    skos:prefLabel "Dehnung"@de .
+
+physik:phy105_6 a skos:Concept ;
+    skos:prefLabel "Fläche. Volumen"@de .
+
+physik:phy105_8 a skos:Concept ;
+    skos:prefLabel "Winkel"@de .
+
+physik:phy106_2 a skos:Concept ;
+    skos:prefLabel "Zeit"@de ;
+    rdfs:comment "weiterer Text"@de .
+
+physik:phy106_4 a skos:Concept ;
+    skos:prefLabel "Geschwindigkeit. Beschleunigung"@de .
+
+physik:phy106_5 a skos:Concept ;
+    skos:prefLabel "Kurzzeitphysik. Analyse schnell verlaufender Vorgänge. Stroboskopie. Zeitlupenverfahren u.ä."@de .
+
+physik:phy106_6 a skos:Concept ;
+    skos:prefLabel "Kraft. Arbeit. Leistung"@de .
+
+physik:phy107_2 a skos:Concept ;
+    skos:prefLabel "Druck"@de .
+
+physik:phy107_4 a skos:Concept ;
+    skos:prefLabel "Einzelnes (dynamische Druckmessung, Barometer, Dampfdruck- messung u.a.)"@de .
+
+physik:phy107_6 a skos:Concept ;
+    skos:prefLabel "Masse. Gewicht. Grob-, Fein-, Mikrowaagen"@de .
+
+physik:phy107_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy109 a skos:Concept ;
+    skos:prefLabel "Grundbegriffe der Mechanik (u. ihre Geschichte)"@de ;
+    skos:narrower physik:phy109_2 ; 
+    skos:narrower physik:phy109_9 .
+
+physik:phy109_2 a skos:Concept ;
+    skos:prefLabel "Impuls"@de .
+
+physik:phy109_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy110 a skos:Concept ;
+    skos:prefLabel "Theoretische (analytische) Mechanik"@de ;
+    skos:narrower physik:phy110_2 ;
+    skos:narrower physik:phy110_4 ;
+    skos:narrower physik:phy110_5 ;
+    skos:narrower physik:phy110_6 ;
+    skos:narrower physik:phy110_8 .
+
+physik:phy110_2 a skos:Concept ;
+    skos:prefLabel "Mathematische Hilfsmittel der Mechanik"@de .
+
+physik:phy110_4 a skos:Concept ;
+    skos:prefLabel "Klassische Mechanik i,a."@de .
+
+physik:phy110_5 a skos:Concept ;
+    skos:prefLabel "Feldtheorien der Mechanik (lineare u. nichtlineare)"@de .
+
+physik:phy110_6 a skos:Concept ;
+    skos:prefLabel "Statik i.a."@de ;
+    rdfs:seeAlso "Technische Statik s.tec..."@de .
+
+physik:phy110_8 a skos:Concept ;
+    skos:prefLabel "Dynamik i.a."@de .
+
+physik:phy111 a skos:Concept ;
+    skos:prefLabel "Prinzipien der Mechanik. Bewegungsgleichungen. Hamilton-Jakobische Theorie"@de ;
+    skos:narrower physik:phy111_2 ;
+    skos:narrower physik:phy111_4 ;
+    skos:narrower physik:phy111_6 ;
+    skos:narrower physik:phy111_9 .
+
+physik:phy111_2 a skos:Concept ;
+    skos:prefLabel "Drei- u.Mehrkörperproblem"@de ;
+    rdfs:seeAlso "vgl.a.ast Z 5"@de ;
+    rdfs:seeAlso physik:phy596 .
+
+physik:phy111_4 a skos:Concept ;
+    skos:prefLabel "Nichtlineare Systeme i.a."@de .
+
+physik:phy111_6 a skos:Concept ;
+    skos:prefLabel "Mechanik bei bewegten Bezugssystemen"@de .
+
+physik:phy111_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy113 a skos:Concept ;
+    skos:prefLabel "Mechanik der Massenpunkte u. starren Körper"@de ;
+    skos:narrower physik:phy113_2 ;
+    skos:narrower physik:phy113_4 ;
+    skos:narrower physik:phy113_6 .
+
+physik:phy113_2 a skos:Concept ;
+    skos:prefLabel "Fall. Wurf. Stoß u.ä."@de .
+
+physik:phy113_4 a skos:Concept ;
+    skos:prefLabel "Zentral- u. Bahnbewegungen. Pendel"@de .
+
+physik:phy113_6 a skos:Concept ;
+    skos:prefLabel "Rotation. Trägheitsmomente. Drehimpuls u.ä."@de .
+
+physik:phy114 a skos:Concept ;
+    skos:prefLabel "Kreisel"@de ;
+    skos:narrower physik:phy114_5 . 
+
+physik:phy114_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy115 a skos:Concept ;
+    skos:prefLabel "Bewegung von  System… Flüssigkeitsbehältern u.ä."@de .
+
+physik:phy116 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy120 a skos:Concept ;
+    skos:prefLabel "Mechanik deformierbarer Medien i .a. (Kontinuumsmechanik i.a.)"@de ;
+    skos:narrower physik:phy120_5 .
+
+physik:phy120_5 a skos:Concept ;
+    skos:prefLabel "Mathematische Hilfsmittel u. Einzelfragen"@de .
+
+physik:phy122 a skos:Concept ;
+    skos:prefLabel "Mechanik deformierbarer fester Medien"@de ;
+    skos:narrower physik:phy122_5 .
+
+physik:phy122_5 a skos:Concept ;
+    skos:prefLabel "Meßmethoden u. -geräte"@de ;
+    rdfs:seeAlso "Photoelastizität s.tec ..."@de .
+
+physik:phy123 a skos:Concept ;
+    skos:prefLabel "Theorie der Elastizität. Spannung. Dehnung. Biegung"@de .
+
+physik:phy124 a skos:Concept ;
+    skos:prefLabel "Sonstiges (Kontakt zweier Oberflächen u.a.)"@de .
+
+physik:phy126 a skos:Concept ;
+    skos:prefLabel "Rheologie. Plastizität. Viskosität. Mechanische Relaxation"@de ;
+    skos:narrower physik:phy126_5 .
+
+physik:phy126_5 a skos:Concept ;
+    skos:prefLabel "Meßmethoden u.-geräte"@de ;
+    rdfs:seeAlso "Viskosimetrie s.phy 127.7"@de ;
+    rdfs:seeAlso physik:phy127_7 .
+
+physik:phy127_1 a skos:Concept ;
+    skos:prefLabel "Plastizität. Elastoplastizität. Rheologie fester Medien"@de .
+
+physik:phy127_2 a skos:Concept ;
+    skos:prefLabel "Mechanische Relaxation. Hysteresis"@de ;
+    rdfs:seeAlso phsyik:phy912_2 .
+
+physik:phy127_4 a skos:Concept ;
+    skos:prefLabel "Plastisches Fließen. Kriechen"@de .
+
+physik:phy127_6 a skos:Concept ;
+    skos:prefLabel "Viskoses Fließen. Rheologie strukturviskoser Stoffe. Mikrorheologie. Nichtnewtonsche Flüssigkeiten"@de ;
+    rdfs:seeAlso "vgl. a. phy 945 ff"@de ;
+    rdfs:seeAlso physik:phy945 .
+
+physik:phy127_7 a skos:Concept ;
+    skos:prefLabel "Viskosität. Viskosimetrie"@de .
+
+physik:phy127_8 a skos:Concept ;
+    skos:prefLabel "Viskoelastizität"@de .
+
+physik:phy127_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy128 a skos:Concept ;
+    skos:prefLabel "Mechanik fester Medien bei hohen und tiefen Temperaturen"@de ;
+    skos:narrower physik:phy128_2 ;
+    skos:narrower physik:phy128_4 ;
+    skos:narrower physik:phy128_6 ;
+    skos:narrower physik:phy128_9 . 
+
+physik:phy128_2 a skos:Concept ;
+    skos:prefLabel "Thermoelastizität"@de .
+
+physik:phy128_4 a skos:Concept ;
+    skos:prefLabel "Thermoplastizität"@de .
+
+physik:phy128_6 a skos:Concept ;
+    skos:prefLabel "Thermoviskoelastizität"@de .
+
+physik:phy128_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy130 a skos:Concept ;
+    skos:prefLabel "Mechanik der Flüssigkeiten und Gase"@de ;
+    rdfs:seeAlso "Hydraulik s.phy 141.8"@de ;
+    rdfs:seeAlso physik:phy141_8 ;
+    rdfs:seeAlso "Magnetohydrodynamik s.phy 361.4"@de ;
+    rdfs:seeAlso physik:phy361_4 .
+
+physik:phy131 a skos:Concept ;
+    skos:prefLabel "Hydro- u. Aerostatik"@de ;
+    skos:narrower physik:phy131_2 ;
+    skos:narrower physik:phy131_4 .
+
+physik:phy131_2 a skos:Concept ;
+    skos:prefLabel "Hydrostatik"@de .
+
+physik:phy131_4 a skos:Concept ;
+    skos:prefLabel "Aerostatik"@de ;
+    rdfs:seeAlso "Barometer s. phy 107.4"@de ;
+    rdfs:seeAlso physik:phy107_4 .
+
+physik:phy132 a skos:Concept ;
+    skos:prefLabel "Hydro- u. Aerodynamik. Strömungslehre"@de ;
+    skos:narrower physik:phy132_2 ;
+    skos:narrower physik:phy132_3 ;
+    skos:narrower physik:phy132_5 ;
+    skos:narrower physik:phy132_6 .
+
+physik:phy132_2 a skos:Concept ;
+    skos:prefLabel "Experimentelle Strömungsmechanik. Meß- u. Untersuchungstechnik"@de .
+
+physik:phy132_3 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy132_5 a skos:Concept ;
+    skos:prefLabel "Mathematische Methode"@de .
+
+physik:phy132_6 a skos:Concept ;
+    skos:prefLabel "Einzelfragen allg. Art (Analogieverfahren, Relativistische Hydrodynamik, u. a.)"@de .
+
+physik:phy133 a skos:Concept ;
+    skos:prefLabel "Inkompressible Strömung"@de ;
+    skos:narrower physik:phy133_2 ;
+    skos:narrower physik:phy133_3 ;
+    skos:narrower physik:phy133_5 ;
+    skos:narrower physik:phy133_6 ;
+    skos:narrower physik:phy133_9 .
+
+physik:phy133_2 a skos:Concept ;
+    skos:prefLabel "Inkompressible nichtviskose Strömung. Ideale Flüssigkeiten"@de .
+
+physik:phy133_3 a skos:Concept ;
+    skos:prefLabel "Einzelnes (Potentialströmungen u.a.)"@de .
+
+physik:phy133_5 a skos:Concept ;
+    skos:prefLabel "Inkompressible viskose Strömung"@de .
+
+physik:phy133_6 a skos:Concept ;
+    skos:prefLabel "Einzelnes (Poiseulle-, Couette-, geschichtete, negativ-viskose Strömungen u.ä.)"@de ;
+    rdfs:seeAlso "Mehrphasige Strömungen s.phy 141.2"@de ;
+    rdfs:seeAlso physik:phy141_2 ;
+    rdfs:seeAlso "Strömungswiderstände s.phy 138"@de ;
+    rdfs:seeAlso physik:phy138 .
+
+physik:phy133_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy134 a skos:Concept ;
+    skos:prefLabel "Aerodynamik i.a."@de ;
+    rdfs:seeAlso "vgl.a.Flugaerodynamik: ver 515 ff"@de .
+
+physik:phy135 a skos:Concept ;
+    skos:prefLabel "Kompressible Strömung. Gasdynamik"@de ;
+    skos:narrower physik:phy135_2 ;
+    skos:narrower physik:phy135_4 ;
+    skos:narrower physik:phy135_6 ;
+    skos:narrower physik:phy135_8 .
+
+physik:phy135_2 a skos:Concept ;
+    skos:prefLabel "Fragen allg.Art"@de .
+
+physik:phy135_4 a skos:Concept ;
+    skos:prefLabel "Unterschall- u.transsonische Strömung"@de .
+
+physik:phy135_6 a skos:Concept ;
+    skos:prefLabel "Über- u.Hyperschallströmung"@de .
+
+physik:phy135_8 a skos:Concept ;
+    skos:prefLabel "Einzelnes (Prandtl-Meyer-Strömung u.a.)"@de .
+
+physik:phy136_2 a skos:Concept ;
+    skos:prefLabel "Umströmung von Körpern, Profilen, Schaufeln, Gittern"@de .
+
+physik:phy136_4 a skos:Concept ;
+    skos:prefLabel "Unstetige Strömungen. Stoßwellen. Druckstöße u.-wellen. Stoßwellenrohre"@de ;
+    rdfs:seeAlso physik:phy365 ;
+    rdfs:seeAlso physik:phy251 .
+
+physik:phy136_6 a skos:Concept ;
+    skos:prefLabel "Strömung verdünnter Gase. Gleitströmung. Molekularströmung"@de .
+
+physik:phy136_8 a skos:Concept ;
+    skos:prefLabel "Strahlungsgasdynamik. Aerothermochemie. Gasdynamik ionisierter und chemisch reagierender Gase"@de .
+
+physik:phy136_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges (Luftfeuchtigkeit, Eisbildung, Elektroaerodynamik u.a.)"@de .
+
+physik:phy138 a skos:Concept ;
+    skos:prefLabel "Turbulenz, Strömungswiderstände. Stabilität (bei inkompressibler u.kompressibler Strömung)"@de ;
+    skos:narrower physik:phy138_5 .
+
+physik:phy138_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes (Statistische Hydromechanik. u. a.)"@de .
+
+physik:phy140 a skos:Concept ;
+    skos:prefLabel "Grenzschichten"@de ;
+    skos:narrower physik:phy140_2 ;
+    skos:narrower physik:phy140_4 ;
+    skos:narrower physik:phy140_6 ;
+    skos:narrower physik:phy140_8 ;
+    skos:narrower physik:phy140_9 .
+
+physik:phy140_2 a skos:Concept ;
+    skos:prefLabel "Inkompressible Grenzschichten. Laminare Grenzschichten"@de .
+
+physik:phy140_4 a skos:Concept ;
+    skos:prefLabel "Turbulente Grenzschichten"@de .
+
+physik:phy140_6 a skos:Concept ;
+    skos:prefLabel "Kompressible, Überschall-, thermische Grenzschichten"@de .
+
+physik:phy140_8 a skos:Concept ;
+    skos:prefLabel "Stabilität. Übergang. Ablösung. Beeinflussung"@de .
+
+physik:phy140_9 a skos:Concept ;
+    skos:prefLabel "Strömung dünner Schichten. Rieselfilmströmung"@de .
+
+physik:phy141_2 a skos:Concept ;
+    skos:prefLabel "Mehrphasige Strömungen"@de ;
+    rdfs:seeAlso "mit Wärmeübergang s.phy 237"@de ;
+    rdfs:seeAlso physik:phy237 .
+
+physik:phy141_4 a skos:Concept ;
+    skos:prefLabel "Innere Strömungen (durch Düsen, Maschinen u.ä.)"@de .
+
+physik:phy141_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de ;
+    rdfs:seeAlso "Hydraulik s. phy l4l.8"@de ;
+    rdfs:seeAlso physik:phy141_8 .
+
+physik:phy141_8 a skos:Concept ;
+    skos:prefLabel "Hydraulik"@de ;
+    rdfs:seeAlso "vgl. a. tec 235, bau 824"@de .
+
+physik:phy142_2 a skos:Concept ;
+    skos:prefLabel "Strahlen"@de .
+
+physik:phy142_4 a skos:Concept ;
+    skos:prefLabel "Zerstäubung. Tropfen"@de .
+
+physik:phy142_6 a skos:Concept ;
+    skos:prefLabel "Kavitation. Blasen"@de .
+
+physik:phy142_8 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy145 a skos:Concept ;
+    skos:prefLabel "Mechanik u.Thermodynamik sonstiger Medien"@de .
+
+physik:phy146 a skos:Concept ;
+    skos:prefLabel "Strömung von dispersen Systemen (Suspensionen u.ä.)"@de .
+
+physik:phy147 a skos:Concept ;
+    skos:prefLabel "Poröse Medien"@de ;
+    skos:narrower physik:phy147_2 ;
+    skos:narrower physik:phy147_4 ;
+    skos:narrower physik:phy147_6 ;
+    skos:narrower physik:phy147_8 . 
+
+physik:phy147_2 a skos:Concept ;
+    skos:prefLabel "Elastizität. Plastizität"@de .
+
+physik:phy147_4 a skos:Concept ;
+    skos:prefLabel "Strömung durch poröse Medien. Filtergesetze"@de .
+
+physik:phy147_6 a skos:Concept ;
+    skos:prefLabel "Thermodynamische Fragen. Transportvorgänge"@de ;
+    rdfs:seeAlso physik:phy260 ;
+    rdfs:seeAlso physik:phy284 .
+
+physik:phy147_8 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy149 a skos:Concept ;
+    skos:prefLabel "Teilchen. Teilchenaggregationen"@de ;
+    skos:narrower physik:phy149_2 ;
+    skos:narrower physik:phy149_4 ;
+    skos:narrower physik:phy149_6 . 
+
+physik:phy149_2 a skos:Concept ;
+    skos:prefLabel "Messung. Untersuchung"@de .
+
+physik:phy149_4 a skos:Concept ;
+    skos:prefLabel "Bewegung u. Strömung von Schüttungen, Pulvern u.a."@de .
+
+physik:phy149_6 a skos:Concept ;
+    skos:prefLabel "Sonstiges. Physik von Böden, Sanden u.ä."@de .
+
+physik:phy151 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy160 a skos:Concept ;
+    skos:prefLabel "Allgemeines"@de .
+
+physik:phy162 a skos:Concept ;
+    skos:prefLabel "Schwingungen"@de ;
+    skos:narrower physik:phy162_2 ;
+    skos:narrower physik:phy162_4 ;
+    skos:narrower physik:phy162_5 ;
+    skos:narrower physik:phy162_6 ;
+    skos:narrower physik:phy162_9 . 
+
+physik:phy162_2 a skos:Concept ;
+    skos:prefLabel "Schwingungsmessung (Frequenzmessung, Lichtstrahl-Oszillographie u.a.)"@de ;
+    rdfs:seeAlso "Kathodenstrahl-Oszillographie s.phy 334.2"@de ;
+    rdfs:seeAlso physik:phy334_2 .
+
+physik:phy162_4 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art (Erregung, stochastische Schwingungen, Resonanz, Dämpfung, Systeme nach Freiheitsgrad u.ä.)"@de .
+
+physik:phy162_5 a skos:Concept ;
+    skos:prefLabel "Nichtlineare Schwingungen. Variable Parameter"@de .
+
+physik:phy162_6 a skos:Concept ;
+    skos:prefLabel "Schwingungen fester Medien (Saiten, Platten, Schalen u.ä.)"@de .
+
+physik:phy162_9 a skos:Concept ;
+    skos:prefLabel "Sonstige"@de .
+
+physik:phy164 a skos:Concept ;
+    skos:prefLabel "Wellen"@de ;
+    skos:narrower physik:phy164_5 .
+
+physik:phy164_5 a skos:Concept ;
+    skos:prefLabel "Fragen allg.Art (Welleninterferenz, Doppler-Effekt, Huyghenssches, Fermatsches Prinzip u.ä.) Solitonen"@de .
+
+physik:phy165 a skos:Concept ;
+    skos:prefLabel "Wellenausbreitung in Medien besonderer Struktur"@de ;
+    skos:narrower physik:phy165_2 ; 
+    skos:narrower physik:phy165_4 ;
+    skos:narrower physik:phy165_6 ;
+    skos:narrower physik:phy165_9 .
+
+physik:phy165_2 a skos:Concept ;
+    skos:prefLabel "Periodische Strukturen i.a."@de ;
+    rdf:seeAlso physik:phy167 ;
+    rdf:seeAlso physik:phy198 ;
+    rdf:seeAlso physik:phy458 . 
+
+physik:phy165_4 a skos:Concept ;
+    skos:prefLabel "Geschichtete Medien i.a."@de .
+
+physik:phy165_6 a skos:Concept ;
+    skos:prefLabel "Stochastische Medien"@de .
+
+physik:phy165_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy167 a skos:Concept ;
+    skos:prefLabel "Mechanische Wellen u. Stoßphänomene in festen Medien"@de ;
+    skos:narrower physik:phy167_5 .
+
+physik:phy167_5 a skos:Concept ;
+    skos:prefLabel "Mechanische Wellen u. Stoßphänomene in Medien besonderer Struktur u. Form (heterogene, halbunendliche, geschichtete u.a.)"@de .
+
+physik:phy169 a skos:Concept ;
+    skos:prefLabel "Mechanische Schwingungen u. Wellen in flüssigen Medien. Wasserwellen"@de .
+
+physik:phy171 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
