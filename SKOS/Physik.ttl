@@ -11,6 +11,8 @@ physik: a owl:Ontology ; owl:imports skos: .
 # Die unterstrichenen Gebiete haben kein Konzept.
 # Unterbegriffe unter einem unterstrichenen Gebiet.
 # Sonderbestände "e" noch nicht erfasst.
+# Konsistente Verwendung von rdfs:comment und rdfs:seeAlso?
+# Verweis auf eine andere Systematik, die nicht mehr existiert (pae)
 
 physik:phy1 a skos:Concept ;
     skos:prefLabel "Gesamtgebiet"@de ;
@@ -121,7 +123,6 @@ physik:phy20_8 a skos:Concept ;
 physik:phy20_9 a skos:Concept ;
     skos:prefLabel "Sonstiges"@de .
 
-# Verweis auf eine andere Systematik, die nicht mehr existiert
 physik:phy22 a skos:Concept ;
     skos:prefLabel "Unterrichts- u. Darstellungsfragen"@de ;
     rdfs:comment "s.a. pae 635"@de ;
@@ -385,23 +386,112 @@ physik:phy74 a skos:Concept ;
 
 physik:phy76 a skos:Concept ;
     skos:prefLabel "Allgemeine Konstanten. Fundamentalkonstanten"@de ;
-     rdfs:seeAlso "Konstanten- u. Datensammlungen zur gesamten Physik od. mehreren Teilgebieten s. phy 1 e 6"@de ;
+    rdfs:seeAlso "Konstanten- u. Datensammlungen zur gesamten Physik od. mehreren Teilgebieten s. phy 1 e 6"@de ;
     rdfs:seeAlso physik:phy1_e_6 .
 
 physik:phy78 a skos:Concept ;
     skos:prefLabel "Sonstiges"@de .
 
-physik:phy a skos:Concept ;
-    skos:prefLabel ""@de .
+physik:phy80 a skos:Concept ;
+    skos:prefLabel "Allgemeines"@de .
 
-physik:phy a skos:Concept ;
-    skos:prefLabel ""@de .
+physik:phy81 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art"@de .
 
-physik:phy a skos:Concept ;
-    skos:prefLabel ""@de .
+physik:phy83 a skos:Concept ;
+    skos:prefLabel "Praktikumsbücher u.-anleitungen"@de .
 
-physik:phy a skos:Concept ;
-    skos:prefLabel ""@de .
+physik:phy85 a skos:Concept ;
+    skos:prefLabel "Physikalische Meßtechnik. Physikalische u. naturwissenschaftliche Meßgeräte u.Instrumente i. a."@de ;
+    rdfs:comment "Messung einzelner Größen s. bei diesen"@de ;
+    rdfs:seeAlso "Vgl. a. Technisches Messen; tec ....."@de .
+
+physik:phy86 a skos:Concept ;
+    skos:prefLabel "Fragen allg.Art"@de ;
+    skos:narrower physik:phy86_2 ;
+    skos:narrower physik:phy86_3 ;
+    skos:narrower physik:phy86_4 ;
+    skos:narrower physik:phy86_6 ;
+    skos:narrower physik:phy86_9 .
+
+physik:phy86_2 a skos:Concept ;
+    skos:prefLabel "Prüfung. Justierung u.ä."@de .
+
+physik:phy86_3 a skos:Concept ;
+    skos:prefLabel "Eichung. Eichvorschriften"@de .
+
+physik:phy86_4 a skos:Concept ;
+    skos:prefLabel "Bauteile u. ihre Funktion"@de .
+
+physik:phy86_6 a skos:Concept ;
+    skos:prefLabel "Automatisches Messen"@de .
+
+physik:phy86_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy87_1 a skos:Concept ;
+    skos:prefLabel "Elektronisch u.auf Festkörperbasis arbeitende Geräte u. Verfahren"@de .
+
+physik:phy87_3 a skos:Concept ;
+    skos:prefLabel "Digitale Meßtechnik"@de .
+
+physik:phy87_4 a skos:Concept ;
+    skos:prefLabel "Dynamische Meßverfahren"@de .
+
+physik:phy87_5 a skos:Concept ;
+    skos:prefLabel "Meßwertumformer u. Hilfsgeräte"@de .
+
+physik:phy87_6 a skos:Concept ;
+    skos:prefLabel "Registrierung. Meßwertverarbeitung, -auswertung. Kurvenglättung"@de .
+
+physik:phy87_7 a skos:Concept ;
+    skos:prefLabel "Fehlerdiskussion. Fehlerrechnung. Ausgleichsrechnung"@de .
+
+physik:phy87_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy89 a skos:Concept ;
+    skos:prefLabel "Physikalische u. physikalisch-technische Prüfanstalten u. -Organisationen"@de 
+    skos:narrower physik:phy89_2 ;
+    skos:narrower physik:phy89_4 .
+
+physik:phy89_2 a skos:Concept ;
+    skos:prefLabel "Deutschland"@de .
+
+physik:phy89_4 a skos:Concept ;
+    skos:prefLabel "Ausland"@de .
+
+physik:phy91 a skos:Concept ;
+    skos:prefLabel "Physikalische Labor- u. Werktechnik"@de 
+    skos:narrower physik:phy91_2 ;
+    skos:narrower physik:phy91_4 ;
+    skos:narrower physik:phy91_5 ;
+    skos:narrower physik:phy91_7 ;
+    skos:narrower physik:phy91_8 .
+
+physik:phy91_2 a skos:Concept ;
+    skos:prefLabel "Physikalische Laboratorien (Planung u. Einrichtung)"@de .
+
+physik:phy91_4 a skos:Concept ;
+    skos:prefLabel "Laborausrüstung"@de .
+
+physik:phy91_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes (Zentrifugen, Heizvorrichtungen, Hochtemperaturofen u.a.)"@de .
+
+physik:phy91_7 a skos:Concept ;
+    skos:prefLabel "Technische Kunstgriffe"@de .
+
+physik:phy91_8 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy93 a skos:Concept ;
+    skos:prefLabel "Vakuumphysik, -praxis"@de ;
+    skos:narrower physik:phy93_1 ;
+    skos:narrower physik:phy93_2 ;
+    skos:narrower physik:phy93_3 ;
+    skos:narrower physik:phy93_5 ;
+    skos:narrower physik:phy93_7 ;
+    skos:narrower physik:phy93_9 .
 
 physik:phy a skos:Concept ;
     skos:prefLabel ""@de .
