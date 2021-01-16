@@ -2037,7 +2037,10 @@ physik:phy345_9 a skos:Concept ;
     skos:prefLabel "Sonstiges (Elektrodynamik bewegter Medien)"@de .
 
 physik:phy348 a skos:Concept ;
-    skos:prefLabel "Physik der elektrischen Schwingungen u. Wellen (Schwingungen u. Wellen allg. s. phy 160) (Technische Fragen s. elt 490 ff.)"@de .
+    skos:prefLabel "Physik der elektrischen Schwingungen u. Wellen"@de ;
+    rdfs:seeAlso "Schwingungen u. Wellen allg. s. phy 160"@de ;
+    rdfs:seeAlso physik:phy160 ;
+    rdfs:seeAlso "Technische Fragen s. elt 490 ff"@de .
 
 physik:phy349_2 a skos:Concept ;
     skos:prefLabel "Fragen allg. Art (Energie, Leistung, elektromagnet. Strahlung u.a.)"@de .
@@ -2046,7 +2049,13 @@ physik:phy349_6 a skos:Concept ;
     skos:prefLabel "Erzeugung u. Messung elektrischer Schwingungen u. Wellen"@de .
 
 physik:phy350 a skos:Concept ;
-    skos:prefLabel "Ausbreitung elektrischer Wellen (Vgl. a. elt 493 ff.)"@de .
+    skos:prefLabel "Ausbreitung elektrischer Wellen"@de ;
+    rdfs:seeAlso "Vgl. a. elt 493 ff"@de ;
+    skos:narrower physik:phy350_1 ;
+    skos:narrower physik:phy350_2 ;
+    skos:narrower physik:phy350_4 ;
+    skos:narrower physik:phy350_6 ;
+    skos:narrower physik:phy350_8 .
 
 physik:phy350_1 a skos:Concept ;
     skos:prefLabel "Fragen allg. Art. Mathemat. Hilfsmittel"@de .
@@ -2070,7 +2079,8 @@ physik:phy351_4 a skos:Concept ;
     skos:prefLabel "Ausbreitung längs Leitern"@de .
 
 physik:phy351_6 a skos:Concept ;
-    skos:prefLabel "Elektr. Wellen in begrenzten Räumen. Theorie der Wellenleiter (NS)"@de .
+    skos:prefLabel "Elektr. Wellen in begrenzten Räumen. Theorie der Wellenleiter"@de ;
+    rdfs:comment "NS"@de .
 
 physik:phy351_9 a skos:Concept ;
     skos:prefLabel "Sonstiges"@de .
@@ -2079,7 +2089,8 @@ physik:phy353_2 a skos:Concept ;
     skos:prefLabel "Nachweis. Empfang u.ä."@de .
 
 physik:phy353_4 a skos:Concept ;
-    skos:prefLabel "Mikrowellenphysik (Vgl. a. elt 840 ff.)"@de .
+    skos:prefLabel "Mikrowellenphysik"@de ;
+    rdfs:seeAlso "Vgl. a. elt 840 ff"@de .
 
 physik:phy353_9 a skos:Concept ;
     skos:prefLabel "Sonstiges"@de .
@@ -2088,7 +2099,8 @@ physik:phy355 a skos:Concept ;
     skos:prefLabel "Ionenphysik i.a."@de .
 
 physik:phy357 a skos:Concept ;
-    skos:prefLabel "lonenleitung in Flüssigkeiten. Elektrochemische  Erscheinungen"@de .
+    skos:prefLabel "lonenleitung in Flüssigkeiten. Elektrochemische  Erscheinungen"@de ;
+    skos:narrower physik:phy357_5 . 
 
 physik:phy357_5 a skos:Concept ;
     skos:prefLabel "Einzelnes (Elektrolyte, Leitfähigkeit, Elektrodenvorgänge u.a.)"@de .
@@ -2103,7 +2115,7 @@ physik:phy361_4 a skos:Concept ;
     skos:prefLabel "Magneto- u. Elektrohydrodynamik"@de .
 
 physik:phy361_6 a skos:Concept ;
-    skos:prefLabel "Einzelnes (Magnetohydrodynamik von Flüssigkeiten, flüssigen Metallen, ..."@de .
+    skos:prefLabel "Einzelnes (Magnetohydrodynamik von Flüssigkeiten, flüssigen Metallen, ...)"@de .
 
 physik:phy361_8 a skos:Concept ;
     skos:prefLabel "Elektrodynamik von Plasmen. Innere Felder u. Wellen. Plasmaschwingungen. Plasmaturbulenz. Instabilitäten"@de .
@@ -2112,7 +2124,8 @@ physik:phy362_2 a skos:Concept ;
     skos:prefLabel "Elektronen- u. Ionenstrahlen in Plasmen"@de .
 
 physik:phy362_3 a skos:Concept ;
-    skos:prefLabel "Sonstige elektrische Eigenschaften von Plasmen. Theorie der EHD) + MHD-Generatoren (Vgl. a. elt 118 + 120)"@de .
+    skos:prefLabel "Sonstige elektrische Eigenschaften von Plasmen. Theorie der EHD + MHD-Generatoren"@de ;
+    rdfs:seeAlso "Vgl. a. elt 118 + 120"@de . 
 
 physik:phy362_4 a skos:Concept ;
     skos:prefLabel "Optische Erscheinungen u. Eigenschaften von Plasmen u. Gasentladungen"@de .
@@ -2124,13 +2137,16 @@ physik:phy362_8 a skos:Concept ;
     skos:prefLabel "Experimentelle Fragen. Plasmaerzeugung. Plasmadiagnostik. Druckeigenschaften"@de .
 
 physik:phy363 a skos:Concept ;
-    skos:prefLabel "Plasmabeschleunigung, -kompression. Fusionsforschung"@de .
+    skos:prefLabel "Plasmabeschleunigung, -kompression. Fusionsforschung"@de ;
+    skos:narrower physik:phy363_2 .
 
 physik:phy363_2 a skos:Concept ;
     skos:prefLabel "Plasmakonfigurationen. Wlassowgleichung u.ä."@de .
 
 physik:phy365 a skos:Concept ;
-    skos:prefLabel "Drahtexplosionen. Plasmaphysik der Stoßwellen. Dichte Plasmen (Sonstiges zu Stoßwellen s. phy  136.4)"@de .
+    skos:prefLabel "Drahtexplosionen. Plasmaphysik der Stoßwellen. Dichte Plasmen"@de ;
+    rdfs:seeAlso "Sonstiges zu Stoßwellen s. phy  136.4"@de ;
+    rdfs:seeAlso physik:phy136_4 .
 
 physik:phy366 a skos:Concept ;
     skos:prefLabel "Sonstige Fragen der Plasmaphysik"@de .
@@ -2139,7 +2155,13 @@ physik:phy367 a skos:Concept ;
     skos:prefLabel "Anwendungen der Plasmaphysik (Plasmastrahlen u.a.)"@de .
 
 physik:phy370 a skos:Concept ;
-    skos:prefLabel "Elementarprozesse in Gasentladungen"@de .
+    skos:prefLabel "Elementarprozesse in Gasentladungen"@de ;
+    skos:narrower physik:phy370_1 ; 
+    skos:narrower physik:phy370_2 ;
+    skos:narrower physik:phy370_3 ;
+    skos:narrower physik:phy370_5 ;
+    skos:narrower physik:phy370_7 ;
+    skos:narrower physik:phy370_9 .
 
 physik:phy370_1 a skos:Concept ;
     skos:prefLabel "Wechselwirkungen. Stoß-, Streuprozesse"@de .
@@ -2178,7 +2200,11 @@ physik:phy372_4 a skos:Concept ;
     skos:prefLabel "Koronaentladung"@de .
 
 physik:phy374 a skos:Concept ;
-    skos:prefLabel "Selbständige Entladung"@de .
+    skos:prefLabel "Selbständige Entladung"@de ;
+    skos:narrower physik:phy374_2 ;
+    skos:narrower physik:phy374_4 ;
+    skos:narrower physik:phy374_6 ;
+    skos:narrower physik:phy374_8 .
 
 physik:phy374_2 a skos:Concept ;
     skos:prefLabel "Townsend-Entladung"@de .
@@ -2217,19 +2243,28 @@ physik:phy377_9 a skos:Concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy380 a skos:Concept ;
-    skos:prefLabel "Physikalische Elektronik u. Ionik (Quantenelektronik, Maser, Laser s. elt 725) (Technische Elektronik s. elt 600) (Medizinische Elektronik s. med 55)"@de .
+    skos:prefLabel "Physikalische Elektronik u. Ionik"@de ;
+    rdfs:seeAlso "Quantenelektronik, Maser, Laser s. elt 725"@de ;
+    rdfs:seeAlso "Technische Elektronik s. elt 600"@de ;
+    rdfs:seeAlso "Medizinische Elektronik s. med 55"@de ;
+    skos:narrower physik:phy380_5 .
 
 physik:phy380_5 a skos:Concept ;
     skos:prefLabel "Theorie und Fragen allg. Art"@de .
 
-physik:phy38l a skos:Concept ;
-    skos:prefLabel "Fluktuation. Rauschen"@de .
+physik:phy381 a skos:Concept ;
+    skos:prefLabel "Fluktuation. Rauschen"@de ;
+    skos:narrower physik:phy381_5 .
 
 physik:phy381_5 a skos:Concept ;
     skos:prefLabel "Einzelnes"@de .
 
 physik:phy382 a skos:Concept ;
-    skos:prefLabel "Elektronen- u. Ionenemission"@de .
+    skos:prefLabel "Elektronen- u. Ionenemission"@de ;
+    skos:narrower physik:phy382_2 ;
+    skos:narrower physik:phy382_4 ;
+    skos:narrower physik:phy382_6 ;
+    skos:narrower physik:phy382_8 .
 
 physik:phy382_2 a skos:Concept ;
     skos:prefLabel "Fragen allg. Art (Austrittsarbeit u.a.)"@de .
@@ -2250,7 +2285,9 @@ physik:phy383_3 a skos:Concept ;
     skos:prefLabel "Mechanoemission. Emission schneller Elektronen bei der Zerstörung von Festkörpern."@de .
 
 physik:phy383_4 a skos:Concept ;
-    skos:prefLabel "Photoelektrische Emission. Photoeffekt. Photozellen (innerer Photoeffekt s. phy  893.6)"@de .
+    skos:prefLabel "Photoelektrische Emission. Photoeffekt. Photozellen"@de ;
+    rdfs:seeAlso "innerer Photoeffekt s. phy  893.6"@de ;
+    rdfs:seeAlso physik:phy893_6 .
 
 physik:phy383_5 a skos:Concept ;
     skos:prefLabel "Elektronenkanonen"@de .
@@ -2259,31 +2296,39 @@ physik:phy383_6 a skos:Concept ;
     skos:prefLabel "Ionenemission. Ionenquellen"@de .
 
 physik:phy383_8 a skos:Concept ;
-    skos:prefLabel "Anwendungen. Theorie der thermionischen Energieumwandlung (Praxis s. elt 117)"@de .
+    skos:prefLabel "Anwendungen. Theorie der thermionischen Energieumwandlung"@de ;
+    rdfs:seeAlso "Praxis s. elt 117"@de .
 
 physik:phy383_9 a skos:Concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy385 a skos:Concept ;
-    skos:prefLabel "Physik der Elektronenröhren (HS: elt 620 ff.)"@de .
+    skos:prefLabel "Physik der Elektronenröhren"@de ;
+    rdfs:seeAlso "HS: elt 620 ff"@de ;
+    skos:narrower physik:phy385_5 .
 
 physik:phy385_5 a skos:Concept ;
     skos:prefLabel "Einzelnes (Verzögerungsleitungen u.a.)"@de .
 
 physik:phy387 a skos:Concept ;
-    skos:prefLabel "Elektronen- u. Ionenstrahlen"@de .
+    skos:prefLabel "Elektronen- u. Ionenstrahlen"@de ;
+    skos:narrower physik:phy387_5 .
 
 physik:phy387_5 a skos:Concept ;
     skos:prefLabel "Einzelfragen (Wechselwirkung benachbarter Strahlen, Raumladungserscheinungen, Ausbreitung in elektr. u. magn. Feldern u.a. )"@de .
 
 physik:phy390 a skos:Concept ;
-    skos:prefLabel "Elektronen- u. Ionenoptik. Korpuskularstrahloptik"@de .
+    skos:prefLabel "Elektronen- u. Ionenoptik. Korpuskularstrahloptik"@de ;
+    skos:narrower physik:phy390_5 .
 
 physik:phy390_5 a skos:Concept ;
     skos:prefLabel "Grundlagen. Abbildungsgesetze. Elektronenlinsen"@de .
 
 physik:phy391 a skos:Concept ;
-    skos:prefLabel "Elektronenmikroskop u. –mikroskopie"@de .
+    skos:prefLabel "Elektronenmikroskop u. –mikroskopie"@de ;
+    skos:narrower physik:phy391_2 ;
+    skos:narrower physik:phy391_4 ;
+    skos:narrower physik:phy391_8 ;
 
 physik:phy391_2 a skos:Concept ;
     skos:prefLabel "Arten und Einzelfragen (Elektronenspiegelmikroskop, Raster-Elektronenmikroskop, ...)"@de .
@@ -2304,13 +2349,1733 @@ physik:phy392_8 a skos:Concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy394 a skos:Concept ;
-    skos:prefLabel "Sonstige Anwendungen der Elektronen- u. Ionenstrahlen"@de .
+    skos:prefLabel "Sonstige Anwendungen der Elektronen- u. Ionenstrahlen"@de ;
+    skos:narrower physik:phy394_2 ;
+    skos:narrower physik:phy394_8 .
 
 physik:phy394_2 a skos:Concept ;
     skos:prefLabel "Elektronische u. elektronenoptische Bildwandler (Röntgenbildverstärker u.a.)"@de .
 
 physik:phy394_8 a skos:Concept ;
-    skos:prefLabel "Sonstiges (lonenbeschuß s.phy 863.6)"@de .
+    skos:prefLabel "Sonstiges"@de ;
+    rdfs:seeAlso "Ionenbeschuß s.phy 863.6"@de ;
+    rdfs:seeAlso physik:phy863_6 .
 
 physik:phy398 a skos:Concept ;
     skos:prefLabel "Sonstiges"@de .
+
+physik:phy400 a skos:Concept ;
+    skos:prefLabel "Allgemeines"@de .
+
+physik:phy402 a skos:Concept ;
+    skos:prefLabel "Grundlagen u. Fragen allg. Art"@de ;
+    skos:narrower physik:phy402_2 ;
+    skos:narrower physik:phy402_4 ;
+    skos:narrower physik:phy402_6 ;
+    skos:narrower physik:phy402_9 .
+
+physik:phy402_2 a skos:Concept ;
+    skos:prefLabel "Natur des Lichtes i.a."@de .
+
+physik:phy402_4 a skos:Concept ;
+    skos:prefLabel "Lichtgeschwindigkeit und ihre Messung"@de .
+
+physik:phy402_6 a skos:Concept ;
+    skos:prefLabel "Informationstheoretisches. Kontrastübertragung"@de .
+
+physik:phy402_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy404 a skos:Concept ;
+    skos:prefLabel "Meßtechnik. Einheiten Lichtquellen. Photometrie"@de ;
+    skos:narrower physik:phy404_2 ;
+    skos:narrower physik:phy404_4 .
+
+physik:phy404_2 a skos:Concept ;
+    skos:prefLabel "Optische Einheiten u. Maßsysteme"@de .
+
+physik:phy404_4 a skos:Concept ;
+    skos:prefLabel "Lichtquellen. Normalien"@de .
+
+physik:phy405 a skos:Concept ;
+    skos:prefLabel "Photometrie"@de ;
+    skos:narrower physik:phy405_5 .
+
+physik:phy405_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes (Spektrophotometrie u.a.)"@de .
+
+physik:phy406 a skos:Concept ;
+    skos:prefLabel "Besondere optische Untersuchungsverfahren (Schlierenmethode u.a.)"@de .
+
+physik:phy408 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy410 a skos:Concept ;
+    skos:prefLabel "Physiologische Optik"@de ;
+    skos:narrower physik:phy410_1 ;
+    skos:narrower physik:phy410_3 ;
+    skos:narrower physik:phy410_5 ;
+    skos:narrower physik:phy410_7 ;
+    skos:narrower physik:phy410_9 .
+
+physik:phy410_1 a skos:Concept ;
+    skos:prefLabel "Grundlagen u. Fragen allg. Art"@de .
+
+physik:phy410_3 a skos:Concept ;
+    skos:prefLabel "Formensehen. Plastisches Sehen. Stereoinstrumente. Anaglyphenbrillen u.a."@de .
+
+physik:phy410_5 a skos:Concept ;
+    skos:prefLabel "Sehfehler. Brillen. Augenoptik"@de .
+
+physik:phy410_7 a skos:Concept ;
+    skos:prefLabel "Farbensehen"@de .
+
+physik:phy410_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy412 a skos:Concept ;
+    skos:prefLabel "Farbenlehre. Kolorimetrie"@de .
+
+physik:phy413 a skos:Concept ;
+    skos:prefLabel "Farbenlehre. Farbsysteme, -metrik"@de ;
+    skos:narrower physik:phy413_2 ;
+    skos:narrower physik:phy413_4 ;
+    skos:narrower physik:phy413_6 .
+
+physik:phy413_2 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art (Farbton, -sättigung, Gegen-, Optimalfarben, Farbmischung u.a.)"@de .
+
+physik:phy413_4 a skos:Concept ;
+    skos:prefLabel "Einzelne Farbsysteme u.-metriken (mono-, di-, tri-, tetrachromatische Systeme, Farbempfindungs-, höhere Metriken u.a.)"@de .
+
+physik:phy413_6 a skos:Concept ;
+    skos:prefLabel "Farbtafeln u.-tabellen. Farbnamen"@de .
+
+physik:phy414 a skos:Concept ;
+    skos:prefLabel "Kolorimetrie. Farbmessung"@de .
+
+physik:phy415 a skos:Concept ;
+    skos:prefLabel "Anwendungen u. Sonstiges"@de .
+
+physik:phy420 a skos:Concept ;
+    skos:prefLabel "Geometrische Optik"@de ;
+    rdfs:comment "Optische Instrumente"@de ;
+    rdfs:comment "Herstellung optischer Instrumente"@de .
+
+physik:phy421 a skos:Concept ;
+    skos:prefLabel "Angewandte u. praktische Optik i.a."@de .
+
+physik:phy422 a skos:Concept ;
+    skos:prefLabel "Geometrische Optik. (Optische Geräte)"@de .
+
+physik:phy423 a skos:Concept ;
+    skos:prefLabel "Grundlagen u. Fragen allg. Art"@de ;
+    skos:narrower physik:phy423_1 ;
+    skos:narrower physik:phy423_2 ;
+    skos:narrower physik:phy423_3 ;
+    skos:narrower physik:phy423_4 ;
+    skos:narrower physik:phy423_5 ;
+    skos:narrower physik:phy423_6 ;
+    skos:narrower physik:phy423_7 ;
+    skos:narrower physik:phy423_8 ;
+    skos:narrower physik:phy423_9 .
+
+physik:phy423_1 a skos:Concept ;
+    skos:prefLabel "Rechenverfahren. Mathematische Hilfsmittel"@de .
+
+physik:phy423_2 a skos:Concept ;
+    skos:prefLabel "Bildentstehung. Abbildungsgesetze. Gaußsche Optik"@de .
+
+physik:phy423_3 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy423_4 a skos:Concept ;
+    skos:prefLabel "Informationstheoretische u. statistische Optik. Fourieroptik"@de .
+
+physik:phy423_5 a skos:Concept ;
+    skos:prefLabel "Messung geometr.-opt.Größen. Untersuchung optischer Systeme"@de .
+
+physik:phy423_6 a skos:Concept ;
+    skos:prefLabel "Abbildungsfehler u. ihre Korrektur"@de .
+
+physik:phy423_7 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy423_8 a skos:Concept ;
+    skos:prefLabel "Bauteile optischer Geräte"@de .
+
+physik:phy423_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy426_2 a skos:Concept ;
+    skos:prefLabel "Lupen. Okulare. Spiegel"@de .
+
+physik:phy426_4 a skos:Concept ;
+    skos:prefLabel "Objektive (auch photographische Optik)"@de .
+
+physik:phy426_6 a skos:Concept ;
+    skos:prefLabel "Diaskop. Episkop"@de .
+
+physik:phy428_2 a skos:Concept ;
+    skos:prefLabel "Fernoptische Beobachtungs- u. Meßinstrumente i.a."@de ;
+    rdfs:seeAlso "Vgl. a.  ged 500,  ast  780"@de .
+
+physik:phy428_4 a skos:Concept ;
+    skos:prefLabel "Fernrohr. Spiegelfernrohr"@de ;
+    rdfs:seeAlso "Vgl. a. ast 785"@de .
+
+physik:phy430 a skos:Concept ;
+    skos:prefLabel "Mikroskop. Mikroskopie (Lichtmikroskopie)"@de ;
+    rdfs:comment "Anwendungen in einzelnen Gebieten s. dort"@de ;
+    rdfs:seeAlso "Elektronenmikroskopie s. phy  391"@de ;
+    rdfs:seeAlso physik:phy391 ;
+    skos:narrower physik:phy430_5 .
+
+physik:phy430_5 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art (Bildentstehung, Auflösungsvermögen u.a.)"@de .
+
+physik:phy431 a skos:Concept ;
+    skos:prefLabel "Mikroskop- u. Mikroskopier-Arten"@de ;
+    rdfs:seeAlso "Röntgenstrahlmikroskop s. phy  525.5" ;
+    rdfs:seeAlso physik:phy525_5 ;
+    skos:narrower physik:phy431_2 ;
+    skos:narrower physik:phy431_4 ;
+    skos:narrower physik:phy431_6 ;
+    skos:narrower physik:phy431_8 .
+
+physik:phy431_2 a skos:Concept ;
+    skos:prefLabel "nach Beleuchtungsart: Durchlicht-, Dunkelfeld-Mikroskopie"@de .
+
+physik:phy431_4 a skos:Concept ;
+    skos:prefLabel "nach Beleuchtungsart: Auflicht-, Metall-Mikroskopie"@de ;
+    rdfs:comment "letzteres NS" .
+
+physik:phy431_6 a skos:Concept ;
+    skos:prefLabel "Ultraviolett-, Ultramikroskop"@de .
+
+physik:phy431_8 a skos:Concept ;
+    skos:prefLabel "Fluoreszenzmikroskopie"@de .
+
+physik:phy432_2 a skos:Concept ;
+    skos:prefLabel "Polarisationsmikroskop"@de .
+
+physik:phy432_4 a skos:Concept ;
+    skos:prefLabel "Phasenkontrast-, Interferenz-, Schlieren-, Fernseh-Mikroskop"@de .
+
+physik:phy432_6 a skos:Concept ;
+    skos:prefLabel "Stereo-, Lichtschnitt-Mikroskop"@de .
+
+physik:phy432_8 a skos:Concept ;
+    skos:prefLabel "Spiegel-, Ultrarot-Mikroskop"@de .
+
+physik:phy432_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy434 a skos:Concept ;
+    skos:prefLabel "Mikroskopische Technik. Hilfsgeräte. Präparationsverfahren"@de ;
+    skos:narrower physik:phy434_2 ;
+    skos:narrower physik:phy434_4 .
+
+physik:phy434_2 a skos:Concept ;
+    skos:prefLabel "Einzelnes (Mikromanupulatoren u.a.)"@de .
+
+physik:phy434_4 a skos:Concept ;
+    skos:prefLabel "Mikrophotographie. Mikrokinematographie"@de .
+
+physik:phy435 a skos:Concept ;
+    skos:prefLabel "Anwendungen"@de ;
+    skos:narrower physik:phy435_2 ;
+    skos:narrower physik:phy435_8 .
+
+physik:phy435_2 a skos:Concept ;
+    skos:prefLabel "Technische Mikroskopie. Meßmikroskope"@de ;
+    rdfs:comment "Anwendung in Mineralogie, Biologie, Medizin s.dort"@de .
+
+physik:phy435_8 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy438 a skos:Concept ;
+    skos:prefLabel "Sonstige optische Geräte"@de .
+
+physik:phy440 a skos:Concept ;
+    skos:prefLabel "Anwendungen optischer Instrumente"@de ;
+    skos:narrower physik:phy440_2 ;
+    skos:narrower physik:phy440_4 ;
+    skos:narrower physik:phy440_8 .
+
+physik:phy440_2 a skos:Concept ;
+    skos:prefLabel "Optik in der Meßtechnik"@de .
+
+physik:phy440_4 a skos:Concept ;
+    skos:prefLabel "Optik in der Technik"@de .
+
+physik:phy440_8 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy442 a skos:Concept ;
+    skos:prefLabel "Faseroptik"@de .
+
+physik:phy444 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy450 a skos:Concept ;
+    skos:prefLabel "Physikalische Optik"@de ;
+    skos:narrower physik:phy450_5 ;
+
+physik:phy450_5 a skos:Concept ;
+    skos:prefLabel "Darstellungen der physikal. Optik unter besonderen Gesichtspunkten"@de .
+
+physik:phy451 a skos:Concept ;
+    skos:prefLabel "Wellenoptik i.a."@de ;
+    skos:narrower physik:phy451_5 .
+
+physik:phy451_5 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art"@de .
+
+physik:phy452 a skos:Concept ;
+    skos:prefLabel "Reflexion. Brechung. Dispersion"@de ;
+    skos:narrower physik:phy452_2 ;
+    skos:narrower physik:phy452_4 ;
+    skos:narrower physik:phy452_6 ;
+    skos:narrower physik:phy452_8 .
+
+physik:phy452_2 a skos:Concept ;
+    skos:prefLabel "Reflexion. Totalreflexion. Antoreflexbeläge"@de .
+
+physik:phy452_4 a skos:Concept ;
+    skos:prefLabel "Remission. Glanz"@de .
+
+physik:phy452_6 a skos:Concept ;
+    skos:prefLabel "Brechung. Refraktometer"@de .
+
+physik:phy452_8 a skos:Concept ;
+    skos:prefLabel "Dispersion"@de .
+
+physik:phy454 a skos:Concept ;
+    skos:prefLabel "Interferenz. Beugung. Streuung"@de ;
+    skos:narrower physik:phy454_2 ;
+    skos:narrower physik:phy454_4 ;
+    skos:narrower physik:phy454_6 .
+
+physik:phy454_2 a skos:Concept ;
+    skos:prefLabel "Interferenz. Interferometer, Kohärenz"@de ;
+    rdfs:seeAlso physik:phy105_2 ;
+    rdfs:seeAlso "Interferenzspektroskopie s.phy 802.6"@de ;
+    rdfs:seeAlso physik:phy802_6 .
+
+physik:phy454_4 a skos:Concept ;
+    skos:prefLabel "Beugung (Fresnelzonen, Fresneltransformation, ...)"@de .
+
+physik:phy454_6 a skos:Concept ;
+    skos:prefLabel "Streuung (Raleighsche Streuung, Mie-Streuung, ...)"@de .
+
+physik:phy456 a skos:Concept ;
+    skos:prefLabel "Optische Filter (Absorptions-, Interferenzfilter u.a.)"@de .
+
+physik:phy458 a skos:Concept ;
+    skos:prefLabel "Lichtausbreitung in Medien besonderer Struktur. Lichtleiter"@de ;
+    skos:narrower physik:phy458_2 ;
+    skos:narrower physik:phy458_4 ;
+    skos:narrower physik:phy458_6 :
+
+physik:phy458_2 a skos:Concept ;
+    skos:prefLabel "Inhomogene, mikrostrukturierte, geschichtete Medien"@de .
+
+physik:phy458_4 a skos:Concept ;
+    skos:prefLabel "Diffuse, stochastische Medien. Optik der Atmosphäre (einschl. Planeten). Invarianzverfahren, Radiative transfer"@de ;
+    rdfs:seeAlso "NS; HS: phy  499"@de ;
+    rdfs:seeAlso physik:phy499 .
+
+physik:phy458_6 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy460 a skos:Concept ;
+    skos:prefLabel "Kristalloptik. Polarisation. Doppelbrechung"@de ;
+    skos:narrower physik:phy460_2 ;
+    skos:narrower physik:phy460_4 ;
+    skos:narrower physik:phy460_5 ;
+    skos:narrower physik:phy460_6 ;
+    skos:narrower physik:phy460_8 .
+
+physik:phy460_2 a skos:Concept ;
+    skos:prefLabel "Kristalloptik. Dichroismus. Doppelbrechung"@de .
+
+physik:phy460_4 a skos:Concept ;
+    skos:prefLabel "Polarisation. Polarisatoren"@de .
+
+physik:phy460_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes u. Anwendungen"@de .
+
+physik:phy460_6 a skos:Concept ;
+    skos:prefLabel "Photoelastische Erscheinungen. Piezooptik"@de .
+
+physik:phy460_8 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy462 a skos:Concept ;
+    skos:prefLabel "Molekularoptik. Optische Aktivität"@de ;
+    skos:narrower physik:phy462_5 .
+
+physik:phy462_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy464 a skos:Concept ;
+    skos:prefLabel "Magneto- u. Elektrooptik"@de ;
+    skos:narrower physik:phy464_2 ;
+    skos:narrower physik:phy464_4 .
+
+physik:phy464_2 a skos:Concept ;
+    skos:prefLabel "Magnetooptik (Faraday-, Voigt-, Cotton-Mouton-Effekt u.a.)"@de ;
+    rdfs:seeAlso "Zeeman-Effekt s.phy  748.2"@de ;
+    rdfs:seeAlso physik:phy748_2 .
+
+physik:phy464_4 a skos:Concept ;
+    skos:prefLabel "Elektrooptik (Kerr-Effekt u.a.)"@de ;
+    rdfs:seeAlso "Stark-Effekt s.phy 748.2"@de ;
+    rdfs:seeAlso physik:phy748_2 .
+
+physik:phy466 a skos:Concept ;
+    skos:prefLabel "Optik bewegter Körper"@de .
+
+physik:phy468 a skos:Concept ;
+    skos:prefLabel "Sonstige optische Erscheinungen. Photoakustik."@de .
+
+physik:phy470 a skos:Concept ;
+    skos:prefLabel "Optische Eigenschaften u. Konstanten der Stoffe i.a."@de ;
+    skos:narrower physik:phy470_5 .
+
+physik:phy470_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy475 a skos:Concept ;
+    skos:prefLabel "Anwendungen der physikalischen Optik (Modulation von Licht, .,.)"@de .
+
+physik:phy490 a skos:Concept ;
+    skos:prefLabel "Allgemeines"@de .
+
+physik:phy492 a skos:Concept ;
+    skos:prefLabel "Elektromagnetische Strahlung (allg. u. opt. Strahlung)"@de ;
+    skos:narrower physik:phy492_5 .
+
+physik:phy492_5 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art"@de .
+
+physik:phy494 a skos:Concept ;
+    skos:prefLabel "Strahlungsmessung. Strahlungsempfänger"@de ;
+    skos:narrower physik:phy494_5 .
+
+physik:phy494_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy495 a skos:Concept ;
+    skos:prefLabel "Temperaturstrahlung. Strahlungsgesetze"@de ;
+    skos:narrower physik:phy495_1 ;
+    skos:narrower physik:phy495_2 ;
+    skos:narrower physik:phy495_3 ;
+    skos:narrower physik:phy495_4 ;
+    skos:narrower physik:phy495_6 ;
+    skos:narrower physik:phy495_8 .
+
+physik:phy495_1 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art"@de ;
+    rdfs:seeAlso "Strahlungsgleichgewicht s. phy  495.8"@de ;
+    rdfs:seeAlso physik:phy495_8 .
+
+physik:phy495_2 a skos:Concept ;
+    skos:prefLabel "Strahlungsgesetze"@de .
+
+physik:phy495_3 a skos:Concept ;
+    skos:prefLabel "Strahlungsgesetze von Kirchhoff, Stefan-Boltzmann, Wien u.a."@de .
+
+physik:phy495_4 a skos:Concept ;
+    skos:prefLabel "Plancksches Strahlungsgesetz (einschl. Tafeln)"@de .
+
+physik:phy495_6 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy495_8 a skos:Concept ;
+    skos:prefLabel "Strahlungsgleichgewicht (einschl. Tafeln)"@de .
+
+physik:phy498 a skos:Concept ;
+    skos:prefLabel "Strahlungseigenschaften der Stoffe. Absorption u. Emission thermischer Strahlung"@de .
+
+physik:phy499 a skos:Concept ;
+    skos:prefLabel "Energieübertragung durch Strahlung i. a. (Vgl. a. phy 284.3+458.4)"@de ;
+    rdfs:seeAlso physik:phy284_3 ;
+    rdfs:seeAlso physik:phy458_4 .
+
+physik:phy501 a skos:Concept ;
+    skos:prefLabel "Infrarot- u. Ultraviolettstrahlung u. -optik"@de ;
+    skos:narrower physik:phy501_2 ;
+    skos:narrower physik:phy501_3 ;
+    skos:narrower physik:phy501_6 ;
+    skos:narrower physik:phy501_7 .
+
+physik:phy501_2 a skos:Concept ;
+    skos:prefLabel "Infrarotstrahlung. Infrarotoptik. Wärmestrahlung"@de .
+
+physik:phy501_3 a skos:Concept ;
+    skos:prefLabel "Einzelnes u.Anwendungen"@de .
+
+physik:phy501_6 a skos:Concept ;
+    skos:prefLabel "Ultraviolettstrahlung. Ultraviolettoptik"@de .
+
+physik:phy501_7 a skos:Concept ;
+    skos:prefLabel "Einzelnes u. Anwendungen"@de .
+
+physik:phy503 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy505 a skos:Concept ;
+    skos:prefLabel "Quantenoptik"@de ;
+    skos:narrower physik:phy505_5 .
+
+physik:phy505_5 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art"@de .
+
+physik:phy507 a skos:Concept ;
+    skos:prefLabel "Lichtquantentheorie. Strahlungsdruck"@de .
+
+physik:phy508 a skos:Concept ;
+    skos:prefLabel "Emission. Absorption"@de ;
+    skos:narrower physik:phy508_2 ;
+    skos:narrower physik:phy508_4 .
+
+physik:phy508_2 a skos:Concept ;
+    skos:prefLabel "Emission"@de .
+
+physik:phy508_4 a skos:Concept ;
+    skos:prefLabel "Absorption"@de .
+
+physik:phy510 a skos:Concept ;
+    skos:prefLabel "Lumineszenz"@de ;
+    skos:narrower physik:phy510_5 .
+
+physik:phy510_5 a skos:Concept ;
+    skos:prefLabel "Grundlagen u. Fragen allg. Art"@de .
+
+physik:phy511 a skos:Concept ;
+    skos:prefLabel "Lumineszenzerscheinungen"@de ;
+    skos:narrower physik:phy511_1 ;
+    skos:narrower physik:phy511_2 ;
+    skos:narrower physik:phy511_3 ;
+    skos:narrower physik:phy511_4 ;
+    skos:narrower physik:phy511_6 ;
+    skos:narrower physik:phy511_8 ;
+    skos:narrower physik:phy511_9 .
+
+physik:phy511_1 a skos:Concept ;
+    skos:prefLabel "Anregung"@de .
+
+physik:phy511_2 a skos:Concept ;
+    skos:prefLabel "Photolumineszenz"@de .
+
+physik:phy511_3 a skos:Concept ;
+    skos:prefLabel "Anregung durch Korpuskularstrahlen. Szintillationen"@de .
+
+physik:phy511_4 a skos:Concept ;
+    skos:prefLabel "Sonstige Arten (Elektro-, Thermo-, Chemi-, Bio-, Tribolumineszenz)"@de .
+
+physik:phy511_6 a skos:Concept ;
+    skos:prefLabel "Emission der Lumineszenzstrahlung (Spektren, Polarisation u.ä.)"@de .
+
+physik:phy511_8 a skos:Concept ;
+    skos:prefLabel "Abklingen. Auslöschen. Ausleuchten"@de .
+
+physik:phy511_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy513 a skos:Concept ;
+    skos:prefLabel "Lumineszenz nach Medium"@de ;
+    skos:narrower physik:phy513_2 ;
+    skos:narrower physik:phy513_4 ;
+    skos:narrower physik:phy513_6 .
+
+physik:phy513_2 a skos:Concept ;
+    skos:prefLabel "Lumineszenz von Atomen, Molekülen, Gasen, Dämpfen"@de .
+
+physik:phy513_4 a skos:Concept ;
+    skos:prefLabel "Lumineszenz von Flüssigkeiten u. organ. Stoffen"@de .
+
+physik:phy513_6 a skos:Concept ;
+    skos:prefLabel "Lumineszenz von Festkörpern. Luminophore (Kristallphosphore, aktivierte Kristalle usw.). Wiedervereinigungsleuchten"@de .
+
+physik:phy515 a skos:Concept ;
+    skos:prefLabel "Anwendung. Leuchtstoffe"@de ;
+    rdfs:seeAlso "Vgl. a. elt 306"@de .
+
+physik:phy517 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy518 a skos:Concept ;
+    skos:prefLabel "Nichtlineare Optik"@de .
+
+physik:phy520 a skos:Concept ;
+    skos:prefLabel "Radiologie"@de ;
+    rdfs:seeAlso "Gamma-Strahlen s.phy  694.5"@de ;
+    rdfs:seeAlso physik:phy694_5 ;
+    skos:narrower physik:phy520_2 .
+
+physik:phy520_2 a skos:Concept ;
+    skos:prefLabel "Fragen allg.Art (Strahlungsquellen i. a., ...)"@de .
+
+physik:phy522 a skos:Concept ;
+    skos:prefLabel "Röntgenstrahlen"@de ;
+    rdfs:seeAlso "Röntgenspektroskopie s.phy 746"@de ;
+    rdfs:seeAlso "Röntgenanalyse s.phy 746"@de ;
+    rdfs:seeAlso physik:phy746 ;
+    skos:narrower physik:phy522_1 ;
+    skos:narrower physik:phy522_3 ; 
+    skos:narrower physik:phy522_4 ;
+    skos:narrower physik:phy522_6 ;
+    skos:narrower physik:phy522_8 .
+
+physik:phy522_1 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art (Wesen der Rö-str. ; harte, weiche Rö-str,u.ä.)"@de .
+
+physik:phy522_3 a skos:Concept ;
+    skos:prefLabel "Emission von Röntgenstrahlen"@de .
+
+physik:phy522_4 a skos:Concept ;
+    skos:prefLabel "Bremsstrahlung"@de .
+
+physik:phy522_6 a skos:Concept ;
+    skos:prefLabel "Geräte zur Erzeugung von Röntgenstrahlen. Röntgenröhren"@de .
+
+physik:phy522_8 a skos:Concept ;
+    skos:prefLabel "Energie der Röntgenstrahlen. Röntgenphotometrie"@de .
+
+physik:phy523 a skos:Concept ;
+    skos:prefLabel "Ausbreitung von Röntgenstrahlen"@de ;
+    skos:narrower physik:phy523_2 ;
+    skos:narrower physik:phy523_6 ;
+    skos:narrower physik:phy523_9 .
+
+physik:phy523_2 a skos:Concept ;
+    skos:prefLabel "Reflexion. Brechung. Dispersion. Doppelbrechung. Polarisation phy  523.4Interferenz. Beugung. Streuung"@de ;
+    rdfs:seeAlso "an Kristallen s.phy 847"@de ;
+    rdfs:seeAlso physik:phy847 .
+
+physik:phy523_6 a skos:Concept ;
+    skos:prefLabel "Absorption. Schwächung"@de .
+
+physik:phy523_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy525 a skos:Concept ;
+    skos:prefLabel "Anwendungen"@de ;
+    rdfs:comment "in anderen Gebieten s. bei diesen"@de ;
+    skos:narrower physik:phy525_1 ;
+    skos:narrower physik:phy525_2 ;
+    skos:narrower physik:phy525_3 ;
+    skos:narrower physik:phy525_4 ;
+    skos:narrower physik:phy525_5 ;
+    skos:narrower physik:phy525_8 ;
+    skos:narrower physik:phy525_9 .
+
+physik:phy525_1 a skos:Concept ;
+    skos:prefLabel "Röntgenphotographie i. a. Leuchtschirme. Bildgüte"@de .
+
+physik:phy525_2 a skos:Concept ;
+    skos:prefLabel "Röntgenoptik i. a."@de .
+
+physik:phy525_3 a skos:Concept ;
+    skos:prefLabel "Röntgenschattenabbildung. Makroskopische Röntgenradiographie"@de .
+
+physik:phy525_4 a skos:Concept ;
+    skos:prefLabel "Röntgenphotogrammetrie"@de .
+
+physik:phy525_5 a skos:Concept ;
+    skos:prefLabel "Röntgenmikroskopie. Röntgenmikroradiographie. Röntgenmikroprojektion"@de .
+
+physik:phy525_8 a skos:Concept ;
+    skos:prefLabel "Röntgenanalyse i.a."@de .
+
+physik:phy525_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy527 a skos:Concept ;
+    skos:prefLabel "Korpuskularstrahlen i.a."@de ;
+    rdfs:seeAlso "Elektronen- u. ionenstrahlen s.phy  387 ff"@de ;
+    rdfs:seeAlso physik:phy387 ;
+    rdfs:seeAlso "Atom- u. Molekularstrahlen s.phy 755"@de ;
+    rdfs:seeAlso physik:phy755 ;
+    rdfs:seeAlso "Neutronenstrahlen s.phy 706.4"@de ;
+    rdfs:seeAlso physik:phy706_4 ;
+    skos:narrower physik:phy527_1 .
+
+physik:phy527_1 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy529 a skos:Concept ;
+    skos:prefLabel "Materiewellen. Interferenz u. Beugung von Korpuskularstrahlen i.a."@de ;
+    rdfs:seeAlso "Beugung an Kristallen s.phy  847"@de ;
+    rdfs:seeAlso physik:phy847 ;
+    skos:narrower physik:phy529_5 .
+
+physik:phy529_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy531 a skos:Concept ;
+    skos:prefLabel "Meßverfahren. Dosimetrie u. Dosimeter. Radiologische Einheiten"@de ;
+    rdfs:seeAlso "Vgl. a. phy 626 ff"@de ;
+    rdfs:seeAlso physik:phy626 ;
+    skos:narrower physik:phy531_1 ;
+    skos:narrower physik:phy531_2 ;
+    skos:narrower physik:phy531_3 ;
+    skos:narrower physik:phy531_4 ;
+    skos:narrower physik:phy531_5 ;
+    skos:narrower physik:phy531_9 .
+
+physik:phy531_1 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art. Radiologische Einheiten i.a."@de .
+
+physik:phy531_2 a skos:Concept ;
+    skos:prefLabel "Messung, Dosimetrie von Röntgen- u. Gamma-Strahlen"@de .
+
+physik:phy531_3 a skos:Concept ;
+    skos:prefLabel "Messung, Dosimetrie von Korpuskularstrahlen"@de .
+
+physik:phy531_4 a skos:Concept ;
+    skos:prefLabel "Geladene Korpuskularstrahlen (Alpha-, Betastrahlen, Elektronen, ...)"@de .
+
+physik:phy531_5 a skos:Concept ;
+    skos:prefLabel "Ungeladene Korpuskularstrahlen. Neutronendosimetrie"@de .
+
+physik:phy531_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy532 a skos:Concept ;
+    skos:prefLabel "Anwendungen der Radiologie. Dosisdiagramme in speziellen Anwendungen u.ä."@de .
+
+physik:phy533 a skos:Concept ;
+    skos:prefLabel "Strahlenschutz. Umweltradioaktivität."@de ;
+    rdfs:seeAlso "Strahlenbelastung s.a. phy 719"@de ;
+    rdfs:seeAlso physik:phy719 ;
+    rdfs:seeAlso "s. a. san  515"@de ;
+    skos:narrower physik:phy533_5 .
+
+physik:phy533_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy535 a skos:Concept ;
+    skos:prefLabel "Strahlenwirkung. Strahlenschädigung"@de ;
+    rdfs:seeAlso "Vgl.a.bio ..., med ..., che  130"@de ;
+    rdfs:seeAlso physik:phy863 ;
+    skos:narrower physik:phy535_5 .
+
+physik:phy535_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy537 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy550 a skos:Concept ;
+    skos:prefLabel "Gesamtgebiet"@de .
+
+physik:phy552 a skos:Concept ;
+    skos:prefLabel "Einzelfragen allg. Art (Kritik an der modernen Physik u.ä.)"@de .
+
+physik:phy555 a skos:Concept ;
+    skos:prefLabel "Beziehungen der Atomphysik zu anderen Gebieten"@de .
+
+physik:phy560 a skos:Concept ;
+    skos:prefLabel "Allgemeines"@de .
+
+physik:phy561 a skos:Concept ;
+    skos:prefLabel "Geschichte der Quantentheorie. Ältere Quantentheorie"@de .
+
+physik:phy562 a skos:Concept ;
+    skos:prefLabel "Quanten- u. Wellenmechanik"@de ;
+    rdfs:comment "hier: allg. u. nichtrelativistische"@de ;
+    skos:narrower physik:phy562_5 .
+
+physik:phy562_5 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art"@de .
+
+physik:phy563 a skos:Concept ;
+    skos:prefLabel "Mathematische Hilfsmittel (Gruppentheorie, Hilbertraum u.a. in der Quantenmechanik)"@de .
+
+physik:phy565 a skos:Concept ;
+    skos:prefLabel "Einzelprobleme"@de ;
+    skos:narrower physik:phy565_2 ;
+    skos:narrower physik:phy565_4 ;
+    skos:narrower physik:phy565_6 ;
+    skos:narrower physik:phy565_9 .
+
+physik:phy565_2 a skos:Concept ;
+    skos:prefLabel "Quantenpostulate. Darstellungstheorie u.a."@de .
+
+physik:phy565_4 a skos:Concept ;
+    skos:prefLabel "Drehimpulse in der Quantenmechanik. Winkelkorrelationen. Racah-Algebra. (Kopplung u. Entkopplung; Wigner-, Clebsch-Gordon-, Racah-, Z-Koeffizienten; 3 j-, 6 j-Symbole u.a.)"@de .
+
+physik:phy565_6 a skos:Concept ;
+    skos:prefLabel "Näherungsverfahren der Quantenmechanik u.ä."@de .
+
+physik:phy565_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy568 a skos:Concept ;
+    skos:prefLabel "Deterministische Interpretationen u.a. Grundlagenfragen der Quanten- u. Wellenmechanik. Arbeiten d. franz.Schule."@de .
+
+physik:phy570 a skos:Concept ;
+    skos:prefLabel "Relativistische Quantentheorie"@de ;
+    skos:narrower physik:phy570_2 ;
+    skos:narrower physik:phy570_9 .
+
+physik:phy570_2 a skos:Concept ;
+    skos:prefLabel "Relativistische Theorie des Elektrons (Diracsche Theorie u.a.)"@de .
+
+physik:phy570_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy575 a skos:Concept ;
+    skos:prefLabel "Einzelfragen (Eddingtons Fundamentaltheorie u.a.)"@de .
+
+physik:phy580 a skos:Concept ;
+    skos:prefLabel "Theorie der Streuprozesse. S-Matrix-Theorie. Eta-Matrix u.a."@de ;
+    skos:narrower physik:phy580_2 ;
+    skos:narrower physik:phy580_4 ;
+    skos:narrower physik:phy580_9 .
+
+physik:phy580_2 a skos:Concept ;
+    skos:prefLabel "Einzelfragen (Mandelstam-Theorie, Feynman-Integrale, Regge-Pole, Dispersionsrelationen, komplexe Drehimpulse, Variationsverfahren u.a.)"@de .
+
+physik:phy580_4 a skos:Concept ;
+    skos:prefLabel "Inverses Problem zur Streutheorie (Konstruktion von Potentialen aus Streudaten u.a.)"@de .
+
+physik:phy580_9 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy585 a skos:Concept ;
+    skos:prefLabel "Quantentheorie der Wellenfelder. Quantenfeldtheorie"@de ;
+    rdfs:seeAlso "Mesonenfeldtheorie s.phy  659.4"@de ;
+    rdfs:seeAlso physik:phy659_4 ;
+    skos:narrower physik:phy585_5 .
+
+physik:phy585_5 a skos:Concept ;
+    skos:prefLabel "Fragen allg. Art (Störungstheorie, Methode der zweiten Quantisierung,...)"@de .
+
+physik:phy587 a skos:Concept ;
+    skos:prefLabel "Quantenelektrodynamik. Quantentheorie der Strahlung"@de ;
+    rdfs:seeAlso "experimentelle s.phy 604.6"@de ;
+    rdfs:seeAlso physik:phy604_6 ;
+    skos:narrower physik:phy587_5 .
+
+physik:phy587_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes (Diracsche Löchertheorie, Vakuumpolarisation, Renormierung, Regularisierung u.a.) Eichfelder"@de .
+
+physik:phy589 a skos:Concept ;
+    skos:prefLabel "Relativistische Quantenfeldtheorie"@de .
+
+physik:phy592 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy594 a skos:Concept ;
+    skos:prefLabel "Feldtheorie der Elementarteilchen"@de ;
+    skos:narrower physik:phy594_5 . 
+
+physik:phy594_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes (Austauschkräfte, nichtlineare Feldtheorie, Born-Infeld-, Bopp-Podolsky-Elektrodynamik u.a.)"@de .
+
+physik:phy596 a skos:Concept ;
+    skos:prefLabel "Vielkörperprobleme. Femi-Flüssigkeiten (Vgl. a. phy  656.6)"@de ;
+    rdfs:seeAlso physik:phy656_6 ;
+    skos:narrower physik:phy596_5 .
+
+physik:phy596_5 a skos:Concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy598 a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy600 a skos:concept ;
+    skos:prefLabel "Allgemeines"@de .
+
+physik:phy602 a skos:concept ;
+    skos:prefLabel "Elementarteilchen. Hochenergiephysik"@de .
+
+physik:phy603_2 a skos:concept ;
+    skos:prefLabel "Einzelfragen allg. Art"@de .
+
+physik:phy603_4 a skos:concept ;
+    skos:prefLabel "Grundlagen. Theorie. Systematik u.a. (Current algebras, Algebr. Theorie, ...) Symmetrie?"@de .
+
+physik:phy603_6 a skos:concept ;
+    skos:prefLabel "Modelle (Fermi-Young-, Sakata-, Quark-Modell, …)"@de .
+
+physik:phy603_8 a skos:concept ;
+    skos:prefLabel "Relativistische Kinematik der Hochenergiephysik"@de .
+
+physik:phy604 a skos:concept ;
+    skos:prefLabel "Wechselwirkungen u. ihre Struktur. Symmetrie"@de ;
+    skos:narrower physik:phy604_2 ;
+    skos:narrower physik:phy604_4 ;
+    skos:narrower physik:phy604_6 ;
+    skos:narrower physik:phy604_8 .
+
+physik:phy604_2 a skos:concept ;
+    skos:prefLabel "Starke Wechselwirkung"@de .
+
+physik:phy604_4 a skos:concept ;
+    skos:prefLabel "Schwache Wechselwirkung. Einfang. Zerfall u.ä."@de .
+
+physik:phy604_6 a skos:concept ;
+    skos:prefLabel "Elektromagnetische Wechselwirkung. Photonen-Wechselwirkung. Paarerzeugung u. -Vernichtung"@de ;
+    rdfs:seeAlso  physik:phy587 .
+
+physik:phy604_8 a skos:concept ;
+    skos:prefLabel "Charakteristische Größen i.a. Erhaltungssätze i.a. Zeitumkehr"@de .
+
+physik:phy605_2 a skos:concept ;
+    skos:prefLabel "Massen. Lebensdauern"@de .
+
+physik:phy605_4 a skos:concept ;
+    skos:prefLabel "Parität. Spin. Polarisation. Momente. Strangeness u.a."@de .
+
+physik:phy605_6 a skos:concept ;
+    skos:prefLabel "Reaktionen der Elementarteilchen. Streuung. Vielfachstreuung. Wirkungsquerschnitte"@de .
+
+physik:phy605_8 a skos:concept ;
+    skos:prefLabel "Zerfall"@de .
+
+physik:phy606 a skos:concept ;
+    skos:prefLabel "Hyperkerne. Hyperfragmente"@de .
+
+# HIER
+physik:phy607 a skos:concept ;
+    skos:prefLabel "Höchstenergieprozesse"@de .
+
+physik:phy607_2 a skos:concept ;
+    skos:prefLabel "Vielfacherzeugung"@de .
+
+physik:phy607_4 a skos:concept ;
+    skos:prefLabel "Kernreaktionen im GeV-Gebiet. "Sterne""@de .
+
+physik:phy608 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy610 a skos:concept ;
+    skos:prefLabel "Arten von Elementarteilchen"@de .
+
+physik:phy610_5 a skos:concept ;
+    skos:prefLabel "Fragen allg.Art"@de .
+
+physik:phy611 a skos:concept ;
+    skos:prefLabel "Leptonen"@de .
+
+physik:phy611_2 a skos:concept ;
+    skos:prefLabel "Neutrino"@de .
+
+physik:phy611_4 a skos:concept ;
+    skos:prefLabel "Elektron; (Elektronik s.phy 380 ff.)"@de .
+
+physik:phy611_6 a skos:concept ;
+    skos:prefLabel "Positron. Positronium"@de .
+
+physik:phy611_8 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy612 a skos:concept ;
+    skos:prefLabel "Mesonen u. Hyperonen i.a. Hadronen"@de .
+
+physik:phy613 a skos:concept ;
+    skos:prefLabel "Mesonen. Mesonenphysik (Mesonenfeldtheorie s. phy  659.4)"@de .
+
+physik:phy613_1 a skos:concept ;
+    skos:prefLabel "Fragen allg.Art"@de .
+
+physik:phy613_2 a skos:concept ;
+    skos:prefLabel "Wechselwirkungen (π-N, N-N, γ-N, Photoerzeugung von Mesonen u.a.)"@de .
+
+physik:phy613_4 a skos:concept ;
+    skos:prefLabel "Arten von Mesonen"@de .
+
+physik:phy613_5 a skos:concept ;
+    skos:prefLabel "Leichte Mesonen (Myonen, Pionen)"@de .
+
+physik:phy613_6 a skos:concept ;
+    skos:prefLabel "Schwere Mesonen (K-Mesonen, Tauonen, Thetonen u.a.)"@de .
+
+physik:phy613_9 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy615 a skos:concept ;
+    skos:prefLabel "Baryonen"@de .
+
+physik:phy615_2 a skos:concept ;
+    skos:prefLabel "Nukleonen"@de .
+
+physik:phy615_4 a skos:concept ;
+    skos:prefLabel "Proton (Neutron s.phy  705 ff.)"@de .
+
+physik:phy615_6 a skos:concept ;
+    skos:prefLabel "Hyperonen u. Antihyperonen"@de .
+
+physik:phy615_7 a skos:concept ;
+    skos:prefLabel "Einzelfragen u. einzelne Arten"@de .
+
+physik:phy616 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy617 a skos:concept ;
+    skos:prefLabel "Quasielementare Teilchen (Alphateilchen s. phy  696)"@de .
+
+physik:phy617_2 a skos:concept ;
+    skos:prefLabel "Deuteronen. Tritonen"@de .
+
+physik:phy617_9 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy620 a skos:concept ;
+    skos:prefLabel "Kosmische Strahlung (Höhenstrahlung, Ultrastrahlung)"@de .
+
+physik:phy620_5 a skos:concept ;
+    skos:prefLabel "Einzelnes (Primärstrahlung, Schauer, Variation u.a.)"@de .
+
+physik:phy625 a skos:concept ;
+    skos:prefLabel "Experimentelle Kernphysik. Atom- und kernphysikalische Geräte (Isotopentrennung s. phy  716.4)"@de .
+
+physik:phy625_5 a skos:concept ;
+    skos:prefLabel "Kernphysikalische Laboratorien"@de .
+
+physik:phy625_6 a skos:concept ;
+    skos:prefLabel "Einzelnes (Ausrüstung, Manipulatoren, Handschuhboxen u.a.)"@de .
+
+physik:phy626 a skos:concept ;
+    skos:prefLabel "Nachweis- u. Meßverfahren. Strahlungsmeßgeräte (Dosimetrie s. phy  531) (Cerenkov-Zähler s. phy  824.4)"@de .
+
+physik:phy626_5 a skos:concept ;
+    skos:prefLabel "Fragen allg. Art (Schaltungstechnik, Elektronik für kernphysikalische Meßgeräte, Zählschaltungen, Vervielfacher, Eichung, Auswertung mit Rechenmaschinen u.a.)"@de .
+
+physik:phy627 a skos:concept ;
+    skos:prefLabel "Zählverfahren u. -geräte"@de .
+
+physik:phy627_1 a skos:concept ;
+    skos:prefLabel "Zählrohre (Geiger-Müller-, Koinzidenzzähler u.a.)"@de .
+
+physik:phy627_2 a skos:concept ;
+    skos:prefLabel "Platten-, Funkenzähler, Funkenkammern"@de .
+
+physik:phy627_3 a skos:concept ;
+    skos:prefLabel "Ionisationskammern"@de .
+
+physik:phy627_5 a skos:concept ;
+    skos:prefLabel "Szintillationszähler. Kristallzähler"@de .
+
+physik:phy627_7 a skos:concept ;
+    skos:prefLabel "Halbleiterdetektoren. Halbleiterzähler"@de .
+
+physik:phy628 a skos:concept ;
+    skos:prefLabel "Kernspur-Sichtbarmachung"@de .
+
+physik:phy628_2 a skos:concept ;
+    skos:prefLabel "Nebel-, Wilsonkammern"@de .
+
+physik:phy623_4 a skos:concept ;
+    skos:prefLabel "Blasenkammern"@de .
+
+physik:phy628_6 a skos:concept ;
+    skos:prefLabel "Photographische Emulsionen"@de .
+
+physik:phy628_9 a skos:concept ;
+    skos:prefLabel "Sonstiges (Fluoreszierende Flüssigkeiten u.a.)"@de .
+
+physik:phy630 a skos:concept ;
+    skos:prefLabel "Nachweis von ungeladenen Teilchen. Neutronennachweis"@de .
+
+physik:phy632 a skos:concept ;
+    skos:prefLabel "Teilchenspektrometrie"@de .
+
+physik:phy632_2 a skos:concept ;
+    skos:prefLabel "Massenspektrometrie                               ."@de .
+
+physik:phy632_4 a skos:concept ;
+    skos:prefLabel "Alpha-Spektrometer"@de .
+
+physik:phy632_6 a skos:concept ;
+    skos:prefLabel "Beta-Spektrometer"@de .
+
+physik:phy632_9 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy634 a skos:concept ;
+    skos:prefLabel "Gamma-Spektrometer (Vgl.a.phy  694.5}"@de .
+
+physik:phy636 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy638 a skos:concept ;
+    skos:prefLabel "Hochenergetische Strahlen: Spektrometrie u.a. (Mesonenspektrometer)"@de .
+
+physik:phy640 a skos:concept ;
+    skos:prefLabel "Kernphysikalische Beschleunigungsmethoden. Teilchenbeschleuniger"@de .
+
+physik:phy641_2 a skos:concept ;
+    skos:prefLabel "Fragen allg.Art"@de .
+
+physik:phy641_4 a skos:concept ;
+    skos:prefLabel "Einfache Beschleuniger. Potentialfall-Beschleuniger"@de .
+
+physik:phy641_6 a skos:concept ;
+    skos:prefLabel "Elektronenbeschleuniger i.a."@de .
+
+physik:phy641_7 a skos:concept ;
+    skos:prefLabel "Ionenbeschleuniger"@de .
+
+physik:phy641_8 a skos:concept ;
+    skos:prefLabel "Resonanzbeschleuniger i.a."@de .
+
+physik:phy642 a skos:concept ;
+    skos:prefLabel "Linearbeschleuniger"@de .
+
+physik:phy642_5 a skos:concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy643 a skos:concept ;
+    skos:prefLabel "Zirkularbeschleuniger"@de .
+
+physik:phy643_5 a skos:concept ;
+    skos:prefLabel "Fragen allg.Art (Partikelschwingungen, Synchrotonstrahlung,...)"@de .
+
+physik:phy644_2 a skos:concept ;
+    skos:prefLabel "Betatron u.andere Induktionsbeschleuniger"@de .
+
+physik:phy644_4 a skos:concept ;
+    skos:prefLabel "Cyclotron. Synchrocyclotron. Isochroncyclotron"@de .
+
+physik:phy644_6 a skos:concept ;
+    skos:prefLabel "Elektronencyclotron"@de .
+
+physik:phy645 a skos:concept ;
+    skos:prefLabel "Synchrotrone"@de .
+
+physik:phy645_2 a skos:concept ;
+    skos:prefLabel "Protonensynchrotrone (Cosmotron, Bevatron u.a.)"@de .
+
+physik:phy645_4 a skos:concept ;
+    skos:prefLabel "Besonderheiten (alternating-gradient-Fokussierung, FFAG u.a.)"@de .
+
+physik:phy645_6 a skos:concept ;
+    skos:prefLabel "Elektronensynchrotrone"@de .
+
+physik:phy647 a skos:concept ;
+    skos:prefLabel "Sonstiges   Speicherring"@de .
+
+physik:phy649 a skos:concept ;
+    skos:prefLabel "Quellen von Korpuskularstrahlen i.a."@de .
+
+physik:phy650 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy651 a skos:concept ;
+    skos:prefLabel "Hilfsmittel der experimentellen Kernphysik aus anderen Gebieten"@de .
+
+physik:phy651_2 a skos:concept ;
+    skos:prefLabel "Rechenmaschinen. Automatische Datenerfassung u.-Verarbeitung"@de .
+
+physik:phy652 a skos:concept ;
+    skos:prefLabel "Mathematische Methoden der allg. u. theoret.Kernphysik"@de .
+
+physik:phy653 a skos:concept ;
+    skos:prefLabel "Kerne: Eigenschaften. Daten. Systematik"@de .
+
+physik:phy653_1 a skos:concept ;
+    skos:prefLabel "Eigenschaften der Kerne i.a. Datentafeln"@de .
+
+physik:phy653_2 a skos:concept ;
+    skos:prefLabel "Kernsystematik. Nuklidentafeln"@de .
+
+physik:phy653_4 a skos:concept ;
+    skos:prefLabel "Kernmassen u.ihre Bestimmung (Vgl.a.phy 736.2)"@de .
+
+physik:phy653_5 a skos:concept ;
+    skos:prefLabel "Isobare, isotone, gg-, ug-, uu-Kerne. Spiegelkerne"@de .
+
+physik:phy653_7 a skos:concept ;
+    skos:prefLabel "Actiniden. Transurane"@de .
+
+physik:phy653_9 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy655 a skos:concept ;
+    skos:prefLabel "Kernstruktur"@de .
+
+physik:phy656_2 a skos:concept ;
+    skos:prefLabel "Fragen allg. Art (Coulombsche Wellenfunktionen des Kernes u.a.)"@de .
+
+physik:phy656_4 a skos:concept ;
+    skos:prefLabel "Zwei- u.Dreikorperproblem. Kräfte zwischen Nukleonen"@de .
+
+physik:phy656_6 a skos:concept ;
+    skos:prefLabel "Vielkörperproblem. Nuclear matter (vgl.a.phy 596). Quasiparticle-Methode"@de .
+
+physik:phy656_7 a skos:concept ;
+    skos:prefLabel "Deformierte Kerne"@de .
+
+physik:phy657 a skos:concept ;
+    skos:prefLabel "Kernmodelle"@de .
+
+physik:phy657_2 a skos:concept ;
+    skos:prefLabel "Fragen allg. Art (Beziehungen zwischen Modellen u.a.)"@de .
+
+physik:phy657_4 a skos:concept ;
+    skos:prefLabel "Schalenmodelle (L-S, j-j-Modelle u.a.)                  ,"@de .
+
+physik:phy657_6 a skos:concept ;
+    skos:prefLabel "Kollektives Modell. Unified model"@de .
+
+physik:phy657_9 a skos:concept ;
+    skos:prefLabel "Andere Modelle"@de .
+
+physik:phy659 a skos:concept ;
+    skos:prefLabel "Kernkräfte"@de .
+
+physik:phy659_2 a skos:concept ;
+    skos:prefLabel "Einzelfragen u.phanomenologisch (Ladungsunabhängigkeit der Kernkräfte u.a."@de .
+
+physik:phy659_4 a skos:concept ;
+    skos:prefLabel "Mesonenfeldtheorie. Mesonentheorie der Kernkräfte"@de .
+
+physik:phy659_6 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy661 a skos:concept ;
+    skos:prefLabel "Energienniveaus. Angeregte Kerne"@de .
+
+physik:phy661_1 a skos:concept ;
+    skos:prefLabel "Grundlagen u. Fragen allg. Art (Statistische Eigenschaften der Energieniveaus u.a."@de .
+
+physik:phy661_3 a skos:concept ;
+    skos:prefLabel "Niveaus einzelner Kernarten"@de .
+
+physik:phy661_5 a skos:concept ;
+    skos:prefLabel "Bindungsenergie. Massendefekt"@de .
+
+physik:phy661_7 a skos:concept ;
+    skos:prefLabel "Kernisomerie"@de .
+
+physik:phy661_9 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy663 a skos:concept ;
+    skos:prefLabel "Kernmomente. Spin. Elektr., magnet., Quadrupol-, Trägheits-Momente. Kerninduktion (Hochfrequenzspektroskopie s.phy 810 ff.) Hyperfeinwechselwirkung"@de .
+
+physik:phy665_2 a skos:concept ;
+    skos:prefLabel "Isotopenspin. Isospin. Isobarenspia."@de .
+
+physik:phy665_4 a skos:concept ;
+    skos:prefLabel "Orientierung. Ausrichtung. Polarisation. WinkeIkorrelationea"@de .
+
+physik:phy665_6 a skos:concept ;
+    skos:prefLabel "Ladungs- u.Massenverteilung. Kernradien. Nukleonenverteilung u.a»"@de .
+
+physik:phy665_9 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy670 a skos:concept ;
+    skos:prefLabel "Kernreaktionen. Kernchemie"@de .
+
+physik:phy672 a skos:concept ;
+    skos:prefLabel "Fragen allg. Art"@de .
+
+physik:phy672_2 a skos:concept ;
+    skos:prefLabel "Kernreaktionen nach Energie (bei niedriger, mittlerer, hoher Energie)"@de .
+
+physik:phy672_4 a skos:concept ;
+    skos:prefLabel "Kernreaktionen nach Kernmasse"@de .
+
+physik:phy672_9 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy674 a skos:concept ;
+    skos:prefLabel "Modelle der Kernreaktionen"@de .
+
+physik:phy674_1 a skos:concept ;
+    skos:prefLabel "Fragen allg.Art"@de .
+
+physik:phy674_3 a skos:concept ;
+    skos:prefLabel "Statistisches Modell. Compound model"@de .
+
+physik:phy674_5 a skos:concept ;
+    skos:prefLabel "Optisches Modell"@de .
+
+physik:phy674_7 a skos:concept ;
+    skos:prefLabel "Direkte Wechselwirkung"@de .
+
+physik:phy674_9 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy676 a skos:concept ;
+    skos:prefLabel "Reaktionstypen nach Mechanismus u.a."@de .
+
+physik:phy671_1 a skos:concept ;
+    skos:prefLabel "Grundlagen. Fragen allgemeiner Art"@de .
+
+physik:phy676_2 a skos:concept ;
+    skos:prefLabel "Querschnitte. Ausbeuten. Energieverteilung. Anregungsfunktionen"@de .
+
+physik:phy676_4 a skos:concept ;
+    skos:prefLabel "Korrelationen. Winkelverteilung. Polarisation"@de .
+
+physik:phy676_6 a skos:concept ;
+    skos:prefLabel "Streuprozesse (allg.u.elast.). Nucleon-Nucleon-Wechselwirkungen"@de .
+
+physik:phy676_8 a skos:concept ;
+    skos:prefLabel "Stripping. Pick-up. Knock-out. Direkte Reaktionen. Unelastische Streuung"@de .
+
+physik:phy677_2 a skos:concept ;
+    skos:prefLabel "Spallation. Kernverdampfung. Vielfacherzeugung"@de .
+
+physik:phy677_4 a skos:concept ;
+    skos:prefLabel "Spaltung (Thermonukleare Reaktionen s.phy 363)"@de .
+
+physik:phy677_6 a skos:concept ;
+    skos:prefLabel "Resonanzreaktionen"@de .
+
+physik:phy677_8 a skos:concept ;
+    skos:prefLabel "Oberflächenreaktionen"@de .
+
+physik:phy678 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy680 a skos:concept ;
+    skos:prefLabel "Reaktionstypen nach induzierender Partikel"@de .
+
+physik:phy680_2 a skos:concept ;
+    skos:prefLabel "Umwandlung durch Alpha-Teilchen , 3He, …"@de .
+
+physik:phy680_4 a skos:concept ;
+    skos:prefLabel "Umwandlung durch  Deuteronen"@de .
+
+physik:phy680_6 a skos:concept ;
+    skos:prefLabel "Umwandlung durch  Protonen"@de .
+
+physik:phy680_9 a skos:concept ;
+    skos:prefLabel "Sonstiges (Durch Neutronen s.phy 707 u.a., durch Photonen s.phy  682)"@de .
+
+physik:phy681 a skos:concept ;
+    skos:prefLabel "Reaktionen nach Kernsorte u.a."@de .
+
+physik:phy682 a skos:concept ;
+    skos:prefLabel "Elektromagnetische Wechselwirkungen"@de .
+
+physik:phy682_2 a skos:concept ;
+    skos:prefLabel "Fragen allg.Art"@de .
+
+physik:phy682_4 a skos:concept ;
+    skos:prefLabel "Kernphotoeffekt. Strahlungseinfang. Umwandlung durch Photonen"@de .
+
+physik:phy682_6 a skos:concept ;
+    skos:prefLabel "Coulomb-Anregung"@de .
+
+physik:phy684 a skos:concept ;
+    skos:prefLabel "Gamma-Übergänge. Kernresonanzfluoreszenz"@de .
+
+physik:phy684_5 a skos:concept ;
+    skos:prefLabel "Mößbauer-Effekt"@de .
+
+physik:phy686_2 a skos:concept ;
+    skos:prefLabel "Innere Umwandlung. Konversionselektronen"@de .
+
+physik:phy686_4 a skos:concept ;
+    skos:prefLabel "Elektronenstreuung. Wechselwirkung mit Elektronen"@de .
+
+physik:phy686_9 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy690 a skos:concept ;
+    skos:prefLabel "Kernzerfall. Radioaktivität"@de .
+
+physik:phy690_5 a skos:concept ;
+    skos:prefLabel "Fragen allg.Art (Zerfallsgesetze, Halbwertszeiten, Elektronenhülleneinfluß u.a.)"@de .
+
+physik:phy691 a skos:concept ;
+    skos:prefLabel "Natürliche Radioaktivität. Zerfallsreihen (Radioaktive Altersbestimmung s.phy 715.2)"@de .
+
+physik:phy691_5 a skos:concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy692 a skos:concept ;
+    skos:prefLabel "Künstliche Radioaktivität"@de .
+
+physik:phy692_5 a skos:concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy694 a skos:concept ;
+    skos:prefLabel "Kernspektroskopie                             ,"@de .
+
+physik:phy694_5 a skos:concept ;
+    skos:prefLabel "Gamma-Strahlen. Gamma-Spektroskopie (Vgl.a.phy  634)"@de .
+
+physik:phy696 a skos:concept ;
+    skos:prefLabel "Alpha-Zerfall. Alpha-Spektren (Alpha-Spektrometer s.phy  632.4)"@de .
+
+physik:phy697 a skos:concept ;
+    skos:prefLabel "Beta-Zerfall. Beta-Spektren. (Betaspektrometer s.phy  632.6)"@de .
+
+physik:phy699 a skos:concept ;
+    skos:prefLabel "Sonstige Kernreaktionsprobleme ."@de .
+
+physik:phy699_2 a skos:concept ;
+    skos:prefLabel "K-Einfang. L-Einfang"@de .
+
+physik:phy699_4 a skos:concept ;
+    skos:prefLabel "Sekundäreffekte. Innere Bremsatrahlung. Augereffekte ? u.a."@de .
+
+physik:phy699_9 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy705 a skos:concept ;
+    skos:prefLabel "Neutronenphysik. Reaktorphysik (Nachweis u.Messung s.phy  630)"@de .
+
+physik:phy705_5 a skos:concept ;
+    skos:prefLabel "Fragen allg. Art"@de .
+
+physik:phy706_2 a skos:concept ;
+    skos:prefLabel "Neutronenquellen"@de .
+
+physik:phy706_4 a skos:concept ;
+    skos:prefLabel "Neutronenstrahlen"@de .
+
+physik:phy706_6 a skos:concept ;
+    skos:prefLabel "Neutronenspektrometrie"@de .
+
+physik:phy707 a skos:concept ;
+    skos:prefLabel "Wechselwirkung mit Materie. Wirkungsquerschnitte. Neutronentransporttheorie. Streuung. Diffusion. Neutronenresonanzreaktionen. Bremsung. Gepulste Neutronenfelder. Neutronenaktivierung"@de .
+
+physik:phy707_5 a skos:concept ;
+    skos:prefLabel "Neutronenradiographie"@de .
+
+physik:phy708 a skos:concept ;
+    skos:prefLabel "Schnelle u. relativistische Neutronen"@de .
+
+physik:phy709 a skos:concept ;
+    skos:prefLabel "Sonstiges zu Neutronen"@de .
+
+physik:phy710 a skos:concept ;
+    skos:prefLabel "Reaktorphysik (HS: erg 520 ff.. Hier nur Probleme von bes. physikal.Interesse)"@de .
+
+physik:phy710_5 a skos:concept ;
+    skos:prefLabel "Einzelnes (Abschirmung s.phy 721)"@de .
+
+physik:phy712 a skos:concept ;
+    skos:prefLabel "Forschungsreaktoren (HS hier !)"@de .
+
+physik:phy712_5 a skos:concept ;
+    skos:prefLabel "Einzelnes u. Anwendungen"@de .
+
+physik:phy714 a skos:concept ;
+    skos:prefLabel "Isotope. Anwendungen der Radioaktivität u. Kernstrahlung"@de .
+
+physik:phy715_2 a skos:concept ;
+    skos:prefLabel "Radiaktive Altersbestimmung"@de .
+
+physik:phy715_4 a skos:concept ;
+    skos:prefLabel "Radioaktivität der Atmosphäre, des Meeres, der Gesteine usv."@de .
+
+physik:phy715_5 a skos:concept ;
+    skos:prefLabel "Einzelnes (Fall out u.a.)"@de .
+
+physik:phy716 a skos:concept ;
+    skos:prefLabel "Isotope u. Kernstrahlung"@de .
+
+physik:phy716_2 a skos:concept ;
+    skos:prefLabel "Experimentelle u. techn. Verfahren"@de .
+
+physik:phy716_4 a skos:concept ;
+    skos:prefLabel "Isotopentrennung"@de .
+
+physik:phy716_6 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy716_8 a skos:concept ;
+    skos:prefLabel "Stabile Isotope"@de .
+
+physik:phy717 a skos:concept ;
+    skos:prefLabel "Radioaktive Isotope (Radionuclide) u. Präparate. Kernstrahlenquellen"@de .
+
+physik:phy717_5 a skos:concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy718 a skos:concept ;
+    skos:prefLabel "Anwendungen der Isotopentechnik u. Kernstrahlung"@de .
+
+physik:phy718_2 a skos:concept ;
+    skos:prefLabel "Tracer-, Indikator-Verfahren. Meßtechnische Anwendungen (Aktivierungsanalyse s. che 373)"@de .
+
+physik:phy718_4 a skos:concept ;
+    skos:prefLabel "Massive Bestrahlung. Bestrahlung in Technik, Produktionstechnik, Landwirtschaft u.a."@de .
+
+physik:phy718_8 a skos:concept ;
+    skos:prefLabel "Sonstige Anwendungen nach Gebieten (NS)"@de .
+
+physik:phy719 a skos:concept ;
+    skos:prefLabel "Sicherheitsmaßnahmen im Umgang mit radioaktiven Stoffen und Kernstrahlen (Vgl. a. phy 533) nach san 515"@de .
+
+physik:phy720 a skos:concept ;
+    skos:prefLabel "Sonstige Fragen zu radioaktiven Isotopen (Verseuchung von Werkstoffen, ...)"@de .
+
+physik:phy721 a skos:concept ;
+    skos:prefLabel "Abschirmung gegen ionisierende Strahlen (einschl. Neutronen)"@de .
+
+physik:phy723 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+    skos:prefLabel "Atomhülle. Moleküle. Zwischenmolekulare Erscheinungen"@de .
+
+physik:phy730 a skos:concept ;
+    skos:prefLabel "Allgemeines"@de .
+
+physik:phy732 a skos:concept ;
+    skos:prefLabel "Einzelfragen zum Gesamtgebiet"@de .
+
+physik:phy735 a skos:concept ;
+    skos:prefLabel "Atomhülle"@de .
+
+physik:phy736 a skos:concept ;
+    skos:prefLabel "Fragen allg. Art"@de .
+
+physik:phy736_2 a skos:concept ;
+    skos:prefLabel "Fundamentalkonstanten. Atomgewichte. Relative Massen u.a."@de .
+
+physik:phy736_4 a skos:concept ;
+    skos:prefLabel "Periodisches System (Nuklide, Transurane s. phy 653)"@de .
+
+physik:phy736_8 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy737 a skos:concept ;
+    skos:prefLabel "Struktur. Elektronenanordnung"@de .
+
+physik:phy738 a skos:concept ;
+    skos:prefLabel "Quantenmechanik der Atome (Vgl. a. phy 561)"@de .
+
+physik:phy738_2 a skos:concept ;
+    skos:prefLabel "Grundlagen. Rechenverfahren. Fragen allg. Art (Hartreesche selfconsistent-field-Methode, Korrelationseffekte, ,..)"@de .
+
+physik:phy738_4 a skos:concept ;
+    skos:prefLabel "Ein- u. Zweielektronensysteme"@de .
+
+physik:phy738_6 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy738_8 a skos:concept ;
+    skos:prefLabel "Statistische Behandlung des Atoms"@de .
+
+physik:phy740 a skos:concept ;
+    skos:prefLabel "Wechselwirkung. Streuung. Stoßvorgänge (Hier auch zusammenfassende Darstellungen über Streuung aller Teilchenarten)"@de .
+
+physik:phy741 a skos:concept ;
+    skos:prefLabel "Anregung. Ionisation"@de .
+
+physik:phy741_5 a skos:concept ;
+    skos:prefLabel "Einzelnes (Anregung u.Ionisation durch Elektronenstoß u.a.)"@de .
+
+physik:phy743 a skos:concept ;
+    skos:prefLabel "Atomspektren. Atomare Energiestufen. Atomare Emission"@de .
+
+physik:phy744_2 a skos:concept ;
+    skos:prefLabel "Fragen allg. Art. Berechnung von Atomspektren"@de .
+
+physik:phy744_4 a skos:concept ;
+    skos:prefLabel "Atomspektren einzelner Stoffklassen u.Stoffe"@de .
+
+physik:phy744_6 a skos:concept ;
+    skos:prefLabel "Linienspektren. Tenne. Atomare Energiestufen. Multipletts"@de .
+
+physik:phy744_7 a skos:concept ;
+    skos:prefLabel "Einzelnes (Optisches Pumpen, ...)"@de .
+
+physik:phy744_8 a skos:concept ;
+    skos:prefLabel "UV-Spektren u. -Spektroskopie"@de .
+
+physik:phy746 a skos:concept ;
+    skos:prefLabel "Röntgenspektren u. -Spektroskopie. Röntgenanalyse i.a."@de .
+
+physik:phy746_2 a skos:concept ;
+    skos:prefLabel "Fragen allg.Art"@de .
+
+physik:phy746_4 a skos:concept ;
+    skos:prefLabel "Röntgenspektren einzelner Stoffklassen u. Stoffe"@de .
+
+physik:phy746_6 a skos:concept ;
+    skos:prefLabel "Röntgenfluoreszenz-Strahlung u. -Spektralanalyse. Electron microprobe analysis. Elektroneninduzierte Röntgenspektralanalyse"@de .
+
+physik:phy746_9 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy747 a skos:concept ;
+    skos:prefLabel "Elektronenspektroskopie. ESCA"@de .
+
+physik:phy747_5 a skos:concept ;
+    skos:prefLabel "Auger-Effekt"@de .
+
+physik:phy748 a skos:concept ;
+    skos:prefLabel "Einzelfragen bezügl. atomarer Energieniveaus u. Spektren"@de .
+
+physik:phy748_1 a skos:concept ;
+    skos:prefLabel "Hyperfeinstruktur. Isotopieeffekte (Vgl.a.Kernmomentes phy 663)"@de .
+
+physik:phy748_2 a skos:concept ;
+    skos:prefLabel "Zeeman-, Stark-Effekt (vgl.a.phy 464), Level-crossing"@de .
+
+physik:phy748_5 a skos:concept ;
+    skos:prefLabel "Kontinuierliche Atomspektren"@de .
+
+physik:phy748_6 a skos:concept ;
+    skos:prefLabel "Oszillatorenstärken. Lebensdauer. Übergangswahrscheinlichkeiten. Linienintensitäten. Beam foil spectroscopy"@de .
+
+physik:phy748_7 a skos:concept ;
+    skos:prefLabel "Linienbreite. Verschiebung"@de .
+
+physik:phy748_9 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy750 a skos:concept ;
+    skos:prefLabel "Sonstige Eigenschaften der Atome"@de .
+
+physik:phy751 a skos:concept ;
+    skos:prefLabel "Besondere Atomarten. Atomähnliche gebundene Zustände (Positronium s.phy  611.6)"@de .
+
+physik:phy751_2 a skos:concept ;
+    skos:prefLabel "Mesonenatome"@de .
+
+physik:phy751_6 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy753 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy755 a skos:concept ;
+    skos:prefLabel "Atom- u. Molekularstrahlen (auch: Atom- u. Molekularstrahlspektroskopie)"@de .
+
+physik:phy755_2 a skos:concept ;
+    skos:prefLabel "Fragen allg.Art"@de .
+
+physik:phy755_4 a skos:concept ;
+    skos:prefLabel "Atomstrahlen"@de .
+
+physik:phy755_6 a skos:concept ;
+    skos:prefLabel "Molekularstrahlen"@de .
+
+physik:phy760 a skos:concept ;
+    skos:prefLabel "Moleküle"@de .
+
+physik:phy760_2 a skos:concept ;
+    skos:prefLabel "Fragen allg. Art"@de .
+
+physik:phy760_4 a skos:concept ;
+    skos:prefLabel "Untersuchungs- u. Meßverfahren"@de .
+
+physik:phy760_6 a skos:concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy762 a skos:concept ;
+    skos:prefLabel "Quantenmechanik der Moleküle i.a."@de .
+
+physik:phy763 a skos:concept ;
+    skos:prefLabel "Molekülstruktur. Elektronenverteilung. Chemische Bindung. Quantenchemie (NS)"@de .
+
+physik:phy763_2 a skos:concept ;
+    skos:prefLabel "Theorie u. Fragen allg. Art (Orbitaltheorie, Berechnung der Wellenfunktionen, Integraltafeln, Symmetrie, Korrelationseffekte, …)"@de .
+
+physik:phy763_4 a skos:concept ;
+    skos:prefLabel "Ligandenfeldtheorie. Crystal field theory"@de .
+
+physik:phy763_5 a skos:concept ;
+    skos:prefLabel "Einzelne Molelkülarten"@de .
+
+physik:phy763_9 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy765 a skos:concept ;
+    skos:prefLabel "Elektr. u. magnetische Momente. Magnetische Eigenschaften"@de .
+
+physik:phy767 a skos:concept ;
+    skos:prefLabel "Molekül-, Bandenspektren. Molekülschwingungen u. -rotation"@de .
+
+physik:phy767_5 a skos:concept ;
+    skos:prefLabel "Fragen allg. Art (Festkörper-Spektren s.phy 881)"@de .
+
+physik:phy768 a skos:concept ;
+    skos:prefLabel "Molekülspektren einzelner Stoffklassen u. Stoffe"@de .
+
+physik:phy769 a skos:concept ;
+    skos:prefLabel "Infrarotspektren u.-Spektroskopie. Rotationen u. Schwingungen des Moleküls"@de .
+
+physik:phy769_5 a skos:concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy771 a skos:concept ;
+    skos:prefLabel "Ramanspektren. Smekal-Raman-Effekt"@de .
+
+physik:phy772 a skos:concept ;
+    skos:prefLabel "Mikrowellenspektren (Vgl.a.phy 810)"@de .
+
+physik:phy774 a skos:concept ;
+    skos:prefLabel "Elektronensprungspektren der Moleküle"@de .
+
+physik:phy774_5 a skos:concept ;
+    skos:prefLabel "Einzelne Molekülarten u.Einzelfragen"@de .
+
+physik:phy775 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy776 a skos:concept ;
+    skos:prefLabel "Einzelfragen zu Molekülspektren u. -Schwingungen"@de .
+
+physik:phy776_2 a skos:concept ;
+    skos:prefLabel "Anregung von Molekülspektren, Elektronenstöße u.a."@de .
+
+physik:phy776_4 a skos:concept ;
+    skos:prefLabel "Energiestufen. Lebensdauern, Übergangswahrscheinlichkeiten. Spin-Bahn-Kopplung. Molekulare Multipletts"@de .
+
+physik:phy776_6 a skos:concept ;
+    skos:prefLabel "Linienbreite"@de .
+
+physik:phy776_9 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy777 a skos:concept ;
+    skos:prefLabel "Relaxationserscheinungen bei Molekülen"@de .
+
+physik:phy778 a skos:concept ;
+    skos:prefLabel "Wechselwirkungen. Streuung an Molekülen. Assoziationen"@de .
+
+physik:phy778_5 a skos:concept ;
+    skos:prefLabel "Einzelnes"@de .
+
+physik:phy780 a skos:concept ;
+    skos:prefLabel "Quantentheorie der Reaktionskinetik (NS)"@de .
+
+physik:phy781 a skos:concept ;
+    skos:prefLabel "Sonstige Erscheinungen (Elektronenhülle-Kern-Kopplung, ...}"@de .
+
+physik:phy782 a skos:concept ;
+    skos:prefLabel "Ionen (Quantentheorie, Spektren, ...). Dissoziation. Ionisation. Negative Ionen. Umladung"@de .
+
+physik:phy784 a skos:concept ;
+    skos:prefLabel "Freie Radikale"@de .
+
+physik:phy786 a skos:concept ;
+    skos:prefLabel "Besondere Molekülarten"@de .
+
+physik:phy786_2 a skos:concept ;
+    skos:prefLabel "Mesonenmoleküle"@de .
+
+physik:phy786_4 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy788 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
+physik:phy790 a skos:concept ;
+    skos:prefLabel "Zwischenmolekulare u. -atomare Kräfte u. Erscheinungen (Adhäsion s. phy 942.3)"@de .
+
+physik:phy791 a skos:concept ;
+    skos:prefLabel "Kohäsion (Kohäsive Kräffte der Elektronen in Atomen, Molekülen, Festkörpern i.ä.)"@de .
+
+physik:phy793 a skos:concept ;
+    skos:prefLabel "Sonstiges"@de .
+
