@@ -23,7 +23,6 @@ physik:phy2 a skos:Concept ;
     skos:prefLabel "Institute der Lehre u. Forschung, Organisationen"@de ;
     rdfs:seeAlso physik:phy89 .
 
-# Frage an Esther: Was ist die Beziehung der Codes im Gegensatz zu 4.1 etc.?
 physik:phy4 a skos:Concept ;
     skos:prefLabel "Gesamtgebiet in besonderer Ausrichtung"@de ;
     skos:narrower physik:phy5 ;
@@ -4617,9 +4616,17 @@ physik:phy849 a skos:concept ;
 physik:phy849_3 a skos:concept ;
     skos:prefLabel "Eigenschaften unter hohen Drücken"@de .
 
-# HIER
 physik:phy850 a skos:concept ;
-    skos:prefLabel "Kräfte im Gitter. Bindung der Kristalle. Kristallchemie (Austrittsarbeit s.phy  382.2) (Metallische Bindung s.phy  911.3)"@de .
+    skos:prefLabel "Kräfte im Gitter. Bindung der Kristalle. Kristallchemie"@de ;
+    rdfs:seeAlso "Austrittsarbeit s.phy  382.2"@de ;
+    rdfs:seeAlso physik:phy382_2 ;
+    rdfs:seeAlso "Metallische Bindung s.phy  911.2"@de ;
+    rdfs:seeAlso physik:phy911_2 ;
+    skos:seeAlso physik:phy850_1 ;
+    skos:seeAlso physik:phy850_3 ;
+    skos:seeAlso physik:phy850_5 ;
+    skos:seeAlso physik:phy850_7 ;
+    skos:seeAlso physik:phy850_9 .
 
 physik:phy850_1 a skos:concept ;
     skos:prefLabel "Fragen allg. Art. Kristallreaktionen i.a."@de .
@@ -4637,13 +4644,24 @@ physik:phy830_9 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy851 a skos:concept ;
-    skos:prefLabel "Feld- u. Ladungsverteiltung. Potentialverhältnisse im Gitter"@de .
+    skos:prefLabel "Feld- u. Ladungsverteiltung. Potentialverhältnisse im Gitter"@de ;
+    skos:narrower physik:phy851_5 .
 
 physik:phy851_5 a skos:concept ;
     skos:prefLabel "Einzelnes"@de .
 
 physik:phy852 a skos:concept ;
-    skos:prefLabel "Kristallwachstum. Kristallzüchtung (Schmelzen s. phy 245.4) (Technische Kristallisation s. cet 83)"@de .
+    skos:prefLabel "Kristallwachstum. Kristallzüchtung"@de ;
+    rdfs:seeAlso "Schmelzen s. phy 245.4"@de ;
+    rdfs:seeAlso physik:phy245_4 ;
+    rdfs:seeAlso "Technische Kristallisation s. cet 83"@de ;
+    skos:narrower physik:phy852_1 ;
+    skos:narrower physik:phy852_3 ;
+    skos:narrower physik:phy852_5 ;
+    skos:narrower physik:phy852_6 ;
+    skos:narrower physik:phy852_7 ;
+    skos:narrower physik:phy852_8 ;
+    skos:narrower physik:phy852_9 .
 
 physik:phy852_1 a skos:concept ;
     skos:prefLabel "Kristallbildung"@de .
@@ -4658,7 +4676,8 @@ physik:phy852_6 a skos:concept ;
     skos:prefLabel "Bearbeitung (Schneiden, Sägen, Schleifen, Polieren usw.)"@de .
 
 physik:phy852_7 a skos:concept ;
-    skos:prefLabel "Zonenschmelzen (Vgl. a. fer 553)"@de .
+    skos:prefLabel "Zonenschmelzen"@de ;
+    rdfs:seeAlso "Vgl. a. fer 553"@de .
 
 physik:phy852_8 a skos:concept ;
     skos:prefLabel "Sonstiges (Epitaxie, ...)"@de .
@@ -4667,13 +4686,21 @@ physik:phy852_9 a skos:concept ;
     skos:prefLabel "Reinststoffe"@de .
 
 physik:phy853 a skos:concept ;
-    skos:prefLabel "Makrostrukturen"@de .
+    skos:prefLabel "Makrostrukturen"@de ;
+    skos:narrower physik:phy853_5 .
 
 physik:phy853_5 a skos:concept ;
     skos:prefLabel "Einzelnes (Whiskers u.a.)"@de .
 
 physik:phy854 a skos:concept ;
-    skos:prefLabel "Umwandlungsvorgänge im festen Zustand (Texturen s. fer ..., Zwillingsbildung s. phy  852.3)"@de .
+    skos:prefLabel "Umwandlungsvorgänge im festen Zustand"@de ;
+    rdfs:seeAlso "Texturen s. fer"@de ;
+    rdfs:seeAlso "Zwillingsbildung s. phy  852.3"@de ;
+    rdfs:seeAlso physik:phy852_3 ;
+    skos:narrower physik:phy854_2 ;
+    skos:narrower physik:phy854_4 ;
+    skos:narrower physik:phy854_6 ;
+    skos:narrower physik:phy854_8 .
 
 physik:phy854_2 a skos:concept ;
     skos:prefLabel "Modifikationsübergänge"@de .
@@ -4688,7 +4715,12 @@ physik:phy854_8 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy856 a skos:concept ;
-    skos:prefLabel "Mehrstoffsysteme. Zustandsschaubilder. Mischkristalle. Feste Lösungen. Physikalisch interessante Legierungsstruktnren. (Vgl. a. phy 248)"@de .
+    skos:prefLabel "Mehrstoffsysteme. Zustandsschaubilder. Mischkristalle. Feste Lösungen. Physikalisch interessante Legierungsstruktnren"@de ;
+    rdfs:seeAlso physik:phy248 ;
+    skos:narrower physik:phy856_2 ;
+    skos:narrower physik:phy856_4 ;
+    skos:narrower physik:phy856_6 ;
+    skos:narrower physik:phy856_9 .
 
 physik:phy856_2 a skos:concept ;
     skos:prefLabel "Fragen allg. Art (Phasengleichgewicht, ...)"@de .
@@ -4709,7 +4741,14 @@ physik:phy860 a skos:concept ;
     skos:prefLabel "Gitterfehler. Diffusion. Strahlungseinfluß"@de .
 
 physik:phy861 a skos:concept ;
-    skos:prefLabel "Fehlordnung. Gitterstörungen"@de .
+    skos:prefLabel "Fehlordnung. Gitterstörungen"@de ;
+    skos:narrower physik:phy861_1 ;
+    skos:narrower physik:phy861_15 ;
+    skos:narrower physik:phy861_2 ;
+    skos:narrower physik:phy861_3 ;
+    skos:narrower physik:phy861_4 ;
+    skos:narrower physik:phy861_5 ;
+    skos:narrower physik:phy861_9 .
 
 physik:phy861_1 a skos:concept ;
     skos:prefLabel "Theorie und Fragen allg.Art"@de .
@@ -4733,13 +4772,22 @@ physik:phy861_9 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy862 a skos:concept ;
-    skos:prefLabel "Diffusion in Festkörpern. Selbstdiffusion. Gasdiffusion in Festkörpern. Wanderung von Defekten. Erholungsvorgänge."@de .
+    skos:prefLabel "Diffusion in Festkörpern. Selbstdiffusion. Gasdiffusion in Festkörpern. Wanderung von Defekten. Erholungsvorgänge."@de ;
+    skos:narrower physik:phy862_5 .
 
 physik:phy862_5 a skos:concept ;
     skos:prefLabel "Einzelnes (Kirkendall-Effekt u.a.)"@de .
 
 physik:phy863 a skos:concept ;
-    skos:prefLabel "Strahlungsbeeinflussung des Festkörpers (Vgl. a. phy  911.8, fer  486)"@de .
+    skos:prefLabel "Strahlungsbeeinflussung des Festkörpers"@de ;
+    rdfs:seeAlso physik:phy911_8 ;
+    rdfs:seeAlso "fer 486"@de ;
+    skos:narrower physik:phy863_1 ;
+    skos:narrower physik:phy863_2 ;
+    skos:narrower physik:phy863_3 ;
+    skos:narrower physik:phy863_4 ;
+    skos:narrower physik:phy863_6 ;
+    skos:narrower physik:phy863_9 .
 
 physik:phy863_1 a skos:concept ;
     skos:prefLabel "Fragen allg. Art"@de .
@@ -4760,19 +4808,31 @@ physik:phy863_9 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy865 a skos:concept ;
-    skos:prefLabel "Wechselwirkungsprobleme i.a. (Spin-Gitter-Relaxation s. phy 313)"@de .
+    skos:prefLabel "Wechselwirkungsprobleme i.a."@de ;
+    rdfs:seeAlso "Spin-Gitter-Relaxation s. phy 313"@de ;
+    rdfs:seeAlso physik:phy313 .
 
 physik:phy867 a skos:concept ;
-    skos:prefLabel "Elektronen im Festkörper. Elektronen-Gitter-Wechselwirkungen"@de .
+    skos:prefLabel "Elektronen im Festkörper. Elektronen-Gitter-Wechselwirkungen"@de ;
+    skos:narrower physik:phy867_2 ;
+    skos:narrower physik:phy867_4 .
 
 physik:phy867_2 a skos:concept ;
-    skos:prefLabel "Grundlagen. Theorie der Elektronen im Festkörper (Vgl. a. Vielkörperprobleme phy 596)"@de .
+    skos:prefLabel "Grundlagen. Theorie der Elektronen im Festkörper"@de ;
+    rdfs:seeAlso "Vgl. a. Vielkörperprobleme phy 596"@de ;
+    rdfs:seeAlso physik:phy596 .
 
 physik:phy867_4 a skos:concept ;
     skos:prefLabel "Einzelfragen allg. Art (Defektelektronen u.a.)"@de .
 
 physik:phy868 a skos:concept ;
-    skos:prefLabel "Einelektronennäherung. Einteilchennäherung"@de .
+    skos:prefLabel "Einelektronennäherung. Einteilchennäherung"@de ;
+    skos:narrower physik:phy868_1 ;
+    skos:narrower physik:phy868_2 ;
+    skos:narrower physik:phy868_3 ;
+    skos:narrower physik:phy868_5 ;
+    skos:narrower physik:phy868_7 ;
+    skos:narrower physik:phy868_9 .
 
 physik:phy868_1 a skos:concept ;
     skos:prefLabel "Energiebänder. Fermiflächen. Brillouinzonen. Pseudopotentiale. APW-Methode"@de .
@@ -4781,7 +4841,9 @@ physik:phy868_2 a skos:concept ;
     skos:prefLabel "Tunneleffekt bei Festkörpern i.a."@de .
 
 physik:phy868_3 a skos:concept ;
-    skos:prefLabel "Effektive Massen (Zyklotron resonanz s. phy  815.4)"@de .
+    skos:prefLabel "Effektive Massen"@de ;
+    rdfs:seeAlso "Zyklotronresonanz s. phy  815.4"@de ;
+    rdfs:seeAlso physik:phy815_4 .
 
 physik:phy868_5 a skos:concept ;
     skos:prefLabel "Lokalisierte Energieniveaus"@de .
@@ -4793,7 +4855,12 @@ physik:phy868_9 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy869 a skos:concept ;
-    skos:prefLabel "Mehrelektronenzustände. Elementare angeregte Mehrteilchenzustände (Phononen s. phy  874.4)"@de .
+    skos:prefLabel "Mehrelektronenzustände. Elementare angeregte Mehrteilchenzustände"@de ;
+    rdfs:seeAlso "Phononen s. phy  874.4"@de ;
+    rdfs:seeAlso physik:phy874_4 ;
+    skos:narrower physik:phy869_2 ;
+    skos:narrower physik:phy869_4 ;
+    skos:narrower physik:phy869_9 .
 
 physik:phy869_2 a skos:concept ;
     skos:prefLabel "Excitonen. Angeregte Elektron-Loch-Gebilde. Polaronen"@de .
@@ -4808,7 +4875,10 @@ physik:phy871 a skos:concept ;
     skos:prefLabel "Mechanische u. thermische Eigenschaften des Festkörpers i.a."@de .
 
 physik:phy872 a skos:concept ;
-    skos:prefLabel "Mechanische Eigenschaften. Gitterdynamik"@de .
+    skos:prefLabel "Mechanische Eigenschaften. Gitterdynamik"@de ;
+    skos:narrower physik:phy872_1 ;
+    skos:narrower physik:phy872_2 ;
+    skos:narrower physik:phy872_3 .
 
 physik:phy872_1 a skos:concept ;
     skos:prefLabel "Fragen allg. Art"@de .
@@ -4820,7 +4890,9 @@ physik:phy872_4 a skos:concept ;
     skos:prefLabel "Festigkeit. Sprödigkeit. Bruch. Härte"@de .
 
 physik:phy873_2 a skos:concept ;
-    skos:prefLabel "Plastizität. Plastische Verformung des Festkörpers. Innere Reibung. Mechanische Relaxation (Vgl. a. phy 127.1, fer 328)"@de .
+    skos:prefLabel "Plastizität. Plastische Verformung des Festkörpers. Innere Reibung. Mechanische Relaxation"@de ;
+    rdfs:seeAlso physik:phy127_1 ;
+    rdfs:seeAlso " (Vgl. a. fer 328)"@de .
 
 physik:phy873_4 a skos:concept ;
     skos:prefLabel "Änderung der Struktur. Erzeugung von Gitterdefekten"@de .
@@ -4844,7 +4916,17 @@ physik:phy874_9 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy876 a skos:concept ;
-    skos:prefLabel "Thermische Eigenschaften (Thermische Strahlung s. phy 498)"@de .
+    skos:prefLabel "Thermische Eigenschaften"@de ;
+    rdfs:seeAlso "Thermische Strahlung s. phy 498"@de ;
+    rdfs:seeAlso physik:phy498 ;
+    skos:narrower physik:phy876_1 ;
+    skos:narrower physik:phy876_2 ;
+    skos:narrower physik:phy876_3 ;
+    skos:narrower physik:phy876_4 ;
+    skos:narrower physik:phy876_5 ;
+    skos:narrower physik:phy876_6 ;
+    skos:narrower physik:phy876_7 ;
+    skos:narrower physik:phy876_9 .
 
 physik:phy876_1 a skos:concept ;
     skos:prefLabel "Spezifische Wärme. Entropie. Enthalpie"@de .
@@ -4859,7 +4941,8 @@ physik:phy876_4 a skos:concept ;
     skos:prefLabel "Thermische Umwandlung. Zustandsdiagramme. Übergänge"@de .
 
 physik:phy876_5 a skos:concept ;
-    skos:prefLabel "Ordnung-Unordnung. Nahordnung. Kooperative Erscheinungen (Vgl. a. phy 279.4)"@de .
+    skos:prefLabel "Ordnung-Unordnung. Nahordnung. Kooperative Erscheinungen"@de ;
+    rdfs:seeAlso physik:phy279_4 .
 
 physik:phy876_6 a skos:concept ;
     skos:prefLabel "Schmelzen. Erstarren (nur festkörpertheoretisch)"@de .
@@ -4871,19 +4954,34 @@ physik:phy876_9 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy877 a skos:concept ;
-    skos:prefLabel "Festkörper unter besonderen thermischen Bedingungen (Kältephysik s. phy 290)"@de .
+    skos:prefLabel "Festkörper unter besonderen thermischen Bedingungen"@de ;
+    rdfs:seeAlso "Kältephysik s. phy 290"@de .
 
 physik:phy878 a skos:concept ;
-    skos:prefLabel "Festkörper unter hohem Druck. (Vgl. a. phy  95)"@de .
+    skos:prefLabel "Festkörper unter hohem Druck"@de ;
+    rdfs:seeAlso physik:phy95 .
 
 physik:phy880 a skos:concept ;
-    skos:prefLabel "Optische Eigenschaften von Festkörpern (Klassische Kristalloptik s.phy 460) (Photo-EMK s. phy  893.6) (Piezo-Optik s. phy 460.6)"@de .
+    skos:prefLabel "Optische Eigenschaften von Festkörpern"@de ;
+    rdfs:seeAlso "Klassische Kristalloptik s.phy 460"@de ;
+    rdfs:seeAlso physik:phy460 ;
+    rdfs:seeAlso "Photo-EMK s. phy  893.6"@de ;
+    rdfs:seeAlso physik:phy893_6 ;
+    rdfs:seeAlso "Piezo-Optik s. phy 460.6"@de ;
+    rdfs:seeAlso physik:phy460_6 ;
+    skos:narrower physik:phy880_5 .
 
 physik:phy880_5 a skos:concept ;
     skos:prefLabel "Grundlagen und Fragen allg. Art"@de .
 
 physik:phy881 a skos:concept ;
-    skos:prefLabel "Spektren von Festkörpern. Kristallspektroskopie"@de .
+    skos:prefLabel "Spektren von Festkörpern. Kristallspektroskopie"@de ;
+    skos:narrower physik:phy881_1 ;
+    skos:narrower physik:phy881_2 ;
+    skos:narrower physik:phy881_3 ;
+    skos:narrower physik:phy881_4 ;
+    skos:narrower physik:phy881_6 ;
+    skos:narrower physik:phy881_8 .
 
 physik:phy881_1 a skos:concept ;
     skos:prefLabel "Optische u. UV-Spektren"@de .
@@ -4907,10 +5005,22 @@ physik:phy882_9 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy890 a skos:concept ;
-    skos:prefLabel "Elektrische Eigenschaften (Halbleiter s. phy  915) (Dielektrische Eigenschaften s. phy 340 ff.)"@de .
+    skos:prefLabel "Elektrische Eigenschaften"@de ;
+    rdfs:seeAlso "Halbleiter s. phy 915"@de ;
+    rdfs:seeAlso physik:phy915 ;
+    rdfs:seeAlso "Dielektrische Eigenschaften s. phy 340 ff"@de ;
+    rdfs:seeAlso physik:phy340 ;
 
 physik:phy891 a skos:concept ;
-    skos:prefLabel "Elektrischer Leitungsmechanismus (Supraleitung s.phy 293) (Metallische Leitung s. phy  912.4) (Ionenleitung s. phy  ???)"@de .
+    skos:prefLabel "Elektrischer Leitungsmechanismus"@de ;
+    rdfs:seeAlso "Supraleitung s.phy 293"@de ;
+    rdfs:seeAlso physik:phy293 ;
+    rdfs:seeAlso "Metallische Leitung s. phy  912.4"@de ;
+    rdfs:seeAlso physik:phy912_4 ;
+    rdfs:seeAlso "Ionenleitung s. phy ???"@de ;
+    skos:narrower physik:phy891_2 ;
+    skos:narrower physik:phy891_4 ;
+    skos:narrower physik:phy891_6 .
 
 physik:phy891_2 a skos:concept ;
     skos:prefLabel "Fragen allg.Art (Elektronentransport im Festkörper u.a.)"@de .
@@ -4922,7 +5032,11 @@ physik:phy891_6 a skos:concept ;
     skos:prefLabel "Anisotropieeffekte"@de .
 
 physik:phy892 a skos:concept ;
-    skos:prefLabel "Transport im Magnetfeld. Galvanomagnetische Effekte"@de .
+    skos:prefLabel "Transport im Magnetfeld. Galvanomagnetische Effekte"@de ;
+    skos:narrower physik:phy892_2 ;
+    skos:narrower physik:phy892_4 ;
+    skos:narrower physik:phy892_6 ;
+    skos:narrower physik:phy892_9 .
 
 physik:phy892_2 a skos:concept ;
     skos:prefLabel "Magnetische Widerstandsänderung"@de .
@@ -4943,7 +5057,9 @@ physik:phy893_4 a skos:concept ;
     skos:prefLabel "Einzelnes u. Anwendungen"@de .
 
 physik:phy893_6 a skos:concept ;
-    skos:prefLabel "Photoleitfähigkeit. Photoelektrische Effekte. Photo-EMK (Vgl. a. phy 383.4, phy  918.4)"@de .
+    skos:prefLabel "Photoleitfähigkeit. Photoelektrische Effekte. Photo-EMK (Vgl. a. phy 383.4, phy  918.4)"@de ;
+    rdfs:seeAlso physik:phy383_4 ;
+    rdfs:seeAlso physik:phy918_4 .
 
 physik:phy893_8 a skos:concept ;
     skos:prefLabel "Einzelnes u. Anwendungen"@de .
@@ -4952,19 +5068,31 @@ physik:phy894 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy900 a skos:concept ;
-    skos:prefLabel "Sonstige physikalische Eigenschaften u. Erscheinungen (Magnetische Eigenschaften s. phy 307)"@de .
+    skos:prefLabel "Sonstige physikalische Eigenschaften u. Erscheinungen"@de ;
+    rdfs:seeAlso "Magnetische Eigenschaften s. phy 307"@de ;
+    rdfs:seeAlso physik:phy307 .
 
 physik:phy905 a skos:concept ;
     skos:prefLabel "Anwendungen der Festkörperphysik i.a."@de .
 
 physik:phy910 a skos:concept ;
-    skos:prefLabel "Metallphysik (Vgl. a. Metallkunde: fer 12 ff.) (Flüssige Metalle s. phy  973.2)"@de .
+    skos:prefLabel "Metallphysik"@de ;
+    rdfs:seeAlso "Vgl. a. Metallkunde fer 12 ff"@de ;
+    rdfs:seeAlso "Flüssige Metalle s. phy  973.2"@de ;
+    rdfs:seeAlso physik:phy973_2 ;
+    skos:narrower physik:phy910_5 .
 
 physik:phy910_5 a skos:concept ;
     skos:prefLabel "Experimentelle Fragen. Untersuchungsverfahren"@de .
 
 physik:phy911 a skos:concept ;
-    skos:prefLabel "Physikalische Erscheinungen"@de .
+    skos:prefLabel "Physikalische Erscheinungen"@de ;
+    skos:narrower physik:phy911_2 ;
+    skos:narrower physik:phy911_4 ;
+    skos:narrower physik:phy911_5 ;
+    skos:narrower physik:phy911_7 ;
+    skos:narrower physik:phy911_8 ;
+    skos:narrower physik:phy911_9 .
 
 physik:phy911_2 a skos:concept ;
     skos:prefLabel "Kristallographie, Kristallstruktur, kristallographische Daten der Metalle"@de .
@@ -4976,7 +5104,9 @@ physik:phy911_5 a skos:concept ;
     skos:prefLabel "Makrostruktur"@de .
 
 physik:phy911_7 a skos:concept ;
-    skos:prefLabel "Mehrstoffsysteme. Mischkristalle. Legierungen. Umwandlungen. Ordnung-Unordnung (Vgl. a. phy 279.4 u. phy  876.5)"@de .
+    skos:prefLabel "Mehrstoffsysteme. Mischkristalle. Legierungen. Umwandlungen. Ordnung-Unordnung (Vgl. a. phy 279.4 u. phy  876.5)"@de ;
+    rdfs:seeAlso physik:phy279_4 ;
+    rdfs:seeAlso physik:phy876_5 .
 
 physik:phy911_8 a skos:concept ;
     skos:prefLabel "Gitterfehler. Aktivierungsvorgänge. Diffusion. Strahlungseinfluß"@de .
@@ -5000,13 +5130,23 @@ physik:phy912_7 a skos:concept ;
     skos:prefLabel "Atomphysikalische Eigenschaften. Resonanz. Relaxation"@de .
 
 physik:phy912_7 a skos:concept ;
-    skos:prefLabel "Grenz- u. Oberflächenphysik der Metalle. Metalle und Gase (NS bei phy  942)"@de .
+    skos:prefLabel "Grenz- u. Oberflächenphysik der Metalle. Metalle und Gase"@de ;
+    rdfs:seeAlso "NS bei phy  942"@de ;
+    rdfs:seeAlso physik:phy942 .
 
 physik:phy912_9 a skos:concept ;
     skos:prefLabel "Sonstige physikalische Erscheinungen u. Eigenschaften"@de .
 
 physik:phy913 a skos:concept ;
-    skos:prefLabel "Physik einzelner Metalle u. Legierungen"@de .
+    skos:prefLabel "Physik einzelner Metalle u. Legierungen"@de ;
+    skos:narrower physik:phy913_1 ;
+    skos:narrower physik:phy913_2 ;
+    skos:narrower physik:phy913_3 ;
+    skos:narrower physik:phy913_5 ;
+    skos:narrower physik:phy913_6 ;
+    skos:narrower physik:phy913_7 ;
+    skos:narrower physik:phy913_8 ;
+    skos:narrower physik:phy913_9 .
 
 physik:phy913_1 a skos:concept ;
     skos:prefLabel "Leichtmetalle (Alkali-, Erdalkalimetalle, Aluminium u.a.)"@de .
@@ -5033,10 +5173,18 @@ physik:phy913_9 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy915 a skos:concept ;
-    skos:prefLabel "Halbleiter u. Halbleitereigenschaften (Halbmetalle s. phy  921) (Amorphe Leiter s. phy  952.5)"@de .
+    skos:prefLabel "Halbleiter u. Halbleitereigenschaften"@de ;
+    rdfs:seeAlso "Halbmetalle s. phy  921"@de ;
+    rdfs:seeAlso physik:phy921 ;
+    rdfs:seeAlso "Amorphe Leiter s. phy  952.5"@de ;
+    rdfs:seeAlso physik:phy952_5 .
 
 physik:phy916 a skos:concept ;
-    skos:prefLabel "Physikalische Erscheinungen u. Fragen allg. Art"@de .
+    skos:prefLabel "Physikalische Erscheinungen u. Fragen allg. Art"@de ;
+    skos:narrower physik:phy916_2 ;
+    skos:narrower physik:phy916_4 ;
+    skos:narrower physik:phy916_6 ;
+    skos:narrower physik:phy916_8 .
 
 physik:phy916_2 a skos:concept ;
     skos:prefLabel "Messung. Untersuchung"@de .
@@ -5075,19 +5223,26 @@ physik:phy918_6 a skos:concept ;
     skos:prefLabel "Optische Eigenschaften"@de .
 
 physik:phy918_8 a skos:concept ;
-    skos:prefLabel "Grenz- und Oberflächenerscheinungen (NS bei phy  942.7)"@de .
+    skos:prefLabel "Grenz- und Oberflächenerscheinungen"@de ;
+    rdfs:narrower "NS bei phy  942.7"@de ;
+    rdfs:narrower physik:phy942_7 .
 
 physik:phy918_9 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy920 a skos:concept ;
-    skos:prefLabel "Halbleiterarten. Halbmetallarten"@de .
+    skos:prefLabel "Halbleiterarten. Halbmetallarten"@de ;
+    skos:narrower physik:phy920_5 ;
 
 physik:phy920_5 a skos:concept ;
     skos:prefLabel "nach physikalischen Gesichtspunkten (d-, n-, p-Typen, hohe Temperaturen, ...)"@de .
 
 physik:phy921 a skos:concept ;
-    skos:prefLabel "Anorganische Halbleiter und Halbmetalle"@de .
+    skos:prefLabel "Anorganische Halbleiter und Halbmetalle"@de ;
+    skos:narrower physik:phy921_2 ;
+    skos:narrower physik:phy921_4 ;
+    skos:narrower physik:phy921_6 ;
+    skos:narrower physik:phy921_8 .
 
 physik:phy921_2 a skos:concept ;
     skos:prefLabel "Silizium. Germanium"@de .
@@ -5096,22 +5251,32 @@ physik:phy921_4 a skos:concept ;
     skos:prefLabel "Gallium. Indium. Antimon. Arsen. Tellur. Selen"@de .
 
 physik:phy921_6 a skos:concept ;
-    skos:prefLabel "Halbleitende III-V- und II-VI-Verbindungen. III-V-Halbmetalle . ????????"@de .
+    skos:prefLabel "Halbleitende III-V- und II-VI-Verbindungen. III-V-Halbmetalle"@de .
 
 physik:phy921_8 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy922 a skos:concept ;
-    skos:prefLabel "Organische Halbleiter"@de .
+    skos:prefLabel "Organische Halbleiter"@de ;
+    skos:narrower physik:phy922_5 .
 
 physik:phy922_5 a skos:concept ;
     skos:prefLabel "Einzelnes"@de .
 
 physik:phy924 a skos:concept ;
-    skos:prefLabel "Anwendungen (soweit nicht bei elt 660 ff.)"@de .
+    skos:prefLabel "Anwendungen"@de ;
+    rdfs:seeAlso "soweit nicht bei elt 660 ff"@de .
 
 physik:phy930 a skos:concept ;
-    skos:prefLabel "Festkörperphysik (evtl.+ Flüssigkeiten) nach Stoffgruppen (Bei Angabe einer physikal. Eigenschaft: HS dort, dann hier nur NS) (Metalle s. phy  910 / Halbleiter s.a. phy  915 / Gläser s. phy  952)"@de .
+    skos:prefLabel "Festkörperphysik (evtl.+ Flüssigkeiten) nach Stoffgruppen"@de ;
+    rdfs:comment "Bei Angabe einer physikal. Eigenschaft: HS dort, dann hier nur NS"@de ;
+    rdfs:seeAlso "Metalle s. phy  910"@de ;
+    rdfs:seeAlso physik:phy910 ;
+    rdfs:seeAlso "Halbleiter s.a. phy  915"@de ;
+    rdfs:seeAlso physik:phy915 ;
+    rdfs:seeAlso "Gläser s. phy  952"@de ;
+    rdfs:seeAlso physik:phy952 ;
+    skos:narrower physik:phy930_5 .
 
 physik:phy930_5 a skos:concept ;
     skos:prefLabel "Fragen allg.Art"@de .
@@ -5132,19 +5297,25 @@ physik:phy931_8 a skos:concept ;
     skos:prefLabel "Einzelnes (Halogenide, zusammengesetzte Anionen, Titanate u. Niobate, Doppel- u. Komplexverbindungen, Spinelle u.a.)"@de .
 
 physik:phy932_2 a skos:concept ;
-    skos:prefLabel "Silikate (Gläser s. phy  952)"@de .
+    skos:prefLabel "Silikate"@de ;
+    rdfs:seeAlso "Gläser s. phy  952"@de ;
+    rdfs:seeAlso physik:phy952 .
 
 physik:phy932_4 a skos:concept ;
     skos:prefLabel "Quarz"@de .
 
 physik:phy933 a skos:concept ;
-    skos:prefLabel "Elementare Nichtmetalle"@de .
+    skos:prefLabel "Elementare Nichtmetalle"@de ;
+    skos:narrower physik:phy933_5 .
 
 physik:phy933_5 a skos:concept ;
     skos:prefLabel "Einzelnes"@de .
 
 physik:phy934 a skos:concept ;
-    skos:prefLabel "Sonstige Mineralien"@de .
+    skos:prefLabel "Sonstige Mineralien"@de ;
+    skos:narrower physik:phy934_2 ;
+    skos:narrower physik:phy934_7 ;
+    skos:narrower physik:phy934_9 .
 
 physik:phy934_2 a skos:concept ;
     skos:prefLabel "Edelsteine. Diamant"@de .
@@ -5156,7 +5327,9 @@ physik:phy934_9 a skos:concept ;
     skos:prefLabel "Eis. Schnee"@de .
 
 physik:phy935 a skos:concept ;
-    skos:prefLabel "Organische Verbindungen"@de .
+    skos:prefLabel "Organische Verbindungen"@de ;
+    skos:narrower physik:phy935_2 ;
+    skos:narrower physik:phy935_9 .
 
 physik:phy935_2 a skos:concept ;
     skos:prefLabel "Kohlenwasserstoffe. Erdölprodukte"@de .
@@ -5171,7 +5344,14 @@ physik:phy937 a skos:concept ;
     skos:prefLabel "Edelgase"@de .
 
 physik:phy940 a skos:concept ;
-    skos:prefLabel "Dünne Schichten u. Filme"@de .
+    skos:prefLabel "Dünne Schichten u. Filme"@de ;
+    skos:narrower physik:phy940_1 ;
+    skos:narrower physik:phy940_2 ;
+    skos:narrower physik:phy940_3 ;
+    skos:narrower physik:phy940_5 ;
+    skos:narrower physik:phy940_6 ;
+    skos:narrower physik:phy940_7 ;
+    skos:narrower physik:phy940_8 .
 
 physik:phy940_1 a skos:concept ;
     skos:prefLabel "Herstellung. Messung. Aufdampfschichten"@de .
@@ -5182,8 +5362,12 @@ physik:phy940_2 a skos:concept ;
 physik:phy940_3 a skos:concept ;
     skos:prefLabel "Mechanische, thermische Eigenschaften"@de .
 
+# Verweis auf eine gestrichene Kategorie
 physik:phy940_5 a skos:concept ;
-    skos:prefLabel "Elektrische, dia para magnet. Eigenschaften (Ferromagnet. dünne Schichten s. phy 311.4)"@de .
+    skos:prefLabel "Elektrische, dia para magnet. Eigenschaften"@de ;
+    rdfs:seeAlso "Ferromagnet. dünne Schichten s. phy 311.4"@de .
+    # rdfs:seeAlso "Ferromagnet. dünne Schichten s. phy 311.4"@de ;
+    # rdfs:seeAlso physik:phy311_4 .
 
 physik:phy940_6 a skos:concept ;
     skos:prefLabel "Optische Eigenschaften"@de .
@@ -5195,7 +5379,19 @@ physik:phy940_8 a skos:concept ;
     skos:prefLabel "Anwendungen"@de .
 
 physik:phy942 a skos:concept ;
-    skos:prefLabel "Grenzflächen (Elektronen u. Ionen an u. aus Grenzflächen s. phy 382 ff.) (Grenz- u. Oberflächen von Flüssigkeiten s. phy  972.4)"@de .
+    skos:prefLabel "Grenzflächen"@de ;
+    rdfs:seeAlso "Elektronen u. Ionen an u. aus Grenzflächen s. phy 382 ff"@de ;
+    rdfs:seeAlso physik:phy382 ;
+    rdfs:seeAlso "Grenz- u. Oberflächen von Flüssigkeiten s. phy  972.4"@de ;
+    rdfs:seeAlso physik:phy972_4 ;
+    skos:narrower physik:phy942_1 ;
+    skos:narrower physik:phy942_2 ;
+    skos:narrower physik:phy942_3 ;
+    skos:narrower physik:phy942_4 ;
+    skos:narrower physik:phy942_5 ;
+    skos:narrower physik:phy942_6 ;
+    skos:narrower physik:phy942_7 ;
+    skos:narrower physik:phy942_9 .
 
 physik:phy942_1 a skos:concept ;
     skos:prefLabel "Untersuchungsverfahren"@de .
@@ -5204,19 +5400,26 @@ physik:phy942_2 a skos:concept ;
     skos:prefLabel "Oberflächen fester Körper. Strahlungseinfluß"@de .
 
 physik:phy942_3 a skos:concept ;
-    skos:prefLabel "Thermodynamik der Grenzflächen. Sorption, Adsorption. Desorption. Adhäsion. Benetzbarkeit. Flüssig-fest-Grenzflächen (Katalyse s. che 135)"@de .
+    skos:prefLabel "Thermodynamik der Grenzflächen. Sorption, Adsorption. Desorption. Adhäsion. Benetzbarkeit. Flüssig-fest-Grenzflächen"@de ;
+    rdfs:seeAlso "Katalyse s. che 135"@de .
 
 physik:phy942_4 a skos:concept ;
     skos:prefLabel "Reibung (makro- u. mikrophysikalisch)"@de .
 
 physik:phy942_5 a skos:concept ;
-    skos:prefLabel "Elektrische Erscheinungen an Grenzflächen. Aufladung. Dielektrische Eigenschaften (Elektrete s. phy 342.2)"@de .
+    skos:prefLabel "Elektrische Erscheinungen an Grenzflächen. Aufladung. Dielektrische Eigenschaften"@de ;
+    rdfs:seeAlso "Elektrete s. phy 342.2"@de ;
+    rdfs:seeAlso physik:phy342_2 .
 
 physik:phy942_6 a skos:concept ;
     skos:prefLabel "Grenzflächen von Leitern. Kontaktpotentiale u.ä."@de .
 
 physik:phy942_7 a skos:concept ;
-    skos:prefLabel "Grenzflächen einzelner Stoffklassen (Metalle s. 912.7 NS hier / Halbleiter s. 918.8 / NS hier)"@de .
+    skos:prefLabel "Grenzflächen einzelner Stoffklassen"@de ;
+    rdfs:seeAlso "Metalle s. phy 912.7 NS hier"@de ;
+    rdfs:seeAlso physik:phy912_7 ;
+    rdfs:seeAlso "Halbleiter s. phy 918.8 NS hier"@de ;
+    rdfs:seeAlso physik:phy918_8 ;
 
 physik:phy942_9 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
@@ -5240,7 +5443,9 @@ physik:phy946_9 a skos:concept ;
     skos:prefLabel "Gitterfehler. Diffusion. Strahleneinwirkung"@de .
 
 physik:phy947 a skos:concept ;
-    skos:prefLabel "Eigenschaften der makromolekularen Stoffe"@de .
+    skos:prefLabel "Eigenschaften der makromolekularen Stoffe"@de ;
+    skos:narrower physik:phy947_2 ;
+    skos:narrower physik:phy947_4 .
 
 physik:phy947_2 a skos:concept ;
     skos:prefLabel "Mechanische, akustische, thermische, elastoplastische, rheologische Eigenschaften"@de .
@@ -5255,7 +5460,8 @@ physik:phy949 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy952 a skos:concept ;
-    skos:prefLabel "Physik des amorphen u. glasförmigen Zustandes. Gläser. Unterkühlte Flüssigkeiten"@de .
+    skos:prefLabel "Physik des amorphen u. glasförmigen Zustandes. Gläser. Unterkühlte Flüssigkeiten"@de ;
+    skos:narrower physik:phy952_5 .
 
 physik:phy952_5 a skos:concept ;
     skos:prefLabel "Einzelnes (Elektrische Erscheinungen, amorphe Leiter, ...)"@de .
@@ -5303,13 +5509,16 @@ physik:phy971_5 a skos:concept ;
     skos:prefLabel "Einzelnes"@de .
 
 physik:phy971_8 a skos:concept ;
-    skos:prefLabel "Anisotrope Flüssigkeiten. Kristallinflüssige Phasen. (Vgl. a. phy  852.8)"@de .
+    skos:prefLabel "Anisotrope Flüssigkeiten. Kristallinflüssige Phasen"@de ;
+    rdfs:seeAlso physik:phy852_8 .
 
 physik:phy972_2 a skos:concept ;
-    skos:prefLabel "Transporteigenschaften. Diffusion. (Vgl. a. phy 284.6)"@de .
+    skos:prefLabel "Transporteigenschaften. Diffusion"@de ;
+    rdfs:seeAlso physik:phy284_6 .
 
 physik:phy972_4 a skos:concept ;
-    skos:prefLabel "Oberflächenspannung. Kapillarität. Grenzflächen. (Vgl. a. phy  942)"@de .
+    skos:prefLabel "Oberflächenspannung. Kapillarität. Grenzflächen"@de ;
+    rdfs:seeAlso physik:phy942 .
 
 physik:phy972_6 a skos:concept ;
     skos:prefLabel "Optische Eigenschaften. Absorptionsspektren"@de .
@@ -5324,7 +5533,12 @@ physik:phy972_9 a skos:concept ;
     skos:prefLabel "Sonstige Erscheinungen u. Wirkungen"@de .
 
 physik:phy973 a skos:concept ;
-    skos:prefLabel "Einzelne Flüssigkeitsarten"@de .
+    skos:prefLabel "Einzelne Flüssigkeitsarten"@de ;
+    skos:narrower physik:phy973_1 ;
+    skos:narrower physik:phy973_2 ;
+    skos:narrower physik:phy973_3 ;
+    skos:narrower physik:phy973_4 ;
+    skos:narrower physik:phy973_8 .
 
 physik:phy973_1 a skos:concept ;
     skos:prefLabel "Wasser                                              ."@de .
@@ -5345,16 +5559,19 @@ physik:phy974 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy980 a skos:concept ;
-    skos:prefLabel "Gemeinsames über Flüssigkeiten u. Gase"@de .
+    skos:prefLabel "Gemeinsames über Flüssigkeiten u. Gase"@de ;
+    skos:narrower physik:phy980_2 ;
+    skos:narrower physik:phy980_8 .
 
 physik:phy980_2 a skos:concept ;
-    skos:prefLabel "Physik der komprimierten Gase u. Flüssigkeiten.  (Vgl. a. phy …)"@de .
+    skos:prefLabel "Physik der komprimierten Gase u. Flüssigkeiten"@de .
 
 physik:phy980_8 a skos:concept ;
-    skos:prefLabel "Sonstiges                                ."@de .
+    skos:prefLabel "Sonstiges"@de .
 
 physik:phy982 a skos:concept ;
-    skos:prefLabel "Physik der Gase i.a."@de .
+    skos:prefLabel "Physik der Gase i.a."@de ;
+    skos:narrower physik:phy982_5 .
 
 physik:phy982_5 a skos:concept ;
     skos:prefLabel "Einzelnes"@de .
