@@ -451,7 +451,7 @@ physik:phy87_9 a skos:Concept ;
     skos:prefLabel "Sonstiges"@de .
 
 physik:phy89 a skos:Concept ;
-    skos:prefLabel "Physikalische u. physikalisch-technische Prüfanstalten u. -Organisationen"@de 
+    skos:prefLabel "Physikalische u. physikalisch-technische Prüfanstalten u. -Organisationen"@de ;
     skos:narrower physik:phy89_2 ;
     skos:narrower physik:phy89_4 .
 
@@ -462,7 +462,7 @@ physik:phy89_4 a skos:Concept ;
     skos:prefLabel "Ausland"@de .
 
 physik:phy91 a skos:Concept ;
-    skos:prefLabel "Physikalische Labor- u. Werktechnik"@de 
+    skos:prefLabel "Physikalische Labor- u. Werktechnik"@de ;
     skos:narrower physik:phy91_2 ;
     skos:narrower physik:phy91_4 ;
     skos:narrower physik:phy91_5 ;
@@ -699,7 +699,7 @@ physik:phy127_1 a skos:Concept ;
 
 physik:phy127_2 a skos:Concept ;
     skos:prefLabel "Mechanische Relaxation. Hysteresis"@de ;
-    rdfs:seeAlso phsyik:phy912_2 .
+    rdfs:seeAlso physik:phy912_2 .
 
 physik:phy127_4 a skos:Concept ;
     skos:prefLabel "Plastisches Fließen. Kriechen"@de .
@@ -1151,7 +1151,7 @@ physik:phy198 a skos:Concept ;
     skos:narrower physik:phy198_3 ;
     skos:narrower physik:phy198_5 ;
     skos:narrower physik:phy198_7 ;
-    skos:narrower physik:phy198_9 ;
+    skos:narrower physik:phy198_9 .
     
 physik:phy198_1 a skos:Concept ; 
     skos:prefLabel "Fragen allg. Art (Nichtlineare Akustik, Schallwind, akust. Störungen u.ä.)"@de . 
@@ -2327,7 +2327,7 @@ physik:phy391 a skos:Concept ;
     skos:prefLabel "Elektronenmikroskop u. –mikroskopie"@de ;
     skos:narrower physik:phy391_2 ;
     skos:narrower physik:phy391_4 ;
-    skos:narrower physik:phy391_8 ;
+    skos:narrower physik:phy391_8 .
 
 physik:phy391_2 a skos:Concept ;
     skos:prefLabel "Arten und Einzelfragen (Elektronenspiegelmikroskop, Raster-Elektronenmikroskop, ...)"@de .
@@ -2619,7 +2619,7 @@ physik:phy444 a skos:Concept ;
 
 physik:phy450 a skos:Concept ;
     skos:prefLabel "Physikalische Optik"@de ;
-    skos:narrower physik:phy450_5 ;
+    skos:narrower physik:phy450_5 .
 
 physik:phy450_5 a skos:Concept ;
     skos:prefLabel "Darstellungen der physikal. Optik unter besonderen Gesichtspunkten"@de .
@@ -2675,7 +2675,7 @@ physik:phy458 a skos:Concept ;
     skos:prefLabel "Lichtausbreitung in Medien besonderer Struktur. Lichtleiter"@de ;
     skos:narrower physik:phy458_2 ;
     skos:narrower physik:phy458_4 ;
-    skos:narrower physik:phy458_6 :
+    skos:narrower physik:phy458_6 .
 
 physik:phy458_2 a skos:Concept ;
     skos:prefLabel "Inhomogene, mikrostrukturierte, geschichtete Medien"@de .
@@ -3289,7 +3289,7 @@ physik:phy612 a skos:concept ;
 physik:phy613 a skos:concept ;
     skos:prefLabel "Mesonen. Mesonenphysik"@de ;
     rdfs:seeAlso "Mesonenfeldtheorie s. phy  659.4"@de ;
-    rdfs:seeAlso physik:phy659_4 .
+    rdfs:seeAlso physik:phy659_4 ;
     skos:narrower physik:phy613_1 ;
     skos:narrower physik:phy613_2 ;
     skos:narrower physik:phy613_4 ;
@@ -3962,8 +3962,6 @@ physik:phy721 a skos:concept ;
 
 physik:phy723 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
-
-    skos:prefLabel "Atomhülle. Moleküle. Zwischenmolekulare Erscheinungen"@de .
 
 physik:phy730 a skos:concept ;
     skos:prefLabel "Allgemeines"@de .
@@ -5009,7 +5007,7 @@ physik:phy890 a skos:concept ;
     rdfs:seeAlso "Halbleiter s. phy 915"@de ;
     rdfs:seeAlso physik:phy915 ;
     rdfs:seeAlso "Dielektrische Eigenschaften s. phy 340 ff"@de ;
-    rdfs:seeAlso physik:phy340 ;
+    rdfs:seeAlso physik:phy340 .
 
 physik:phy891 a skos:concept ;
     skos:prefLabel "Elektrischer Leitungsmechanismus"@de ;
@@ -5232,7 +5230,7 @@ physik:phy918_9 a skos:concept ;
 
 physik:phy920 a skos:concept ;
     skos:prefLabel "Halbleiterarten. Halbmetallarten"@de ;
-    skos:narrower physik:phy920_5 ;
+    skos:narrower physik:phy920_5 .
 
 physik:phy920_5 a skos:concept ;
     skos:prefLabel "nach physikalischen Gesichtspunkten (d-, n-, p-Typen, hohe Temperaturen, ...)"@de .
@@ -5419,7 +5417,7 @@ physik:phy942_7 a skos:concept ;
     rdfs:seeAlso "Metalle s. phy 912.7 NS hier"@de ;
     rdfs:seeAlso physik:phy912_7 ;
     rdfs:seeAlso "Halbleiter s. phy 918.8 NS hier"@de ;
-    rdfs:seeAlso physik:phy918_8 ;
+    rdfs:seeAlso physik:phy918_8 .
 
 physik:phy942_9 a skos:concept ;
     skos:prefLabel "Sonstiges"@de .
