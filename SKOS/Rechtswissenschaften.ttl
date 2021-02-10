@@ -158,7 +158,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-004-019 ,
                                                             :jur-020-029 ,
                                                             :jur-030-049 ,
-                                                            :jur-050-059.4 ;
+                                                            :jur-030-059 ;
              rdfs:label "Rechtliche Grundlagen"@de .
 
 
@@ -686,6 +686,14 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
              rdfs:label "Rechtsgeschichte"@de .
 
 
+###  http://uricorn.fly/tib_lok_sys#jur-030-059
+:jur-030-059 rdf:type owl:NamedIndividual ,
+                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+             <http://www.w3.org/2004/02/skos/core#broader> :jur-004-059 ;
+             <http://www.w3.org/2004/02/skos/core#narrower> :jur-050-059.4 ,
+                                                            :jur-059.5 .
+
+
 ###  http://uricorn.fly/tib_lok_sys#jur-031
 :jur-031 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -863,7 +871,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-050-059.4
 :jur-050-059.4 rdf:type owl:NamedIndividual ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
-               <http://www.w3.org/2004/02/skos/core#broader> :jur-004-059 ;
+               <http://www.w3.org/2004/02/skos/core#broader> :jur-030-059 ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-050 ,
                                                               :jur-052 ,
                                                               :jur-053 ,
@@ -921,14 +929,13 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 :jur-059 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
          <http://www.w3.org/2004/02/skos/core#broader> :jur-050-059.4 ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-059.5 ;
          rdfs:label "Deutsche Rechtsgeschichte [1949- heute]"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-059.5
 :jur-059.5 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-059 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-030-059 ;
            rdfs:label "Europäische Rechtsgeschichte"@de .
 
 
@@ -961,6 +968,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
                                                             :jur-071 ,
                                                             :jur-072 ,
                                                             :jur-073-075 ,
+                                                            :jur-076-mb-077 ,
                                                             :jur-078-079 ,
                                                             :jur-080-082 ,
                                                             :jur-083-085 ,
@@ -1639,6 +1647,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-076-mb-077
 :jur-076-mb-077 rdf:type owl:NamedIndividual ,
                          <http://www.w3.org/2004/02/skos/core#Concept> ;
+                <http://www.w3.org/2004/02/skos/core#broader> :jur-060-098 ;
                 <http://www.w3.org/2004/02/skos/core#narrower> :jur-076-nv ,
                                                                :jur-076-pk ,
                                                                :jur-076-pm ,
@@ -1982,7 +1991,9 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 :jur-083-085 rdf:type owl:NamedIndividual ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#broader> :jur-060-098 ;
-             <http://www.w3.org/2004/02/skos/core#narrower> :jur-083 ;
+             <http://www.w3.org/2004/02/skos/core#narrower> :jur-083 ,
+                                                            :jur-084 ,
+                                                            :jur-085 ;
              rdfs:label "Humanitäres Völkerrecht"@de .
 
 
@@ -2017,12 +2028,14 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-084
 :jur-084 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-083-085 ;
          rdfs:label "See-, Land- und Luftkrieg"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-085
 :jur-085 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-083-085 ;
          rdfs:label "Recht der Militärbündnisse"@de .
 
 
@@ -2396,9 +2409,6 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
                                                             :jur-116 ,
                                                             :jur-117-118 ,
                                                             :jur-119-122 ,
-                                                            :jur-120 ,
-                                                            :jur-121 ,
-                                                            :jur-122 ,
                                                             :jur-123-124 ,
                                                             :jur-125 ,
                                                             :jur-127-129 ;
@@ -3178,8 +3188,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-120
 :jur-120 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#broader> :jur-104-129 ,
-                                                       :jur-119-122 ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-119-122 ;
          <http://www.w3.org/2004/02/skos/core#narrower> :jur-120.1 ,
                                                         :jur-120.3 ,
                                                         :jur-120.4 ,
@@ -3234,8 +3243,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-121
 :jur-121 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#broader> :jur-104-129 ,
-                                                       :jur-119-122 ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-119-122 ;
          <http://www.w3.org/2004/02/skos/core#narrower> :jur-121.2 ,
                                                         :jur-121.3 ,
                                                         :jur-121.5 ,
@@ -3274,8 +3282,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-122
 :jur-122 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#broader> :jur-104-129 ,
-                                                       :jur-119-122 ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-119-122 ;
          <http://www.w3.org/2004/02/skos/core#narrower> :jur-122.1 ,
                                                         :jur-122.3 ,
                                                         :jur-122.4 ,
@@ -3554,8 +3561,22 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-130-132 ,
                                                             :jur-133-134 ,
                                                             :jur-135-179 ,
+                                                            :jur-169.5 ,
+                                                            :jur-170 ,
+                                                            :jur-171 ,
+                                                            :jur-172 ,
+                                                            :jur-174 ,
+                                                            :jur-175 ,
+                                                            :jur-176 ,
+                                                            :jur-177 ,
+                                                            :jur-178 ,
+                                                            :jur-179 ,
                                                             :jur-180-206 ,
+                                                            :jur-196 ,
+                                                            :jur-197 ,
+                                                            :jur-198 ,
                                                             :jur-210-299 ,
+                                                            :jur-254 ,
                                                             :jur-300-329 ,
                                                             :jur-330-390 ,
                                                             :jur-392-395 ,
@@ -3821,16 +3842,8 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-135 ,
-                                                            :jur-136 ,
-                                                            :jur-137 ,
-                                                            :jur-138 ,
-                                                            :jur-139 ,
-                                                            :jur-140 ,
-                                                            :jur-141 ,
-                                                            :jur-143 ,
-                                                            :jur-145.1 ,
-                                                            :jur-145.3 ,
-                                                            :jur-145.6 ,
+                                                            :jur-135.1 ,
+                                                            :jur-135.2-145 ,
                                                             :jur-148-151 ,
                                                             :jur-152 ,
                                                             :jur-153-154 ,
@@ -3849,22 +3862,24 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-135.1
 :jur-135.1 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-135 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-135-179 ;
            rdfs:label "Verfassungsrecht. Deutschland - Einzelfragen"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-135.2
 :jur-135.2 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-135 ,
-                                                         :jur-135.2-145 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-135.2-145 ;
            rdfs:label "Menschenrechte im Staatsrecht / Grundrechte / Grundpflichten"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-135.2-145
 :jur-135.2-145 rdf:type owl:NamedIndividual ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
+               <http://www.w3.org/2004/02/skos/core#broader> :jur-135-179 ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-135.2 ,
+                                                              :jur-135.3 ,
+                                                              :jur-135.4 ,
                                                               :jur-136 ,
                                                               :jur-137 ,
                                                               :jur-138 ,
@@ -3877,14 +3892,14 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-135.3
 :jur-135.3 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-135 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-135.2-145 ;
            rdfs:label "Freie Entfaltung der Persönlichkeit / Freiheitsrechte (im allgemeinen, nur GG)"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-135.4
 :jur-135.4 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-135 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-135.2-145 ;
            rdfs:label "Menschenwürde / Körperliche Unversehrtheit / Recht auf Leben / Recht auf Arbeit / Persönlichkeitsschutz / Informationelle Selbstbestimmung"@de .
 
 
@@ -3912,8 +3927,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-136
 :jur-136 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#broader> :jur-135-179 ,
-                                                       :jur-135.2-145 ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-135.2-145 ;
          <http://www.w3.org/2004/02/skos/core#narrower> :jur-136.5 ,
                                                         :jur-136.8 ;
          rdfs:label "Glaubens-, Gewissens- und Bekenntnisfreiheit / Geistesfreiheit"@de .
@@ -3936,24 +3950,21 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-137
 :jur-137 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#broader> :jur-135-179 ,
-                                                       :jur-135.2-145 ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-135.2-145 ;
          rdfs:label "Freiheit der Wissenschaft, Forschung und Lehre"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-138
 :jur-138 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#broader> :jur-135-179 ,
-                                                       :jur-135.2-145 ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-135.2-145 ;
          rdfs:label "Ehe und Familie"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-139
 :jur-139 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#broader> :jur-135-179 ,
-                                                       :jur-135.2-145 ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-135.2-145 ;
          <http://www.w3.org/2004/02/skos/core#narrower> :jur-139.5 ,
                                                         :jur-139.6 ;
          rdfs:label "Versammlungsfreiheit / Demonstrationsrecht / Vereinigungsfreiheit / Vereinsfreiheit"@de .
@@ -3976,52 +3987,49 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-140
 :jur-140 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#broader> :jur-135-179 ,
-                                                       :jur-135.2-145 ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-135.2-145 ;
          rdfs:label "Berufsfreiheit"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-141
 :jur-141 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#broader> :jur-135-179 ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-135.2-145 ;
          rdfs:label "Unverletzlichkeit der Wohnung"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-143
 :jur-143 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#broader> :jur-135-179 ,
-                                                       :jur-135.2-145 ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-143.5 ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-135.2-145 ;
          rdfs:label "Eigentumsgarantie / Eigentum"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-143.5
 :jur-143.5 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-143 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-135.2-145 ;
            rdfs:label "Sozialisierung"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-145.1
 :jur-145.1 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-135-179 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-135.2-145 ;
            rdfs:label "Asylrecht"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-145.3
 :jur-145.3 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-135-179 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-135.2-145 ;
            rdfs:label "Petitionsrecht"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-145.6
 :jur-145.6 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-135-179 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-135.2-145 ;
            rdfs:label "Widerstandsrecht"@de .
 
 
@@ -4046,54 +4054,48 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 :jur-150 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
          <http://www.w3.org/2004/02/skos/core#broader> :jur-148-151 ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-150.2 ,
-                                                        :jur-150.3 ,
-                                                        :jur-150.4 ,
-                                                        :jur-150.5 ,
-                                                        :jur-150.6 ,
-                                                        :jur-150.7 ;
          rdfs:label "Bund - Allgemeine Grundsätze des Verfassungsrechts"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-150.2
 :jur-150.2 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-150 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-148-151 ;
            rdfs:label "Bundesstaatlichkeit"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-150.3
 :jur-150.3 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-150 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-148-151 ;
            rdfs:label "Demokratie"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-150.4
 :jur-150.4 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-150 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-148-151 ;
            rdfs:label "Föderalismus"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-150.5
 :jur-150.5 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-150 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-148-151 ;
            rdfs:label "Rechtsstaatlichkeit"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-150.6
 :jur-150.6 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-150 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-148-151 ;
            rdfs:label "Sozialstaatlichkeit"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-150.7
 :jur-150.7 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-150 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-148-151 ;
            rdfs:label "Neugliederung des Bundesgebietes"@de .
 
 
@@ -4101,22 +4103,20 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 :jur-151 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
          <http://www.w3.org/2004/02/skos/core#broader> :jur-148-151 ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-151.3 ,
-                                                        :jur-151.4 ;
          rdfs:label "Staatsgewalt / Gewaltenteilung - Souveränität"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-151.3
 :jur-151.3 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-151 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-148-151 ;
            rdfs:label "Hoheitsrechte des Bundes / Übertragung von Hoheitsrechten"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-151.4
 :jur-151.4 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-151 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-148-151 ;
            rdfs:label "Bündnisrecht / Staatsgewalt. Verhältnis nach außen"@de .
 
 
@@ -4411,12 +4411,14 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-169.5
 :jur-169.5 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
            rdfs:label "Vereinigung Deutschlands"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-170
 :jur-170 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
          <http://www.w3.org/2004/02/skos/core#narrower> :jur-170.3 ;
          rdfs:label "Verfassungsrecht. Länder / Verfassungsgerichtsbarkeit. Länder"@de .
 
@@ -4438,6 +4440,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-171
 :jur-171 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
          <http://www.w3.org/2004/02/skos/core#narrower> :jur-171.1 ,
                                                         :jur-171.2 ,
                                                         :jur-171.3 ,
@@ -4476,6 +4479,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-172
 :jur-172 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
          <http://www.w3.org/2004/02/skos/core#narrower> :jur-172.3 ,
                                                         :jur-172.6 ;
          rdfs:label "Verfassungrecht und Verfassungsgerichtsbarkeit. Bremen"@de .
@@ -4498,6 +4502,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-174
 :jur-174 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
          <http://www.w3.org/2004/02/skos/core#narrower> :jur-174.3 ,
                                                         :jur-174.6 ,
                                                         :jur-174.8 ;
@@ -4528,18 +4533,21 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-175
 :jur-175 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
          rdfs:label "Verfassungrecht und Verfassungsgerichtsbarkeit. Schleswig-Holstein"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-176
 :jur-176 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
          rdfs:label "Verfassungrecht und Verfassungsgerichtsbarkeit. Mecklenburg-Vorpommern"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-177
 :jur-177 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
          <http://www.w3.org/2004/02/skos/core#narrower> :jur-177.5 ;
          rdfs:label "Verfassungrecht und Verfassungsgerichtsbarkeit. Sachsen"@de .
 
@@ -4554,12 +4562,14 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-178
 :jur-178 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
          rdfs:label "Verfassungrecht und Verfassungsgerichtsbarkeit. Brandenburg"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-179
 :jur-179 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
          rdfs:label "Verfassungrecht und Verfassungsgerichtsbarkeit. Thüringen"@de .
 
 
@@ -4921,18 +4931,21 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-196
 :jur-196 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
          rdfs:label "Verwaltungszustellung"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-197
 :jur-197 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
          rdfs:label "Verwaltungszwangsverfahren / Verwaltungsvollstreckung"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-198
 :jur-198 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
          rdfs:label "Verwaltungskostenrecht / Gebührenordnungen"@de .
 
 
@@ -6118,6 +6131,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-254
 :jur-254 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
          rdfs:label "Sonn- und Feiertagsrecht"@de .
 
 
@@ -7107,7 +7121,8 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#broader> :jur-130-428 ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-300-308 ,
-                                                            :jur-310-329 ;
+                                                            :jur-310-329 ,
+                                                            :jur-323.8-324.6 ;
              rdfs:label "Finanzrecht / Geldrecht / Steuerrecht"@de .
 
 
@@ -7215,6 +7230,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-310 ,
                                                             :jur-311 ,
                                                             :jur-312 ,
+                                                            :jur-314 ,
                                                             :jur-315-317 ,
                                                             :jur-318-319 ,
                                                             :jur-320 ,
@@ -7223,10 +7239,12 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
                                                             :jur-321.8 ,
                                                             :jur-321.9 ,
                                                             :jur-322 ,
+                                                            :jur-323 ,
                                                             :jur-324 ,
                                                             :jur-324.9-325.1 ,
                                                             :jur-325.5-325.7 ,
                                                             :jur-326 ,
+                                                            :jur-327 ,
                                                             :jur-328 ,
                                                             :jur-329 ;
              rdfs:label "Steuerrecht"@de .
@@ -7281,6 +7299,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-314
 :jur-314 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-310-329 ;
          rdfs:label "Steuerverfassung"@de .
 
 
@@ -7551,6 +7570,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-323
 :jur-323 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-310-329 ;
          <http://www.w3.org/2004/02/skos/core#narrower> :jur-323.2 ;
          rdfs:label "Körperschaftsteuer"@de .
 
@@ -7565,6 +7585,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-323.8-324.6
 :jur-323.8-324.6 rdf:type owl:NamedIndividual ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
+                 <http://www.w3.org/2004/02/skos/core#broader> :jur-300-329 ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-324 ,
                                                                 :jur-324.1 ,
                                                                 :jur-324.3 ,
@@ -7732,6 +7753,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-327
 :jur-327 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-310-329 ;
          rdfs:label "Zollrecht"@de .
 
 
@@ -11020,6 +11042,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 :jur-520-546 rdf:type owl:NamedIndividual ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#broader> :jur-500-558 ;
+             <http://www.w3.org/2004/02/skos/core#narrower> :jur-543-544 ;
              rdfs:label "Zwangsvollstreckung / Insolvenzrecht"@de .
 
 
@@ -11176,6 +11199,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-543-544
 :jur-543-544 rdf:type owl:NamedIndividual ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
+             <http://www.w3.org/2004/02/skos/core#broader> :jur-520-546 ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-543 ,
                                                             :jur-544 ;
              rdfs:label "Insolvenzverfahren"@de .
