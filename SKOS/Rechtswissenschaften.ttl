@@ -11589,10 +11589,7 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-633
 :jur-633 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#broader> :jur-626-646 ,
-                                                       :jur-633-635 ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-633.1 ,
-                                                        :jur-633.5 ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-633-635 ;
          rdfs:label "Leistungsstörungen"@de .
 
 
@@ -11609,14 +11606,14 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
 ###  http://uricorn.fly/tib_lok_sys#jur-633.1
 :jur-633.1 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-633 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-633-635 ;
            rdfs:label "Leistungsstörungen. Tatbestandsmäßigkeit / Leistungsstörungen. Rechtswidrigkeit / Leistungsstörungen. Kausalität (haftungsbegründend)"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-633.5
 :jur-633.5 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-633 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-633-635 ;
            rdfs:label "Leistungsstörungen. Verschulden / Leistungsstörungen. Vorsatz / Fahrlässigkeit / Haftung für fremdes Verschulden / Erfüllungsgehilfe"@de .
 
 
@@ -11632,29 +11629,28 @@ construct {?s skos:broader ?y} where  {?y skos:narrower ?s} order by ?s
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
          <http://www.w3.org/2004/02/skos/core#broader> :jur-626-646 ,
                                                        :jur-633-635 ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-635.5 ,
-                                                        :jur-635.8 ;
          rdfs:label "Unmöglichkeit / Unvermögen"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-635.5
 :jur-635.5 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-635 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-633-635 ;
            rdfs:label "Verzug"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-635.8
 :jur-635.8 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
-           <http://www.w3.org/2004/02/skos/core#broader> :jur-635 ;
+           <http://www.w3.org/2004/02/skos/core#broader> :jur-633-635 ;
            rdfs:label "Leistungsstörungen - Einzelfragen"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-637
 :jur-637 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#broader> :jur-626-646 ;
+         <http://www.w3.org/2004/02/skos/core#broader> :jur-626-646 ,
+                                                       :jur-637 ;
          <http://www.w3.org/2004/02/skos/core#narrower> :jur-637.1 ,
                                                         :jur-637.2 ,
                                                         :jur-637.3 ,
