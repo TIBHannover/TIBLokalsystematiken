@@ -10,3 +10,4 @@ Im EXCEL-Formal liegen bisher vor
 Als SKOS-Serialisierung in Turtle liegen bisher vor
 * Mathematik
 * Physik
+* Rechtswissenschaften
