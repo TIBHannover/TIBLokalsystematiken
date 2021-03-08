@@ -179,7 +179,6 @@
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-004-019 ,
                                                             :jur-020-029 ,
-                                                            :jur-030-049 ,
                                                             :jur-030-059 ;
              <http://www.w3.org/2004/02/skos/core#notation> "jur 004-059"^^xsd:string ;
              rdfs:label "Rechtliche Grundlagen"@de .
