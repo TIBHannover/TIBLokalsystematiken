@@ -485,7 +485,7 @@
                                                             :jur-028 ,
                                                             :jur-029 ;
              <http://www.w3.org/2004/02/skos/core#notation> "jur 020-029"^^xsd:string ;
-             rdfs:label "Allgemeine Rechtslehre / Rechtstheorie / Rechtsvergleichung / Rechtsgeschichte"@de .
+             rdfs:label "Allgemeine Rechtslehre / Rechtstheorie / Rechtsvergleichung"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-020.1
@@ -709,7 +709,7 @@
                                                             :jur-041.5 ,
                                                             :jur-049 ;
              <http://www.w3.org/2004/02/skos/core#notation> "jur 030-049"^^xsd:string ;
-             rdfs:label "Rechtsgeschichte"@de .
+             rdfs:label "Rechtsgeschichte - allgemein"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-030-059
@@ -718,7 +718,7 @@
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-030-049 ,
                                                             :jur-050-059.4 ,
                                                             :jur-059.5 ;
-             <http://www.w3.org/2004/02/skos/core#editorialNote> "Knoten hat kein Label in der Excel-Vorlage, dient nur der Gruppierung untergeordneter Knoten"@de .
+             rdfs:label "Rechtsgeschichte" .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-031
@@ -13198,7 +13198,6 @@
                                                             :jur-689 ,
                                                             :jur-690 ,
                                                             :jur-691 ,
-                                                            :jur-692-692.2 ,
                                                             :jur-692-692.3 ,
                                                             :jur-692.3 ,
                                                             :jur-692.5 ,
@@ -13507,21 +13506,14 @@
          rdfs:label "Dienstbarkeiten"@de .
 
 
-###  http://uricorn.fly/tib_lok_sys#jur-692-692.2
-:jur-692-692.2 rdf:type owl:NamedIndividual ,
-                        <http://www.w3.org/2004/02/skos/core#Concept> ;
-               <http://www.w3.org/2004/02/skos/core#narrower> :jur-692 ,
-                                                              :jur-692.1 ,
-                                                              :jur-692.2 ;
-               <http://www.w3.org/2004/02/skos/core#notation> "jur 692-692.2"^^xsd:string ;
-               rdfs:label "Dienstbarkeiten"@de .
-
-
 ###  http://uricorn.fly/tib_lok_sys#jur-692-692.3
 :jur-692-692.3 rdf:type owl:NamedIndividual ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
-               <http://www.w3.org/2004/02/skos/core#narrower> :jur-692.3 ;
-               <http://www.w3.org/2004/02/skos/core#editorialNote> "Knoten hat kein Label in der Excel-Vorlage, dient nur der Gruppierung untergeordneter Knoten"@de .
+               <http://www.w3.org/2004/02/skos/core#narrower> :jur-692 ,
+                                                              :jur-692.1 ,
+                                                              :jur-692.2 ,
+                                                              :jur-692.3 ;
+               rdfs:label "Dienstbarkeiten" .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-692.1
@@ -15217,7 +15209,7 @@
                                                         :jur-823.5 ,
                                                         :jur-823.8 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 823"^^xsd:string ;
-         rdfs:label "Bankgeschäfte"@de .
+         rdfs:label "Finanzierungsgeschäfte"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-823.2
@@ -15252,7 +15244,7 @@
 :jur-823.8 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
            <http://www.w3.org/2004/02/skos/core#notation> "jur 823.8"^^xsd:string ;
-           rdfs:label "Sonstige Bankgeschäfte"@de .
+           rdfs:label "Sonstige Finanzierungsgeschäfte"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-824
@@ -15351,6 +15343,7 @@
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-829.5 ,
                                                               :jur-829.6 ,
+                                                              :jur-829.8 ,
                                                               :jur-830-833 ,
                                                               :jur-834 ,
                                                               :jur-835-836 ,
@@ -15366,6 +15359,12 @@
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
            <http://www.w3.org/2004/02/skos/core#notation> "jur 829.6"^^xsd:string ;
            rdfs:label "Gewerblicher Rechtsschutz / Immaterialgüterrecht - Grundfragen"@de .
+
+
+###  http://uricorn.fly/tib_lok_sys#jur-829.8
+:jur-829.8 rdf:type owl:NamedIndividual ,
+                    <http://www.w3.org/2004/02/skos/core#Concept> ;
+           rdfs:label "Geheimnisschutz"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-830
