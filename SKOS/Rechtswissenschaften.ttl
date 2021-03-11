@@ -8,7 +8,24 @@
 
 <http://uricorn.fly/tib_lok_sys#> rdf:type owl:Ontology ;
                                    owl:imports <http://www.w3.org/2004/02/skos/core#> ;
-                                   <http://purl.org/dc/terms/title> "Lokalsystematik der Technischen Informationsbibliothek in Hannover."@de .
+                                   <http://purl.org/dc/terms/title> "Lokalsystematik der Technischen Informationsbibliothek in Hannover für das Fachgebiet Rechtswissenschaften."@de .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://schema.vocnet.org/HierarchyNode
+<http://schema.vocnet.org/HierarchyNode> rdf:type owl:Class ;
+                                         <http://www.w3.org/2004/02/skos/core#altLabel> "Hierarchiebezeichnung"@de ,
+                                                                                        "Hierarchieelement"@de ,
+                                                                                        "Hierarchiename"@de ,
+                                                                                        "Hierarchy Node"@en ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> """Die Klasse \"Hierarchieknoten\" (Hierarchieelement) ist ein Vokabulareintrag zur hierarchischen Gliederung eines Vokabulars.
+Ein Hierarchieknoten muss immer mindestens einen Unterbegriff haben. Diese Eigenschaft teilen Hierarchieknoten mit Begriffsreihen.
+Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Hierarchieknoten"@de ;
+                                         <http://www.w3.org/2004/02/skos/core#scopeNote> "Hierarchieknoten werden nicht zur Dokumentindexierung verwendet."@de .
+
 
 #################################################################
 #    Individuals
@@ -40,6 +57,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-001-003
 :jur-001-003 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-001 ,
                                                             :jur-001.1 ,
@@ -66,6 +84,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-002-head
 :jur-002-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-002 ;
               rdfs:label "Festschriften"@de .
@@ -92,6 +111,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-003-head
 :jur-003-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-003 ;
               rdfs:label "Rechtswissenschaftler"@de .
@@ -141,6 +161,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-004-007
 :jur-004-007 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-004 ,
                                                             :jur-004.2 ,
@@ -175,6 +196,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-004-019
 :jur-004-019 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-004-007 ,
                                                             :jur-008 ,
@@ -186,6 +208,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-004-059
 :jur-004-059 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-004-019 ,
                                                             :jur-020-029 ,
@@ -399,6 +422,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-010-019
 :jur-010-019 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-010 ,
                                                             :jur-010.2 ,
@@ -462,6 +486,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-020-024
 :jur-020-024 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-020 ,
                                                             :jur-020.1 ,
@@ -489,6 +514,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-020-029
 :jur-020-029 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-020-024 ,
                                                             :jur-025-027 ,
@@ -640,6 +666,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-025-027
 :jur-025-027 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-025 ,
                                                             :jur-026 ,
@@ -679,6 +706,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-029-head
 :jur-029-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-029 ;
               rdfs:label "Recht und Dichtung"@de .
@@ -700,6 +728,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-030-049
 :jur-030-049 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-030 ,
                                                             :jur-031 ,
@@ -730,6 +759,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-030-059
 :jur-030-059 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-030-049 ,
                                                             :jur-050-059.4 ,
@@ -900,6 +930,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-050-059.4
 :jur-050-059.4 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-050 ,
                                                               :jur-052 ,
@@ -978,6 +1009,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-060-063
 :jur-060-063 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-060 ,
                                                             :jur-060-bn ,
@@ -993,6 +1025,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-060-098
 :jur-060-098 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-060-063 ,
                                                             :jur-064-067 ,
@@ -1072,6 +1105,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-064-067
 :jur-064-067 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-064 ,
                                                             :jur-064.2 ,
@@ -1284,6 +1318,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-069-head
 :jur-069-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-069 ;
               rdfs:label "Gebiet und Raum im Völkerrecht / Staatsgebiet"@de .
@@ -1347,6 +1382,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-070-head
 :jur-070-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-070 ;
               rdfs:label "Seevölkerrecht / Internationales Wasserrecht"@de .
@@ -1411,6 +1447,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-071-head
 :jur-071-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-071 ;
               rdfs:label "Luftraumrecht / Luftfahrt im Völkerrecht"@de .
@@ -1439,6 +1476,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-073-075
 :jur-073-075 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-073 ,
                                                             :jur-073.1 ,
@@ -1479,6 +1517,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-076-076-kz
 :jur-076-076-kz rdf:type owl:NamedIndividual ,
+                         <http://schema.vocnet.org/HierarchyNode> ,
                          <http://www.w3.org/2004/02/skos/core#Concept> ;
                 <http://www.w3.org/2004/02/skos/core#narrower> :jur-076-fb ,
                                                                :jur-076-fn ,
@@ -1885,6 +1924,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-078-079
 :jur-078-079 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-078 ,
                                                             :jur-079 ,
@@ -1948,6 +1988,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-080-082
 :jur-080-082 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-080 ,
                                                             :jur-080.1 ,
@@ -2035,6 +2076,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-083-085
 :jur-083-085 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-083 ,
                                                             :jur-083.2 ,
@@ -2098,6 +2140,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-086-088
 :jur-086-088 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-086 ,
                                                             :jur-087 ,
@@ -2161,6 +2204,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-089-091
 :jur-089-091 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-089 ,
                                                             :jur-089.3 ,
@@ -2216,6 +2260,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-092-098
 :jur-092-098 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-092 ,
                                                             :jur-094 ,
@@ -2312,6 +2357,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-100-129
 :jur-100-129 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-100 ,
                                                             :jur-100.1 ,
@@ -2441,6 +2487,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-104-129
 :jur-104-129 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-104 ,
                                                             :jur-104.5 ,
@@ -2499,6 +2546,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-105-head
 :jur-105-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-105 ;
               rdfs:label "Europäische Union. Organe"@de .
@@ -2555,6 +2603,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-106-106.7
 :jur-106-106.7 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-106 ,
                                                               :jur-106.1 ,
@@ -2602,6 +2651,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-106.8-106.9
 :jur-106.8-106.9 rdf:type owl:NamedIndividual ,
+                          <http://schema.vocnet.org/HierarchyNode> ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-106.8 ,
                                                                 :jur-106.9 ;
@@ -2637,6 +2687,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-108-head
 :jur-108-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-108 ;
               rdfs:label "Europarecht. Außenbeziehungen"@de .
@@ -2691,6 +2742,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-109-head
 :jur-109-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-109 ;
               rdfs:label "Europarecht. Finanz-, Steuer- und Zollrecht"@de .
@@ -2740,6 +2792,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-110-110.3
 :jur-110-110.3 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-110 ,
                                                               :jur-110.1 ,
@@ -2779,6 +2832,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-110.4-110.7
 :jur-110.4-110.7 rdf:type owl:NamedIndividual ,
+                          <http://schema.vocnet.org/HierarchyNode> ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-110.4 ,
                                                                 :jur-110.5 ,
@@ -2810,6 +2864,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-111-112
 :jur-111-112 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-111 ,
                                                             :jur-111.1 ,
@@ -2892,6 +2947,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-113-head
 :jur-113-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-113 ;
               rdfs:label "Europarecht. Energierecht / Rohstoffe"@de .
@@ -2928,6 +2984,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-114-114.7
 :jur-114-114.7 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-114 ,
                                                               :jur-114.1 ,
@@ -3017,6 +3074,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-115.4-115.9
 :jur-115.4-115.9 rdf:type owl:NamedIndividual ,
+                          <http://schema.vocnet.org/HierarchyNode> ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-115.4 ,
                                                                 :jur-115.5 ,
@@ -3071,6 +3129,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-116-head
 :jur-116-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-116 ;
               rdfs:label "Europarecht. Arbeitsrecht"@de .
@@ -3134,6 +3193,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-117-118
 :jur-117-118 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-117 ,
                                                             :jur-117.2 ,
@@ -3245,6 +3305,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-119-122
 :jur-119-122 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-119 ,
                                                             :jur-120 ,
@@ -3396,6 +3457,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-123-124
 :jur-123-124 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-123 ,
                                                             :jur-123.1 ,
@@ -3542,6 +3604,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-125-head
 :jur-125-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-125 ;
               rdfs:label "Europarecht. Sozialrecht"@de .
@@ -3577,6 +3640,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-127-129
 :jur-127-129 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-127 ,
                                                             :jur-128 ,
@@ -3624,6 +3688,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-130-132
 :jur-130-132 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-130 ,
                                                             :jur-132 ,
@@ -3642,6 +3707,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-130-428
 :jur-130-428 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-130-132 ,
                                                             :jur-133-134 ,
@@ -3750,6 +3816,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-133-134
 :jur-133-134 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-133 ,
                                                             :jur-133.2 ,
@@ -3909,6 +3976,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-135-179
 :jur-135-179 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-135 ,
                                                             :jur-135.1 ,
@@ -3945,6 +4013,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-135.2-145
 :jur-135.2-145 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-135.2 ,
                                                               :jur-135.3 ,
@@ -4120,6 +4189,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-148-151
 :jur-148-151 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-148 ,
                                                             :jur-150 ,
@@ -4217,6 +4287,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-152-head
 :jur-152-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-152 ;
               rdfs:label "Parteien"@de .
@@ -4245,6 +4316,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-153-154
 :jur-153-154 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-153 ,
                                                             :jur-154 ,
@@ -4289,6 +4361,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-155-head
 :jur-155-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-155 ;
               rdfs:label "Parlament"@de .
@@ -4339,6 +4412,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-157-158
 :jur-157-158 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-157 ,
                                                             :jur-158 ;
@@ -4366,6 +4440,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-160-head
 :jur-160-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-160 ;
               rdfs:label "Gesetzgebung"@de .
@@ -4408,6 +4483,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-162-163
 :jur-162-163 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-162 ,
                                                             :jur-163 ,
@@ -4456,6 +4532,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-167-head
 :jur-167-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-167 ;
               rdfs:label "Verfassungsgerichtsbarkeit / Staatsgerichtsbarkeit"@de .
@@ -4491,6 +4568,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-168-169
 :jur-168-169 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-168 ,
                                                             :jur-168.3 ,
@@ -4537,6 +4615,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-170-179
 :jur-170-179 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-170 ,
                                                             :jur-170.3 ,
@@ -4704,6 +4783,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-180-206
 :jur-180-206 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-180 ,
                                                             :jur-180.5 ,
@@ -4730,6 +4810,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-181-183
 :jur-181-183 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-181 ,
                                                             :jur-181.1 ,
@@ -4746,6 +4827,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-181-199
 :jur-181-199 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-181-183 ,
                                                             :jur-184 ,
@@ -4836,6 +4918,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-185-head
 :jur-185-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-185 ;
               rdfs:label "Öffentliches Sachenrecht"@de .
@@ -4874,6 +4957,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-186-head
 :jur-186-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-186 ;
               rdfs:label "Öffentliche-rechtliche Entschädigungen / Enteignung / Amtshaftung"@de .
@@ -4913,6 +4997,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-190-head
 :jur-190-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-190 ;
               rdfs:label "Öffentlich-rechtlicher Anspruch / Subjektives öffentliches Recht"@de .
@@ -4955,6 +5040,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-191-195
 :jur-191-195 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-191 ,
                                                             :jur-191.1 ,
@@ -5023,6 +5109,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-192-194
 :jur-192-194 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-192 ,
                                                             :jur-192.1 ,
@@ -5115,6 +5202,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-199-head
 :jur-199-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-199 ;
               rdfs:label "Verwaltungsrecht. Rechtsschutz"@de .
@@ -5143,6 +5231,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-200-205
 :jur-200-205 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-200 ,
                                                             :jur-200.4 ,
@@ -5301,6 +5390,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-210-299
 :jur-210-299 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-210 ,
                                                             :jur-213-218 ,
@@ -5333,6 +5423,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-213-218
 :jur-213-218 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-213 ,
                                                             :jur-213.1 ,
@@ -5533,6 +5624,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-220-228
 :jur-220-228 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-220 ,
                                                             :jur-220.1 ,
@@ -5559,6 +5651,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-221-224
 :jur-221-224 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-221 ,
                                                             :jur-221.2 ,
@@ -5703,6 +5796,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-225
 :jur-225 rdf:type owl:NamedIndividual ,
+                  <http://schema.vocnet.org/HierarchyNode> ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 225"^^xsd:string ;
          rdfs:label "Arbeitnehmer im öffentlichen Dienst / Angestellte im öffentlichen Dienst"@de .
@@ -5710,6 +5804,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-225-227
 :jur-225-227 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-225 ,
                                                             :jur-225.1 ,
@@ -5765,6 +5860,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-230-237
 :jur-230-237 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-230.1 ,
                                                             :jur-230.4 ,
@@ -5988,6 +6084,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-238-head
 :jur-238-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-238 ;
               rdfs:label "Ziviler Bevölkerungsschutz"@de .
@@ -6009,6 +6106,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-240-244
 :jur-240-244 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-240 ,
                                                             :jur-240.1 ,
@@ -6201,6 +6299,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-245-head
 :jur-245-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-245 ;
               rdfs:label "Umweltrecht"@de .
@@ -6278,6 +6377,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-250-256
 :jur-250-256 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-250 ,
                                                             :jur-251 ,
@@ -6326,6 +6426,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-257-head
 :jur-257-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-257 ;
               rdfs:label "Datenschutz"@de .
@@ -6347,6 +6448,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-260-267
 :jur-260-267 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-260 ,
                                                             :jur-260.2 ,
@@ -6361,6 +6463,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-260-267-head
 :jur-260-267-head rdf:type owl:NamedIndividual ,
+                           <http://schema.vocnet.org/HierarchyNode> ,
                            <http://www.w3.org/2004/02/skos/core#Concept> ;
                   <http://www.w3.org/2004/02/skos/core#narrower> :jur-260-267 ;
                   rdfs:label "Medizinrecht"@de .
@@ -6403,6 +6506,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-262-265
 :jur-262-265 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-262 ,
                                                             :jur-262.1 ,
@@ -6537,6 +6641,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-270-276
 :jur-270-276 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-270 ,
                                                             :jur-270.4 ,
@@ -6604,6 +6709,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-271-head
 :jur-271-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-271 ;
               rdfs:label "Baurecht / Baugesetzbuch / Bundesbaugesetz"@de .
@@ -6680,6 +6786,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-273-head
 :jur-273-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-273 ;
               rdfs:label "Bauausführung / Hausbau"@de .
@@ -6742,6 +6849,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-275-head
 :jur-275-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-275 ;
               rdfs:label "Wohnungsbaurecht / Siedlungsrecht / Wohnraumbewirtschaftung"@de .
@@ -6809,6 +6917,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-280-289.7
 :jur-280-289.7 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-280-head ,
                                                               :jur-281-283 ,
@@ -6822,6 +6931,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-280-head
 :jur-280-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-280 ;
               rdfs:label "Kulturelle Angelegenheiten"@de .
@@ -6864,6 +6974,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-281-283
 :jur-281-283 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-281 ,
                                                             :jur-281.2 ,
@@ -6967,6 +7078,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-284-286
 :jur-284-286 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-284 ,
                                                             :jur-285 ,
@@ -7048,6 +7160,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-288-head
 :jur-288-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-288 ;
               rdfs:label "Öffentliche Sammlungen / Öffentliche Bibliotheken / Archive"@de .
@@ -7091,6 +7204,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-289.8-292
 :jur-289.8-292 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-289.8 ,
                                                               :jur-290-head ,
@@ -7115,6 +7229,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-290-head
 :jur-290-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-290 ;
               rdfs:label "Presserecht"@de .
@@ -7177,6 +7292,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-291-head
 :jur-291-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-291 ;
               rdfs:label "Rundfunk / Fernsehen"@de .
@@ -7237,6 +7353,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-292-head
 :jur-292-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-292 ;
               rdfs:label "Multimedia und Internet / IT-Recht / Elektronischer Rechtsverkehr / E-Commerce / Telekommunikation"@de .
@@ -7305,6 +7422,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-298-head
 :jur-298-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-298 ;
               rdfs:label "Sportrecht"@de .
@@ -7354,6 +7472,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-300-308
 :jur-300-308 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-300 ,
                                                             :jur-301 ,
@@ -7374,6 +7493,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-300-329
 :jur-300-329 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-300-308 ,
                                                             :jur-310-329 ,
@@ -7476,6 +7596,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-310-329
 :jur-310-329 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-310 ,
                                                             :jur-311 ,
@@ -7523,6 +7644,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-312-head
 :jur-312-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-312 ;
               rdfs:label "Steuerschuldrecht"@de .
@@ -7572,6 +7694,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-315-317
 :jur-315-317 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-315 ,
                                                             :jur-315.2 ,
@@ -7643,6 +7766,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-318-319
 :jur-318-319 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-318 ,
                                                             :jur-318.6 ,
@@ -7679,6 +7803,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-320-head
 :jur-320-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-320 ;
               rdfs:label "Finanzgerichtsbarkeit / Steuerrechtsschutz"@de .
@@ -7728,6 +7853,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-321-321.4
 :jur-321-321.4 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-321 ,
                                                               :jur-321.1 ,
@@ -7794,6 +7920,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-322-head
 :jur-322-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-322 ;
               rdfs:label "Einkommensteuer"@de .
@@ -7858,6 +7985,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-323.8-324.6
 :jur-323.8-324.6 rdf:type owl:NamedIndividual ,
+                          <http://schema.vocnet.org/HierarchyNode> ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-324 ,
                                                                 :jur-324.1 ,
@@ -7926,6 +8054,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-324.9-325.1
 :jur-324.9-325.1 rdf:type owl:NamedIndividual ,
+                          <http://schema.vocnet.org/HierarchyNode> ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-324.9 ,
                                                                 :jur-325 ,
@@ -7960,6 +8089,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-325.5-325.7
 :jur-325.5-325.7 rdf:type owl:NamedIndividual ,
+                          <http://schema.vocnet.org/HierarchyNode> ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-325.5 ,
                                                                 :jur-325.6 ,
@@ -7994,6 +8124,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-326-head
 :jur-326-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-326 ;
               rdfs:label "Verbrauchssteuern"@de .
@@ -8040,6 +8171,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-328-head
 :jur-328-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-328 ;
               rdfs:label "Besteuerung in Einzelfällen"@de .
@@ -8085,6 +8217,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-329-head
 :jur-329-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-329 ;
               rdfs:label "Internationales Steuerrecht"@de .
@@ -8120,6 +8253,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-330-347
 :jur-330-347 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-330 ,
                                                             :jur-330.2 ,
@@ -8139,6 +8273,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-330-390
 :jur-330-390 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-330-347 ,
                                                             :jur-350-390 ;
@@ -8180,6 +8315,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-333-head
 :jur-333-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-333 ;
               rdfs:label "Wirtschaftslenkung / Wirtschaftsaufsicht"@de .
@@ -8224,6 +8360,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-335-head
 :jur-335-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-335 ;
               rdfs:label "Außenwirtschaftsrecht"@de .
@@ -8259,6 +8396,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-337-338
 :jur-337-338 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-337 ,
                                                             :jur-337.1 ,
@@ -8332,6 +8470,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-339-head
 :jur-339-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-339 ;
               rdfs:label "Wirtschaftsprüfung / Wirtschaftstreuhänder"@de .
@@ -8374,6 +8513,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-345-347
 :jur-345-347 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-345 ,
                                                             :jur-345.2 ,
@@ -8477,6 +8617,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-350-390
 :jur-350-390 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-350 ,
                                                             :jur-351 ,
@@ -8514,6 +8655,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-352-head
 :jur-352-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-352 ;
               rdfs:label "Gewerbeaufsicht"@de .
@@ -8537,6 +8679,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-353-head
 :jur-353-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-353 ;
               rdfs:label "Handelsgewerberecht / Einzelhandel"@de .
@@ -8600,6 +8743,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-370-373
 :jur-370-373 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-370 ,
                                                             :jur-370.1 ,
@@ -8716,6 +8860,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-374-head
 :jur-374-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-374 ;
               rdfs:label "Lebensmittelrecht"@de .
@@ -8765,6 +8910,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-375-383
 :jur-375-383 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-375 ,
                                                             :jur-375.3 ,
@@ -8892,6 +9038,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-385-386
 :jur-385-386 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-385 ,
                                                             :jur-385.3 ,
@@ -8947,6 +9094,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-388-389.4
 :jur-388-389.4 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-388 ,
                                                               :jur-388.2 ,
@@ -9049,6 +9197,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-392-395
 :jur-392-395 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-392 ,
                                                             :jur-392.2 ,
@@ -9112,6 +9261,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-400-409
 :jur-400-409 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-400 ,
                                                             :jur-400.1 ,
@@ -9126,6 +9276,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-400-428.7
 :jur-400-428.7 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-400-409 ,
                                                               :jur-410-411 ,
@@ -9165,6 +9316,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-402-403
 :jur-402-403 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-402 ,
                                                             :jur-402.2 ,
@@ -9236,6 +9388,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-404-405
 :jur-404-405 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-404 ,
                                                             :jur-404.2 ,
@@ -9328,6 +9481,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-407-head
 :jur-407-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-407 ;
               rdfs:label "Eisenbahnverkehrsrecht"@de .
@@ -9377,6 +9531,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-410-411
 :jur-410-411 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-410 ,
                                                             :jur-410.2 ,
@@ -9440,6 +9595,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-412-425
 :jur-412-425 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-412 ,
                                                             :jur-412.2 ,
@@ -9461,6 +9617,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-412-427
 :jur-412-427 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-412-425 ,
                                                             :jur-426 ,
@@ -9550,6 +9707,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-420-420.7
 :jur-420-420.7 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-420 ,
                                                               :jur-420.5 ,
@@ -9624,6 +9782,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-430-473
 :jur-430-473 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-430 ,
                                                             :jur-431-447 ,
@@ -9641,6 +9800,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-431-447
 :jur-431-447 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-431 ,
                                                             :jur-431.5 ,
@@ -9673,6 +9833,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-432-head
 :jur-432-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-432 ;
               rdfs:label "Arbeitslosigkeit / Arbeitslosenversicherung / Arbeitslosenhilfe / Arbeitsvermittlung  / Arbeitnehmerüberlassung"@de .
@@ -9701,6 +9862,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-433-438
 :jur-433-438 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-433 ,
                                                             :jur-433.2 ,
@@ -9740,6 +9902,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-435-head
 :jur-435-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-435 ;
               rdfs:label "Arbeitskampf / Streik / Aussperrung"@de .
@@ -9791,6 +9954,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-436-head
 :jur-436-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-436 ;
               rdfs:label "Tarifrecht"@de .
@@ -9819,6 +9983,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-437-438
 :jur-437-438 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-437 ,
                                                             :jur-437.2 ,
@@ -9914,6 +10079,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-440-441
 :jur-440-441 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-440 ,
                                                             :jur-440.3 ,
@@ -9934,6 +10100,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-440-442.2
 :jur-440-442.2 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-440-441 ,
                                                               :jur-442-head ,
@@ -10036,6 +10203,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-442-head
 :jur-442-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-442 ;
               rdfs:label "Kündigungsschutz / Kündigung / Kurzarbeit / Beendigung des Arbeitsverhältnisses"@de .
@@ -10057,6 +10225,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-442.5-442.8
 :jur-442.5-442.8 rdf:type owl:NamedIndividual ,
+                          <http://schema.vocnet.org/HierarchyNode> ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-442.5 ,
                                                                 :jur-442.6 ,
@@ -10095,6 +10264,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-443-head
 :jur-443-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-443 ;
               rdfs:label "Arbeitsschutzrecht"@de .
@@ -10166,6 +10336,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-447-head
 :jur-447-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-447 ;
               rdfs:label "Arbeitsgerichtsbarkeit"@de .
@@ -10187,6 +10358,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-450-473
 :jur-450-473 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-450 ,
                                                             :jur-450.4 ,
@@ -10260,6 +10432,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-452-453
 :jur-452-453 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-452 ,
                                                             :jur-452.3 ,
@@ -10310,6 +10483,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-456-head
 :jur-456-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-456 ;
               rdfs:label "Kranken- und Pflegeversicherung"@de .
@@ -10347,6 +10521,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-457-head
 :jur-457-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-457 ;
               rdfs:label "Unfallversicherungsrecht"@de .
@@ -10376,6 +10551,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-458-head
 :jur-458-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-458 ;
               rdfs:label "Rentenversicherungsrecht / Altersfürsorge / Invaliditätsfürsorge / Hinterbliebenenfürsorge / Grundsicherungsgesetz"@de .
@@ -10398,6 +10574,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-459-head
 :jur-459-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-459 ;
               rdfs:label "Familienfürsorge / Kindergeld"@de .
@@ -10419,6 +10596,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-460-461
 :jur-460-461 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-460 ,
                                                             :jur-460.8 ,
@@ -10450,6 +10628,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-463-467
 :jur-463-467 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-465 ,
                                                             :jur-467 ;
@@ -10481,6 +10660,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-470-head
 :jur-470-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-470 ;
               rdfs:label "Sozialgerichtsbarkeit"@de .
@@ -10505,6 +10685,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-473-head
 :jur-473-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-473 ;
               rdfs:label "Jugendrecht"@de .
@@ -10540,6 +10721,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-475-488
 :jur-475-488 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-475 ,
                                                             :jur-475.1 ,
@@ -10553,6 +10735,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-475-498
 :jur-475-498 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-475-488 ,
                                                             :jur-490-495 ,
@@ -10577,6 +10760,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-477-478
 :jur-477-478 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-477 ,
                                                             :jur-477.1 ,
@@ -10672,6 +10856,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-480-484
 :jur-480-484 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-480 ,
                                                             :jur-480.1 ,
@@ -10752,6 +10937,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-482-head
 :jur-482-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-482 ;
               rdfs:label "Landgerichte"@de .
@@ -10822,6 +11008,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-485-487
 :jur-485-487 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-485 ,
                                                             :jur-485.3 ,
@@ -10897,6 +11084,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-488-head
 :jur-488-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-488 ;
               rdfs:label "Gerichtliche Verhandlung"@de .
@@ -10939,6 +11127,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-490-495
 :jur-490-495 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-490 ,
                                                             :jur-491 ,
@@ -11041,6 +11230,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-498-head
 :jur-498-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-498 ;
               rdfs:label "Grundfragen Prozessrecht"@de .
@@ -11104,6 +11294,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-500-518
 :jur-500-518 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-500 ,
                                                             :jur-501.1 ,
@@ -11140,6 +11331,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-500-558
 :jur-500-558 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-500-518 ,
                                                             :jur-520-546 ,
@@ -11289,6 +11481,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-505-head
 :jur-505-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-505 ;
               rdfs:label "Zivilprozessrecht. Urteil"@de .
@@ -11341,6 +11534,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-507-head
 :jur-507-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-507 ;
               rdfs:label "Zivilprozessrecht. Beweisrecht und Beweisarten"@de .
@@ -11380,6 +11574,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-510-head
 :jur-510-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-510 ;
               rdfs:label "Zivilprozessrecht. Rechtsmittel"@de .
@@ -11469,6 +11664,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-518-head
 :jur-518-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-518 ;
               rdfs:label "Schiedsgerichtsbarkeit"@de .
@@ -11518,6 +11714,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-520-546
 :jur-520-546 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-520 ,
                                                             :jur-520.2 ,
@@ -11570,6 +11767,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-522-head
 :jur-522-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-522 ;
               rdfs:label "Vollstreckungsorgane"@de .
@@ -11598,6 +11796,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-525-526
 :jur-525-526 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-525 ,
                                                             :jur-526 ;
@@ -11668,6 +11867,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-542-head
 :jur-542-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-542 ;
               rdfs:label "Insolvenz"@de .
@@ -11717,6 +11917,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-543-544
 :jur-543-544 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-543 ,
                                                             :jur-544 ;
@@ -11747,6 +11948,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-550-552
 :jur-550-552 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-550 ,
                                                             :jur-550.4 ,
@@ -11818,6 +12020,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-555-558
 :jur-555-558 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-555 ,
                                                             :jur-555.1 ,
@@ -11865,6 +12068,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-600-845
 :jur-600-845 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-600 ,
                                                             :jur-601 ,
@@ -11899,6 +12103,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-602-622
 :jur-602-622 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-602 ,
                                                             :jur-602.1 ,
@@ -11957,6 +12162,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-603-head
 :jur-603-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-603 ;
               rdfs:label "Namensrecht / Persönlichkeitsrechte"@de .
@@ -11999,6 +12205,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-606-608
 :jur-606-608 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-606 ,
                                                             :jur-606.1 ,
@@ -12128,6 +12335,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-612-613
 :jur-612-613 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-612 ,
                                                             :jur-612.1 ,
@@ -12207,6 +12415,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-614-617
 :jur-614-617 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-614 ,
                                                             :jur-614.1 ,
@@ -12251,6 +12460,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-616-head
 :jur-616-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-616 ;
               rdfs:label "Allgemeine Geschäftsbedingungen /Verbrauchervertrag"@de .
@@ -12299,6 +12509,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-618-head
 :jur-618-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-618 ;
               rdfs:label "Vertretung / Vollmacht / Treuhänderische Vertretung"@de .
@@ -12369,6 +12580,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-622
 :jur-622 rdf:type owl:NamedIndividual ,
+                  <http://schema.vocnet.org/HierarchyNode> ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
          <http://www.w3.org/2004/02/skos/core#narrower> :jur-622.1 ,
                                                         :jur-622.3 ;
@@ -12399,6 +12611,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-625-679
 :jur-625-679 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-625 ,
                                                             :jur-626-646 ,
@@ -12417,6 +12630,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-626-646
 :jur-626-646 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-626 ,
                                                             :jur-627-head ,
@@ -12454,6 +12668,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-627-head
 :jur-627-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-627 ;
               rdfs:label "Treu und Glauben / Verkehrssitte"@de .
@@ -12489,6 +12704,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-629-632
 :jur-629-632 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-629 ,
                                                             :jur-630-head ,
@@ -12514,6 +12730,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-630-head
 :jur-630-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-630 ;
               rdfs:label "Schadensersatz / Schaden"@de .
@@ -12591,6 +12808,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-633-635
 :jur-633-635 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-633 ,
                                                             :jur-633.1 ,
@@ -12660,6 +12878,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-637-head
 :jur-637-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-637 ;
               rdfs:label "Schuldrechtlicher Vertrag"@de .
@@ -12718,6 +12937,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-638-head
 :jur-638-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-638 ;
               rdfs:label "Gegenseitiger Vertrag"@de .
@@ -12811,6 +13031,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-644-head
 :jur-644-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-644 ;
               rdfs:label "Übertragung von Forderungen / Abtretung"@de .
@@ -12840,6 +13061,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-645-head
 :jur-645-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-645.5 ;
               rdfs:label "Schuldübernahme / Vertragsübernahme"@de .
@@ -12862,6 +13084,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-646-head
 :jur-646-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-646 ;
               rdfs:label "Mehrheit von Schuldnern und Gläubigern"@de .
@@ -12883,6 +13106,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-650-670
 :jur-650-670 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-650 ,
                                                             :jur-651-653 ,
@@ -12922,6 +13146,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-651-653
 :jur-651-653 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-651 ,
                                                             :jur-651.1 ,
@@ -13042,6 +13267,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-654-head
 :jur-654-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-654 ;
               rdfs:label "Abzahlungsgeschäfte / Abzahlungskauf / Ratenkredit / Teilzahlungsfinanzierung / Ratenverträge / Verbraucherkreditgesetz / Verbraucherkredit"@de .
@@ -13077,6 +13303,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-657-658
 :jur-657-658 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-657 ,
                                                             :jur-657.3 ,
@@ -13188,6 +13415,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-664-664.4
 :jur-664-664.4 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-664 ,
                                                               :jur-664.1 ,
@@ -13242,6 +13470,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-664.7-664.9
 :jur-664.7-664.9 rdf:type owl:NamedIndividual ,
+                          <http://schema.vocnet.org/HierarchyNode> ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-664.7 ,
                                                                 :jur-664.8 ,
@@ -13299,6 +13528,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-666-head
 :jur-666-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-666 ;
               rdfs:label "BGB-Gesellschaft"@de .
@@ -13358,6 +13588,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-668-head
 :jur-668-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-668 ;
               rdfs:label "Bürgschaft"@de .
@@ -13401,6 +13632,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-670-head
 :jur-670-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-670 ;
               rdfs:label "Schuldversprechen / Schuldanerkenntnis / Anerkenntnisvertrag"@de .
@@ -13441,6 +13673,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-671-679
 :jur-671-679 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-671-head ,
                                                             :jur-672-679 ;
@@ -13450,6 +13683,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-671-head
 :jur-671-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-671 ;
               rdfs:label "Ungerechtfertigte Bereicherung"@de .
@@ -13499,6 +13733,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-672-679
 :jur-672-679 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-672 ,
                                                             :jur-672.1 ,
@@ -13650,6 +13885,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-680-698
 :jur-680-698 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-680 ,
                                                             :jur-680.1 ,
@@ -13709,6 +13945,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-682-head
 :jur-682-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-682 ;
               rdfs:label "Besitz"@de .
@@ -13751,6 +13988,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-683-684
 :jur-683-684 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-683 ,
                                                             :jur-683.1 ,
@@ -13823,6 +14061,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-685-685.6
 :jur-685-685.6 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-685.5 ,
                                                               :jur-685.6 ;
@@ -13866,6 +14105,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-688-head
 :jur-688-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-688 ;
               rdfs:label "Eigentum. Erwerb und Verlust"@de .
@@ -13927,6 +14167,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-689-head
 :jur-689-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-689 ;
               rdfs:label "Ansprüche aus dem Eigentum"@de .
@@ -13990,6 +14231,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-692-692.3
 :jur-692-692.3 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-692 ,
                                                               :jur-692.1 ,
@@ -14063,6 +14305,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-696-698
 :jur-696-698 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-696 ,
                                                             :jur-697 ,
@@ -14094,6 +14337,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-700-722
 :jur-700-722 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-700 ,
                                                             :jur-701 ,
@@ -14112,6 +14356,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-700-740
 :jur-700-740 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-700-722 ,
                                                             :jur-706 ,
@@ -14150,6 +14395,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-705-708
 :jur-705-708 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-705 ,
                                                             :jur-705.1 ,
@@ -14352,6 +14598,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-710-head
 :jur-710-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-710 ;
               rdfs:label "Verwandtschaft"@de .
@@ -14389,6 +14636,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-712-head
 :jur-712-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-712 ;
               rdfs:label "Elternrecht"@de .
@@ -14421,6 +14669,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-714-head
 :jur-714-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-714 ;
               rdfs:label "Kindschaftsrecht"@de .
@@ -14473,6 +14722,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-720-head
 :jur-720-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-720 ;
               rdfs:label "Betreuung / Vormundschaft"@de .
@@ -14515,6 +14765,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-730-740
 :jur-730-740 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-730 ,
                                                             :jur-730.1 ,
@@ -14550,6 +14801,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-731-head
 :jur-731-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-731 ;
               rdfs:label "Erbfolge"@de .
@@ -14583,6 +14835,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-732-head
 :jur-732-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-732 ;
               rdfs:label "Erben"@de .
@@ -14640,6 +14893,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-735-head
 :jur-735-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-735 ;
               rdfs:label "Testament"@de .
@@ -14710,6 +14964,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-736-head
 :jur-736-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-736 ;
               rdfs:label "Erbvertrag"@de .
@@ -14766,6 +15021,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-742-747
 :jur-742-747 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-742 ,
                                                             :jur-742.1 ,
@@ -14941,6 +15197,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-750-765
 :jur-750-765 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-750 ,
                                                             :jur-752-754 ,
@@ -14951,6 +15208,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-750-811
 :jur-750-811 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-750-765 ,
                                                             :jur-800-811 ;
@@ -14967,6 +15225,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-752-754
 :jur-752-754 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-752 ,
                                                             :jur-752.1 ,
@@ -15030,6 +15289,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-756-765
 :jur-756-765 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-756 ,
                                                             :jur-760 ,
@@ -15069,6 +15329,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-800-811
 :jur-800-811 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-800 ,
                                                             :jur-800.2 ,
@@ -15152,6 +15413,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-801-head
 :jur-801-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-801 ;
               rdfs:label "Personengesellschaften"@de .
@@ -15215,6 +15477,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-804-809
 :jur-804-809 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-804 ,
                                                             :jur-805-806 ,
@@ -15235,6 +15498,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-805-806
 :jur-805-806 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-805 ,
                                                             :jur-805.1 ,
@@ -15297,6 +15561,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-808-808.6
 :jur-808-808.6 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-808 ,
                                                               :jur-808.1 ,
@@ -15380,6 +15645,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-812-819
 :jur-812-819 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-812 ,
                                                             :jur-812.1 ,
@@ -15403,6 +15669,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-812-829.4
 :jur-812-829.4 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-812-819 ,
                                                               :jur-822-829.4 ;
@@ -15453,6 +15720,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-815-head
 :jur-815-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-815 ;
               rdfs:label "Versicherungsvertragsrecht"@de .
@@ -15522,6 +15790,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-817-head
 :jur-817-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-817 ;
               rdfs:label "Schadensversicherung"@de .
@@ -15578,6 +15847,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-818-818.8
 :jur-818-818.8 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-818 ,
                                                               :jur-818.1 ,
@@ -15687,6 +15957,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-822-823
 :jur-822-823 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-822-head ,
                                                             :jur-823-head ;
@@ -15696,6 +15967,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-822-829.4
 :jur-822-829.4 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-822 ,
                                                               :jur-822-823 ,
@@ -15711,6 +15983,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-822-head
 :jur-822-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-822 ;
               rdfs:label "Bankenorganisation"@de .
@@ -15765,6 +16038,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-823-head
 :jur-823-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-823 ;
               rdfs:label "Finanzierungsgeschäfte"@de .
@@ -15818,6 +16092,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-824-head
 :jur-824-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-824 ;
               rdfs:label "Börsenrecht"@de .
@@ -15861,6 +16136,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-825-head
 :jur-825-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-825 ;
               rdfs:label "Wertpapierrecht"@de .
@@ -15910,6 +16186,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-829.5-839
 :jur-829.5-839 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-829.5 ,
                                                               :jur-829.6 ,
@@ -15934,6 +16211,7 @@
 ###  http://uricorn.fly/tib_lok_sys#jur-829.8
 :jur-829.8 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/2004/02/skos/core#Concept> ;
+           <http://www.w3.org/2004/02/skos/core#notation> "jur 829.8"^^xsd:string ;
            rdfs:label "Geheimnisschutz"@de .
 
 
@@ -15946,6 +16224,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-830-833
 :jur-830-833 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-830 ,
                                                             :jur-830.1 ,
@@ -16128,6 +16407,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-835-836
 :jur-835-836 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-835 ,
                                                             :jur-835.4 ,
@@ -16202,6 +16482,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-838-head
 :jur-838-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-838 ;
               rdfs:label "Markenrecht"@de .
@@ -16246,6 +16527,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-839-head
 :jur-839-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-839 ;
               rdfs:label "Wettbewerbsrecht"@de .
@@ -16267,6 +16549,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-839.3-839.8
 :jur-839.3-839.8 rdf:type owl:NamedIndividual ,
+                          <http://schema.vocnet.org/HierarchyNode> ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-839.3 ,
                                                                 :jur-839.6 ,
@@ -16306,6 +16589,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-840-845
 :jur-840-845 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-840 ,
                                                             :jur-840.1 ,
@@ -16401,6 +16685,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-848-897
 :jur-848-897 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-848 ,
                                                             :jur-848-959 ,
@@ -16415,6 +16700,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-848-959
 :jur-848-959 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-848-897 ,
                                                             :jur-852-868 ,
@@ -16441,6 +16727,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-852-868
 :jur-852-868 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-852 ,
                                                             :jur-853-head ,
@@ -16473,6 +16760,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-853-head
 :jur-853-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-853 ;
               rdfs:label "Strafrechtstheorie / Strafrechtsphilosophie / Allgemeine Strafrechtslehre"@de .
@@ -16520,6 +16808,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-854-head
 :jur-854-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-854 ;
               rdfs:label "Strafgesetz / Gesetzmäßigkeit der Strafe / Nulla poena sine lege / Wahlfeststellung / Gewohnheitsrecht / Nullum crimen sine lege"@de .
@@ -16576,6 +16865,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-856-857
 :jur-856-857 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-856 ,
                                                             :jur-856.1 ,
@@ -16649,6 +16939,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-858-head
 :jur-858-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-858 ;
               rdfs:label "Straftat - Subjektiver Teil des Tatbestands"@de .
@@ -16677,6 +16968,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-858.6-858.8
 :jur-858.6-858.8 rdf:type owl:NamedIndividual ,
+                          <http://schema.vocnet.org/HierarchyNode> ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-858.6 ,
                                                                 :jur-858.8 ;
@@ -16704,6 +16996,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-859-head
 :jur-859-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-859 ;
               rdfs:label "Schuld / Schuldstrafrecht"@de .
@@ -16749,6 +17042,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-860-head
 :jur-860-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-860 ;
               rdfs:label "Versuch"@de .
@@ -16789,6 +17083,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-861-head
 :jur-861-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-861 ;
               rdfs:label "Täterschaft / Teilnahme"@de .
@@ -16838,6 +17133,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-863-866.8
 :jur-863-866.8 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-863 ,
                                                               :jur-863.3 ,
@@ -17010,6 +17306,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-870-896
 :jur-870-896 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-870 ,
                                                             :jur-870.5 ,
@@ -17040,6 +17337,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-870.9-875.5
 :jur-870.9-875.5 rdf:type owl:NamedIndividual ,
+                          <http://schema.vocnet.org/HierarchyNode> ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-871-head ,
                                                                 :jur-872-head ,
@@ -17065,6 +17363,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-871-head
 :jur-871-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-871 ;
               rdfs:label "Straftaten gegen das Leben / Tötungsdelikte"@de .
@@ -17119,6 +17418,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-872-head
 :jur-872-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-872 ;
               rdfs:label "Körperverletzung"@de .
@@ -17174,6 +17474,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-873-head
 :jur-873-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-873 ;
               rdfs:label "Straftaten gegen die persönliche Freiheit, Ehre und sonstige persönliche Rechtsgüter"@de .
@@ -17230,6 +17531,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-874-874.4
 :jur-874-874.4 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-874 ,
                                                               :jur-874.2 ;
@@ -17253,6 +17555,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-874.5-874.8
 :jur-874.5-874.8 rdf:type owl:NamedIndividual ,
+                          <http://schema.vocnet.org/HierarchyNode> ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-874.5 ,
                                                                 :jur-874.6 ,
@@ -17306,6 +17609,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-875.8-880
 :jur-875.8-880 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-875.8 ,
                                                               :jur-876-877 ,
@@ -17334,6 +17638,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-876-877
 :jur-876-877 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-876 ,
                                                             :jur-876.5 ,
@@ -17396,6 +17701,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-879-879.2
 :jur-879-879.2 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-879 ,
                                                               :jur-879.2 ;
@@ -17475,6 +17781,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-882-882.4
 :jur-882-882.4 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-882 ,
                                                               :jur-882.1 ,
@@ -17522,6 +17829,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-882.5-882.8
 :jur-882.5-882.8 rdf:type owl:NamedIndividual ,
+                          <http://schema.vocnet.org/HierarchyNode> ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-882.5 ,
                                                                 :jur-882.8 ;
@@ -17538,6 +17846,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-883-886
 :jur-883-886 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-883.2 ,
                                                             :jur-883.4 ,
@@ -17618,6 +17927,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-890-head
 :jur-890-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-890 ;
               rdfs:label "Straftaten gegen den Staat und seine Einrichtungen"@de .
@@ -17664,6 +17974,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-892-head
 :jur-892-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-892 ;
               rdfs:label "Gefährdung der Rechtspflege"@de .
@@ -17709,6 +18020,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-893-head
 :jur-893-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-893 ;
               rdfs:label "Straftaten im Amt"@de .
@@ -17766,6 +18078,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-897-head
 :jur-897-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-897 ;
               rdfs:label "Ordnungswidrigkeiten"@de .
@@ -17787,6 +18100,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-900-919
 :jur-900-919 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-900 ,
                                                             :jur-901 ,
@@ -17815,6 +18129,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-900-924
 :jur-900-924 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-900-919 ,
                                                             :jur-920-923 ,
@@ -17864,6 +18179,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-903-head
 :jur-903-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-903 ;
               rdfs:label "Allgemeine Grundsätze des Strafverfahrens"@de .
@@ -17920,6 +18236,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-905.2-907
 :jur-905.2-907 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-905.2 ,
                                                               :jur-905.5 ,
@@ -17965,6 +18282,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-906-head
 :jur-906-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-906 ;
               rdfs:label "Strafverfahren. Rechtsstellung des Angeklagten / Strafverfahren. Rechtsstellung des Beschuldigten / Strafverfahren. Sanktionen"@de .
@@ -18017,6 +18335,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-908-head
 :jur-908-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-908 ;
               rdfs:label "Strafverfahren. Verfahren im ersten Rechtszug"@de .
@@ -18053,6 +18372,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-909-910
 :jur-909-910 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-909 ,
                                                             :jur-909.6 ,
@@ -18079,6 +18399,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-910-910.3
 :jur-910-910.3 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-910 ,
                                                               :jur-910.1 ,
@@ -18136,6 +18457,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-911-head
 :jur-911-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-911 ;
               rdfs:label "Strafverfahren. Rechtsmittel"@de .
@@ -18189,6 +18511,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-913-head
 :jur-913-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-913 ;
               rdfs:label "Beteiligung des Verletzten am Strafverfahren"@de .
@@ -18233,6 +18556,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-914-head
 :jur-914-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-914 ;
               rdfs:label "Strafverfahren. Kosten"@de .
@@ -18261,6 +18585,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-914.4-914.7
 :jur-914.4-914.7 rdf:type owl:NamedIndividual ,
+                          <http://schema.vocnet.org/HierarchyNode> ,
                           <http://www.w3.org/2004/02/skos/core#Concept> ;
                  <http://www.w3.org/2004/02/skos/core#narrower> :jur-914.4 ,
                                                                 :jur-914.5 ,
@@ -18301,6 +18626,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-915-head
 :jur-915-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-915 ;
               rdfs:label "Strafvollstreckung"@de .
@@ -18322,6 +18648,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-916-917
 :jur-916-917 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-916 ,
                                                             :jur-916.1 ,
@@ -18422,6 +18749,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-920-923
 :jur-920-923 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-920 ,
                                                             :jur-920.7 ,
@@ -18466,6 +18794,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-922-head
 :jur-922-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-922 ;
               rdfs:label "Jugendstrafverfahren"@de .
@@ -18503,6 +18832,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-923-head
 :jur-923-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-923 ;
               rdfs:label "Jugendstrafvollstreckung / Jugendstrafvollzug"@de .
@@ -18538,6 +18868,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-925-928
 :jur-925-928 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-925 ,
                                                             :jur-925.3 ,
@@ -18601,6 +18932,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-930-959
 :jur-930-959 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-930 ,
                                                             :jur-931 ,
@@ -18633,6 +18965,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-931.1-932
 :jur-931.1-932 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-931.4 ,
                                                               :jur-931.5 ,
@@ -18696,6 +19029,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-933-939
 :jur-933-939 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-933 ,
                                                             :jur-933.3 ,
@@ -18914,6 +19248,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-940-head
 :jur-940-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-940 ;
               rdfs:label "Kriminalität"@de .
@@ -18949,6 +19284,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-941-943
 :jur-941-943 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-941 ,
                                                             :jur-941.7 ,
@@ -19016,6 +19352,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-944-944.4
 :jur-944-944.4 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-944 ,
                                                               :jur-944.2 ,
@@ -19069,6 +19406,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-946-948
 :jur-946-948 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-946 ,
                                                             :jur-946.2 ,
@@ -19139,6 +19477,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-950-952
 :jur-950-952 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-950 ,
                                                             :jur-950.2 ,
@@ -19195,6 +19534,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-955-959
 :jur-955-959 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-955.5 ,
                                                             :jur-956 ,
@@ -19233,6 +19573,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-960-974
 :jur-960-974 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-960 ,
                                                             :jur-961-962 ,
@@ -19253,6 +19594,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-961-962
 :jur-961-962 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-961 ,
                                                             :jur-961.1 ,
@@ -19340,6 +19682,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-964-965
 :jur-964-965 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-964 ,
                                                             :jur-964.1 ,
@@ -19435,6 +19778,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-967-968
 :jur-967-968 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-967 ,
                                                             :jur-967.1 ,
@@ -19522,6 +19866,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-970-972
 :jur-970-972 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-970 ,
                                                             :jur-970.1 ,
@@ -19624,6 +19969,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-980-998
 :jur-980-998 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-980 ,
                                                             :jur-980.3 ,
@@ -19652,6 +19998,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-981-992.7
 :jur-981-992.7 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-981 ,
                                                               :jur-982 ,
@@ -19987,6 +20334,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-992.8-994
 :jur-992.8-994 rdf:type owl:NamedIndividual ,
+                        <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-992.8 ,
                                                               :jur-993 ,
@@ -20130,6 +20478,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-995-head
 :jur-995-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-995 ;
               rdfs:label "Lateinamerika"@de .
@@ -20312,6 +20661,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-996-997
 :jur-996-997 rdf:type owl:NamedIndividual ,
+                      <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-996 ,
                                                             :jur-996.1 ,
@@ -20668,6 +21018,7 @@
 
 ###  http://uricorn.fly/tib_lok_sys#jur-998-head
 :jur-998-head rdf:type owl:NamedIndividual ,
+                       <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-998 ;
               rdfs:label "Afrika"@de .
