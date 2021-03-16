@@ -1876,8 +1876,7 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 :jur-076-us rdf:type owl:NamedIndividual ,
                      <http://www.w3.org/2004/02/skos/core#Concept> ;
             <http://www.w3.org/2004/02/skos/core#notation> "jur 076-us"^^xsd:string ;
-            rdfs:label "Internationales Bankrecht"@de ,
-                       "Internationales Finanz- und Kapitalmarktrecht"@de .
+            rdfs:label "Internationales Finanz- und Kapitalmarktrecht"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-076-uv
