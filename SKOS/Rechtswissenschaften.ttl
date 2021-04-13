@@ -43,7 +43,7 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
                                                                                       :jur-475-498 ,
                                                                                       :jur-500-558 ,
                                                                                       :jur-600-845 ,
-                                                                                      :jur-848-959 ,
+                                                                                      :jur-848-897 ,
                                                                                       :jur-960-974 ,
                                                                                       :jur-980-998 .
 
@@ -764,7 +764,7 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-030-049 ,
                                                             :jur-050-059.4 ,
                                                             :jur-059.5 ;
-             rdfs:label "Rechtsgeschichte" .
+             rdfs:label "Rechtsgeschichte"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-031
@@ -2349,7 +2349,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-100
 :jur-100 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-100.1 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 100"^^xsd:string ;
          rdfs:label "Europäische Einigung / Europäische Integration / Europarecht"@de .
 
@@ -2388,7 +2387,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-101
 :jur-101 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-101.3 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 101"^^xsd:string ;
          rdfs:label "Europäische Kooperation"@de .
 
@@ -2976,7 +2974,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-114
 :jur-114 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-114.9 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 114"^^xsd:string ;
          rdfs:label "Europarecht. Landwirtschaft / Europarecht. Forstwirtschaft"@de .
 
@@ -3712,21 +3709,8 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
                                                             :jur-133-134 ,
                                                             :jur-135-179 ,
                                                             :jur-169.5 ,
-                                                            :jur-170 ,
-                                                            :jur-171 ,
-                                                            :jur-172 ,
-                                                            :jur-174 ,
-                                                            :jur-175 ,
-                                                            :jur-176 ,
-                                                            :jur-177 ,
-                                                            :jur-178 ,
-                                                            :jur-179 ,
                                                             :jur-180-206 ,
-                                                            :jur-196 ,
-                                                            :jur-197 ,
-                                                            :jur-198 ,
                                                             :jur-210-299 ,
-                                                            :jur-254 ,
                                                             :jur-300-329 ,
                                                             :jur-330-390 ,
                                                             :jur-392-395 ,
@@ -4404,7 +4388,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-157
 :jur-157 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-157-158 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 157"^^xsd:string ;
          rdfs:label "Staatsoberhaupt"@de .
 
@@ -5048,9 +5031,7 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
                                                             :jur-191.6 ,
                                                             :jur-191.7 ,
                                                             :jur-191.8 ,
-                                                            :jur-192 ,
                                                             :jur-192-194 ,
-                                                            :jur-194 ,
                                                             :jur-195 ,
                                                             :jur-195.5 ;
              <http://www.w3.org/2004/02/skos/core#notation> "jur 191-195"^^xsd:string ;
@@ -5616,7 +5597,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-220
 :jur-220 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-220.1 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 220"^^xsd:string ;
          rdfs:label "Öffentlicher Dienst"@de .
 
@@ -7495,9 +7475,7 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
                       <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-300-308 ,
-                                                            :jur-310-329 ,
-                                                            :jur-323.8-324.6 ,
-                                                            :jur-324.9-325.1 ;
+                                                            :jur-310-329 ;
              <http://www.w3.org/2004/02/skos/core#notation> "jur 300-329"^^xsd:string ;
              rdfs:label "Finanzrecht / Geldrecht / Steuerrecht"@de .
 
@@ -7612,7 +7590,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
                                                             :jur-323 ,
                                                             :jur-323.2 ,
                                                             :jur-323.8-324.6 ,
-                                                            :jur-324 ,
                                                             :jur-324.9-325.1 ,
                                                             :jur-325.5-325.7 ,
                                                             :jur-326-head ,
@@ -7970,7 +7947,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-323
 :jur-323 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-323.2 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 323"^^xsd:string ;
          rdfs:label "Körperschaftsteuer"@de .
 
@@ -7999,12 +7975,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-324
 :jur-324 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-324.1 ,
-                                                        :jur-324.3 ,
-                                                        :jur-324.4 ,
-                                                        :jur-324.5 ,
-                                                        :jur-324.6 ,
-                                                        :jur-324.9 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 324"^^xsd:string ;
          rdfs:label "Umsatzsteuer / Mehrwertsteuer"@de .
 
@@ -9698,8 +9668,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-420
 :jur-420 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-420.5 ,
-                                                        :jur-420.7 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 420"^^xsd:string ;
          rdfs:label "Seefrachtgeschäft"@de .
 
@@ -9760,7 +9728,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-428
 :jur-428 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-428.8 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 428"^^xsd:string ;
          rdfs:label "Post- und Fernmeldewesen"@de .
 
@@ -10102,8 +10069,7 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
                         <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-440-441 ,
-                                                              :jur-442-head ,
-                                                              :jur-442.2 ;
+                                                              :jur-442-head ;
                <http://www.w3.org/2004/02/skos/core#notation> "jur 440-442.2"^^xsd:string ;
                rdfs:label "Arbeitsvertragsrecht und Beendigung des Arbeitsverhältnisses"@de .
 
@@ -10195,7 +10161,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-442
 :jur-442 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-442.2 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 442"^^xsd:string ;
          rdfs:label "Kündigungsschutz / Kündigung / Kurzarbeit / Beendigung des Arbeitsverhältnisses"@de .
 
@@ -10204,7 +10169,8 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 :jur-442-head rdf:type owl:NamedIndividual ,
                        <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
-              <http://www.w3.org/2004/02/skos/core#narrower> :jur-442 ;
+              <http://www.w3.org/2004/02/skos/core#narrower> :jur-442 ,
+			  :jur-442.2;
               rdfs:label "Kündigungsschutz / Kündigung / Kurzarbeit / Beendigung des Arbeitsverhältnisses"@de .
 
 
@@ -12077,9 +12043,7 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
                                                             :jur-700-740 ,
                                                             :jur-742-747 ,
                                                             :jur-750-811 ,
-                                                            :jur-812-819 ,
                                                             :jur-812-829.4 ,
-                                                            :jur-822-829.4 ,
                                                             :jur-829.5-839 ,
                                                             :jur-840-845 ;
              <http://www.w3.org/2004/02/skos/core#notation> "jur 600-845"^^xsd:string ;
@@ -12634,9 +12598,7 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-626 ,
                                                             :jur-627-head ,
                                                             :jur-629-632 ,
-                                                            :jur-633 ,
                                                             :jur-633-635 ,
-                                                            :jur-635 ,
                                                             :jur-637-head ,
                                                             :jur-638-head ,
                                                             :jur-639 ,
@@ -13117,7 +13079,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
                                                             :jur-661 ,
                                                             :jur-662 ,
                                                             :jur-663 ,
-                                                            :jur-664-664.4 ,
                                                             :jur-664.5 ,
                                                             :jur-664.7-664.9 ,
                                                             :jur-665 ,
@@ -13404,10 +13365,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-664
 :jur-664 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-664.1 ,
-                                                        :jur-664.2 ,
-                                                        :jur-664.3 ,
-                                                        :jur-664.4 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 664"^^xsd:string ;
          rdfs:label "Werkvertrag"@de .
 
@@ -13495,8 +13452,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-665
 :jur-665 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-665.5 ,
-                                                        :jur-665.7 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 665"^^xsd:string ;
          rdfs:label "Auftrag"@de .
 
@@ -13899,7 +13854,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
                                                             :jur-690 ,
                                                             :jur-691 ,
                                                             :jur-692-692.3 ,
-                                                            :jur-692.3 ,
                                                             :jur-692.5 ,
                                                             :jur-692.6 ,
                                                             :jur-693 ,
@@ -14236,7 +14190,7 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
                                                               :jur-692.1 ,
                                                               :jur-692.2 ,
                                                               :jur-692.3 ;
-               rdfs:label "Dienstbarkeiten" .
+               rdfs:label "Dienstbarkeiten"@de .
 
 
 ###  http://uricorn.fly/tib_lok_sys#jur-692.1
@@ -14358,7 +14312,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
                       <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-700-722 ,
-                                                            :jur-706 ,
                                                             :jur-730-740 ;
              <http://www.w3.org/2004/02/skos/core#notation> "jur 700-740"^^xsd:string ;
              rdfs:label "Familienrecht / Erbrecht"@de .
@@ -15945,11 +15898,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-822
 :jur-822 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-822.1 ,
-                                                        :jur-822.2 ,
-                                                        :jur-822.5 ,
-                                                        :jur-822.8 ,
-                                                        :jur-822.9 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 822"^^xsd:string ;
          rdfs:label "Bankrecht"@de .
 
@@ -15968,8 +15916,7 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 :jur-822-829.4 rdf:type owl:NamedIndividual ,
                         <http://schema.vocnet.org/HierarchyNode> ,
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
-               <http://www.w3.org/2004/02/skos/core#narrower> :jur-822 ,
-                                                              :jur-822-823 ,
+               <http://www.w3.org/2004/02/skos/core#narrower> :jur-822-823 ,
                                                               :jur-824-head ,
                                                               :jur-825-head ,
                                                               :jur-826 ,
@@ -15985,6 +15932,11 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
                        <http://schema.vocnet.org/HierarchyNode> ,
                        <http://www.w3.org/2004/02/skos/core#Concept> ;
               <http://www.w3.org/2004/02/skos/core#narrower> :jur-822 ;
+			  <http://www.w3.org/2004/02/skos/core#narrower> :jur-822.1 ,
+                                                        :jur-822.2 ,
+                                                        :jur-822.5 ,
+                                                        :jur-822.8 ,
+                                                        :jur-822.9 ;
               rdfs:label "Bankenorganisation"@de .
 
 
@@ -16687,10 +16639,8 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
                       <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-848 ,
-                                                            :jur-848-959 ,
                                                             :jur-850 ,
                                                             :jur-852-868 ,
-                                                            :jur-866.9 ,
                                                             :jur-870-896 ,
                                                             :jur-897-head ;
              <http://www.w3.org/2004/02/skos/core#notation> "jur 848-897"^^xsd:string ;
@@ -16701,9 +16651,7 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 :jur-848-959 rdf:type owl:NamedIndividual ,
                       <http://schema.vocnet.org/HierarchyNode> ,
                       <http://www.w3.org/2004/02/skos/core#Concept> ;
-             <http://www.w3.org/2004/02/skos/core#narrower> :jur-848-897 ,
-                                                            :jur-852-868 ,
-                                                            :jur-900-924 ,
+             <http://www.w3.org/2004/02/skos/core#narrower> :jur-900-924 ,
                                                             :jur-925-928 ,
                                                             :jur-930-959 ;
              <http://www.w3.org/2004/02/skos/core#notation> "jur 848-959"^^xsd:string ;
@@ -17612,9 +17560,7 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
                         <http://www.w3.org/2004/02/skos/core#Concept> ;
                <http://www.w3.org/2004/02/skos/core#narrower> :jur-875.8 ,
                                                               :jur-876-877 ,
-                                                              :jur-877 ,
                                                               :jur-878 ,
-                                                              :jur-879 ,
                                                               :jur-879-879.2 ,
                                                               :jur-879.3 ,
                                                               :jur-879.4 ,
@@ -18364,7 +18310,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-909
 :jur-909 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-909.6 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 909"^^xsd:string ;
          rdfs:label "Strafverfahren. Hauptverfahren"@de .
 
@@ -18936,12 +18881,11 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
              <http://www.w3.org/2004/02/skos/core#narrower> :jur-930 ,
                                                             :jur-931 ,
                                                             :jur-931.1-932 ,
-                                                            :jur-932 ,
                                                             :jur-933-939 ,
                                                             :jur-940-head ,
                                                             :jur-941-943 ,
                                                             :jur-944-944.4 ,
-                                                            :jur-944.5- ,
+                                                            :jur-944.5 ,
                                                             :jur-945 ,
                                                             :jur-946-948 ,
                                                             :jur-949 ,
@@ -19007,7 +18951,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-932
 :jur-932 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-932.3 ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 932"^^xsd:string ;
          rdfs:label "Kriminologie. Methodenlehre"@de .
 
@@ -19341,10 +19284,6 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
 ###  http://uricorn.fly/tib_lok_sys#jur-944
 :jur-944 rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2004/02/skos/core#Concept> ;
-         <http://www.w3.org/2004/02/skos/core#narrower> :jur-944.2 ,
-                                                        :jur-944.3 ,
-                                                        :jur-944.4 ,
-                                                        :jur-944.5- ;
          <http://www.w3.org/2004/02/skos/core#notation> "jur 944"^^xsd:string ;
          rdfs:label "Verbrecher"@de .
 
@@ -19382,10 +19321,10 @@ Hierarchieknoten werden durch Hierarchienamen bezeichnet."""@de ;
            rdfs:label "Sonstige Betroffene"@de .
 
 
-###  http://uricorn.fly/tib_lok_sys#jur-944.5-
-:jur-944.5- rdf:type owl:NamedIndividual ,
+###  http://uricorn.fly/tib_lok_sys#jur-944.5
+:jur-944.5 rdf:type owl:NamedIndividual ,
                      <http://www.w3.org/2004/02/skos/core#Concept> ;
-            <http://www.w3.org/2004/02/skos/core#notation> "jur 944.5-"^^xsd:string ;
+            <http://www.w3.org/2004/02/skos/core#notation> "jur 944.5"^^xsd:string ;
             rdfs:label "Organisierte Kriminalität / Verbrecherorganisation"@de .
 
 
